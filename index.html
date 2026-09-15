@@ -372,10 +372,11 @@
     }
 
     .carousel {
-      width: 280px;
-      height: 300px;
+      width: 320px;
+      height: 330px;
       margin: 0 auto;
-      perspective: 1000px;
+      perspective: 1200px;
+      position: relative;
     }
 
     .carousel-inner {
@@ -383,7 +384,7 @@
       height: 100%;
       position: relative;
       transform-style: preserve-3d;
-      animation: spin 18s linear infinite;
+      animation: spin 22s linear infinite;
     }
 
     .flavor-card {
@@ -394,42 +395,60 @@
       top: 50%;
       margin-left: -90px;
       margin-top: -110px;
-      background: rgba(255, 255, 255, 0.96);
-      border-radius: 25px;
-      padding: 10px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+
+      /* NO WHITE OR YELLOW BOX */
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      box-shadow: none;
+
       backface-visibility: hidden;
+      overflow: visible;
     }
 
     .flavor-card img {
       width: 100%;
       height: 100%;
       object-fit: contain;
-      border-radius: 18px;
+      display: block;
+
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
     }
 
     .flavor-card:nth-child(1) {
-      transform: rotateY(0deg) translateZ(260px);
+      transform: rotateY(0deg) translateZ(285px);
     }
 
     .flavor-card:nth-child(2) {
-      transform: rotateY(60deg) translateZ(260px);
+      transform: rotateY(45deg) translateZ(285px);
     }
 
     .flavor-card:nth-child(3) {
-      transform: rotateY(120deg) translateZ(260px);
+      transform: rotateY(90deg) translateZ(285px);
     }
 
     .flavor-card:nth-child(4) {
-      transform: rotateY(180deg) translateZ(260px);
+      transform: rotateY(135deg) translateZ(285px);
     }
 
     .flavor-card:nth-child(5) {
-      transform: rotateY(240deg) translateZ(260px);
+      transform: rotateY(180deg) translateZ(285px);
     }
 
     .flavor-card:nth-child(6) {
-      transform: rotateY(300deg) translateZ(260px);
+      transform: rotateY(225deg) translateZ(285px);
+    }
+
+    .flavor-card:nth-child(7) {
+      transform: rotateY(270deg) translateZ(285px);
+    }
+
+    .flavor-card:nth-child(8) {
+      transform: rotateY(315deg) translateZ(285px);
     }
 
     @keyframes spin {
@@ -1024,6 +1043,7 @@
       </p>
 
       <div class="buttons">
+
         <a href="#water-ice" class="btn btn-blue">
           EXPLORE WATER ICE
         </a>
@@ -1031,6 +1051,7 @@
         <a href="#catering" class="btn btn-pink">
           BOOK CATERING
         </a>
+
       </div>
 
     </div>
@@ -1102,11 +1123,13 @@
       <div class="water-ice-content">
 
         <div>
+
           <img
             src="water-ice.jpg"
             alt="TastyStrains Philadelphia Water Ice"
             class="water-ice-image"
           >
+
         </div>
 
         <div class="info-card">
@@ -1131,36 +1154,70 @@
 
       </div>
 
+      <!-- UPDATED 8-FLAVOR ROTATING CUPS -->
+
       <div class="flavor-area">
 
-        <h3>SIX FLAVORS. ONE VIBE.</h3>
+        <h3>EIGHT FLAVORS. ONE VIBE.</h3>
 
         <div class="carousel">
 
           <div class="carousel-inner">
 
             <div class="flavor-card">
-              <img src="mango.jpg" alt="Mango Water Ice">
+              <img
+                src="lemon.jpg"
+                alt="Lemon Water Ice"
+              >
             </div>
 
             <div class="flavor-card">
-              <img src="fireworks.jpg" alt="Fireworks Water Ice">
+              <img
+                src="tropical-rainbow.jpg"
+                alt="Tropical Rainbow Water Ice"
+              >
             </div>
 
             <div class="flavor-card">
-              <img src="blueberry .jpg" alt="Blueberry Water Ice">
+              <img
+                src="cherry .jpg"
+                alt="Cherry Water Ice"
+              >
             </div>
 
             <div class="flavor-card">
-              <img src="cotton candy .jpg" alt="Cotton Candy Water Ice">
+              <img
+                src="watermelon .jpg"
+                alt="Watermelon Water Ice"
+              >
             </div>
 
             <div class="flavor-card">
-              <img src="watermelon .jpg" alt="Watermelon Water Ice">
+              <img
+                src="blueberry .jpg"
+                alt="Blueberry Water Ice"
+              >
             </div>
 
             <div class="flavor-card">
-              <img src="cherry .jpg" alt="Cherry Water Ice">
+              <img
+                src="cotton candy .jpg"
+                alt="Cotton Candy Water Ice"
+              >
+            </div>
+
+            <div class="flavor-card">
+              <img
+                src="fireworks.jpg"
+                alt="Fireworks Water Ice"
+              >
+            </div>
+
+            <div class="flavor-card">
+              <img
+                src="mango.jpg"
+                alt="Mango Water Ice"
+              >
             </div>
 
           </div>
