@@ -833,6 +833,50 @@
       font-size: 14px;
     }
 
+    /* SHIRT CHECKOUT */
+
+    .shirt-checkout {
+      display: none;
+      margin: 25px auto 0;
+      max-width: 430px;
+      background: rgba(255, 255, 255, 0.98);
+      border: 4px solid var(--baby-blue);
+      padding: 25px;
+      border-radius: 25px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+
+    .shirt-checkout h4 {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: 28px;
+      color: var(--bubblegum-pink);
+      margin-bottom: 15px;
+    }
+
+    .checkout-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      font-weight: 800;
+      padding: 5px 0;
+    }
+
+    .checkout-total {
+      border-top: 2px solid #ddd;
+      margin-top: 10px;
+      padding-top: 10px;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: 25px;
+      color: var(--baby-blue);
+    }
+
+    .checkout-message {
+      margin: 12px 0 18px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
     /* STORY */
 
     .story-card {
@@ -1423,8 +1467,6 @@
         <span class="blue"> CATERING</span>
       </h2>
 
-      <!-- REAL FILLABLE CATERING FORM -->
-
       <div class="catering-form-box" id="cateringFormBox">
 
         <h3>REQUEST CATERING</h3>
@@ -1520,45 +1562,16 @@
                 required
               >
 
-                <option value="">
-                  Select event type
-                </option>
-
-                <option value="Birthday Party">
-                  Birthday Party
-                </option>
-
-                <option value="Wedding">
-                  Wedding
-                </option>
-
-                <option value="Graduation">
-                  Graduation
-                </option>
-
-                <option value="Baby Shower">
-                  Baby Shower
-                </option>
-
-                <option value="Corporate Event">
-                  Corporate Event
-                </option>
-
-                <option value="Private Celebration">
-                  Private Celebration
-                </option>
-
-                <option value="Family Reunion">
-                  Family Reunion
-                </option>
-
-                <option value="Community Event">
-                  Community Event
-                </option>
-
-                <option value="Other">
-                  Other
-                </option>
+                <option value="">Select event type</option>
+                <option value="Birthday Party">Birthday Party</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Graduation">Graduation</option>
+                <option value="Baby Shower">Baby Shower</option>
+                <option value="Corporate Event">Corporate Event</option>
+                <option value="Private Celebration">Private Celebration</option>
+                <option value="Family Reunion">Family Reunion</option>
+                <option value="Community Event">Community Event</option>
+                <option value="Other">Other</option>
 
               </select>
 
@@ -1623,25 +1636,11 @@
                 required
               >
 
-                <option value="">
-                  Select package
-                </option>
-
-                <option value="Small Event">
-                  Small Event
-                </option>
-
-                <option value="Medium Event">
-                  Medium Event
-                </option>
-
-                <option value="Large Event">
-                  Large Event
-                </option>
-
-                <option value="Not Sure">
-                  Not Sure
-                </option>
+                <option value="">Select package</option>
+                <option value="Small Event">Small Event</option>
+                <option value="Medium Event">Medium Event</option>
+                <option value="Large Event">Large Event</option>
+                <option value="Not Sure">Not Sure</option>
 
               </select>
 
@@ -1703,37 +1702,14 @@
                 name="how_you_heard"
               >
 
-                <option value="">
-                  Select one
-                </option>
-
-                <option value="Instagram">
-                  Instagram
-                </option>
-
-                <option value="TikTok">
-                  TikTok
-                </option>
-
-                <option value="Facebook">
-                  Facebook
-                </option>
-
-                <option value="Google">
-                  Google
-                </option>
-
-                <option value="Friend or Family">
-                  Friend or Family
-                </option>
-
-                <option value="Retail Location">
-                  Retail Location
-                </option>
-
-                <option value="Other">
-                  Other
-                </option>
+                <option value="">Select one</option>
+                <option value="Instagram">Instagram</option>
+                <option value="TikTok">TikTok</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Google">Google</option>
+                <option value="Friend or Family">Friend or Family</option>
+                <option value="Retail Location">Retail Location</option>
+                <option value="Other">Other</option>
 
               </select>
 
@@ -1765,8 +1741,6 @@
         </form>
 
       </div>
-
-      <!-- SUCCESS MESSAGE -->
 
       <div
         id="cateringConfirmation"
@@ -1813,8 +1787,6 @@
         </div>
 
       </div>
-
-      <!-- CATERING INFORMATION -->
 
       <div class="catering-hero">
 
@@ -2023,7 +1995,7 @@
           </div>
 
           <h3>
-            TASTY STRAINS ICY SHIRT
+            TASTYSTRAINS SOO ICY SHIRT OVERSIZED TOP
           </h3>
 
           <div class="product-price">
@@ -2066,19 +2038,71 @@
 
           <div class="buttons">
 
-            <a
-              href="#"
+            <button
+              type="button"
               class="btn btn-pink"
-              onclick="return false;"
+              onclick="openShirtCheckout()"
             >
               BUY NOW
-            </a>
+            </button>
 
           </div>
 
           <p class="product-note">
             Available in S, M, L and XL.
           </p>
+
+          <!-- SHIRT CHECKOUT -->
+
+          <div
+            id="shirtCheckout"
+            class="shirt-checkout"
+          >
+
+            <h4>
+              YOUR TASTY STRAINS ORDER
+            </h4>
+
+            <div class="checkout-line">
+              <span>Shirt</span>
+              <span>$325.00</span>
+            </div>
+
+            <div class="checkout-line">
+              <span>Tax</span>
+              <span>$19.50</span>
+            </div>
+
+            <div class="checkout-line checkout-total">
+              <span>TOTAL</span>
+              <span>$344.50</span>
+            </div>
+
+            <p
+              id="selectedShirtSize"
+              class="checkout-message"
+            ></p>
+
+            <a
+              href="https://square.link/u/Sots570c?src=sheet"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-blue"
+            >
+              CONTINUE TO PAYMENT
+            </a>
+
+            <br><br>
+
+            <button
+              type="button"
+              class="btn btn-pink"
+              onclick="closeShirtCheckout()"
+            >
+              CHANGE SIZE
+            </button>
+
+          </div>
 
         </div>
 
@@ -2386,6 +2410,43 @@
       }
 
     });
+
+
+    /* TASTYSTRAINS SHIRT BUY NOW */
+
+    function openShirtCheckout() {
+
+      const size = document.getElementById("shirt-size").value;
+      const checkout = document.getElementById("shirtCheckout");
+      const selectedSize = document.getElementById("selectedShirtSize");
+
+      if (!size) {
+
+        alert("Please select a shirt size before clicking BUY NOW.");
+
+        return;
+
+      }
+
+      selectedSize.textContent =
+        "Selected Size: " + size +
+        " | Total: $344.50";
+
+      checkout.style.display = "block";
+
+      checkout.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+
+    }
+
+
+    function closeShirtCheckout() {
+
+      document.getElementById("shirtCheckout").style.display = "none";
+
+    }
 
   </script>
 
