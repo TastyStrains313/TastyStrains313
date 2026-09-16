@@ -731,27 +731,106 @@
 
     .clothing-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      grid-template-columns: 1fr;
+      gap: 25px;
+      max-width: 650px;
+      margin: auto;
     }
 
     .clothing-card {
       background: rgba(255, 255, 255, 0.94);
-      padding: 12px;
-      border-radius: 25px;
-      overflow: hidden;
+      padding: 25px;
+      border-radius: 30px;
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-      transition: 0.25s ease;
+      text-align: center;
     }
 
-    .clothing-card:hover {
-      transform: translateY(-6px);
-    }
-
-    .clothing-card img {
+    .product-spin {
       width: 100%;
+      max-width: 500px;
+      height: 520px;
+      margin: 0 auto 20px;
+      perspective: 1200px;
+    }
+
+    .product-spin-inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: shirtSpin 8s linear infinite;
+    }
+
+    .product-face {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+
+    .product-face img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
       display: block;
-      border-radius: 18px;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+    }
+
+    .product-face.back {
+      transform: rotateY(180deg);
+    }
+
+    @keyframes shirtSpin {
+      from {
+        transform: rotateY(0deg);
+      }
+
+      to {
+        transform: rotateY(360deg);
+      }
+    }
+
+    .clothing-card h3 {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: 32px;
+      color: var(--baby-blue);
+      margin-bottom: 8px;
+    }
+
+    .product-price {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: 30px;
+      color: var(--bubblegum-pink);
+      margin-bottom: 18px;
+    }
+
+    .size-label {
+      display: block;
+      font-weight: 900;
+      margin-bottom: 7px;
+    }
+
+    .size-select {
+      width: 100%;
+      max-width: 260px;
+      padding: 13px 15px;
+      border: 2px solid #d9d9d9;
+      border-radius: 14px;
+      font-family: "Andalus", "Times New Roman", serif;
+      font-size: 16px;
+      background: #ffffff;
+      margin-bottom: 18px;
+    }
+
+    .product-note {
+      margin-top: 15px;
+      font-weight: 600;
+      font-size: 14px;
     }
 
     /* STORY */
@@ -904,10 +983,6 @@
         grid-template-columns: 1fr;
       }
 
-      .clothing-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
       .locations-grid {
         grid-template-columns: 1fr;
       }
@@ -928,10 +1003,6 @@
       }
 
       .feature-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .clothing-grid {
         grid-template-columns: 1fr;
       }
 
@@ -974,6 +1045,14 @@
 
       .catering-confirmation {
         padding: 35px 20px;
+      }
+
+      .product-spin {
+        height: 400px;
+      }
+
+      .clothing-card {
+        padding: 18px;
       }
 
     }
@@ -1906,8 +1985,7 @@
         <br>
 
         <p>
-          Follow the brand on Instagram for apparel releases,
-          custom pieces and clothing inquiries.
+          Shop the official TastyStrains ICY shirt below.
         </p>
 
       </div>
@@ -1915,40 +1993,94 @@
       <div class="clothing-grid">
 
         <div class="clothing-card">
-          <img src="clothing-model-1.PNG" alt="TastyStrains clothing model">
+
+          <!-- SHIRT FRONT / BACK SPIN -->
+
+          <div class="product-spin">
+
+            <div class="product-spin-inner">
+
+              <div class="product-face front">
+
+                <img
+                  src="tastystrains-shirt-front.png"
+                  alt="TastyStrains ICY Shirt - Front"
+                >
+
+              </div>
+
+              <div class="product-face back">
+
+                <img
+                  src="tastystrains-shirt-back.png"
+                  alt="TastyStrains ICY Shirt - Back"
+                >
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <h3>
+            TASTY STRAINS ICY SHIRT
+          </h3>
+
+          <div class="product-price">
+            $325
+          </div>
+
+          <label
+            class="size-label"
+            for="shirt-size"
+          >
+            SELECT SIZE
+          </label>
+
+          <select
+            id="shirt-size"
+            class="size-select"
+          >
+
+            <option value="">
+              Select Size
+            </option>
+
+            <option value="S">
+              S
+            </option>
+
+            <option value="M">
+              M
+            </option>
+
+            <option value="L">
+              L
+            </option>
+
+            <option value="XL">
+              XL
+            </option>
+
+          </select>
+
+          <div class="buttons">
+
+            <a
+              href="#"
+              class="btn btn-pink"
+              onclick="return false;"
+            >
+              BUY NOW
+            </a>
+
+          </div>
+
+          <p class="product-note">
+            Available in S, M, L and XL.
+          </p>
+
         </div>
-
-        <div class="clothing-card">
-          <img src="clothing-model2.PNG" alt="TastyStrains clothing model">
-        </div>
-
-        <div class="clothing-card">
-          <img src="clothing-model3.jpg" alt="TastyStrains clothing model">
-        </div>
-
-        <div class="clothing-card">
-          <img src="clothing-model4.PNG" alt="TastyStrains clothing model">
-        </div>
-
-        <div class="clothing-card">
-          <img src="clothing-model5.PNG" alt="TastyStrains clothing model">
-        </div>
-
-        <div class="clothing-card">
-          <img src="clothing-model6.PNG" alt="TastyStrains clothing model">
-        </div>
-
-      </div>
-
-      <div class="buttons" style="margin-top:35px;">
-
-        <a
-          href="https://www.instagram.com/tastystrains313/"
-          target="_blank"
-          class="btn btn-blue"
-        >
-          APPAREL INQUIRIES
-        </a>
 
       </div>
 
