@@ -809,6 +809,78 @@
       margin-bottom: 18px;
     }
 
+    /* PRODUCT DESCRIPTION - ADDED */
+
+    .product-description {
+      max-width: 560px;
+      margin: 0 auto 25px;
+      padding: 22px;
+      text-align: left;
+      background: rgba(255, 255, 255, 0.88);
+      border-radius: 22px;
+      border: 2px solid rgba(94, 203, 255, 0.35);
+    }
+
+    .product-description h4 {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: 25px;
+      color: var(--baby-blue);
+      margin-bottom: 6px;
+      line-height: 1.1;
+    }
+
+    .product-tagline {
+      font-weight: 900;
+      color: var(--bubblegum-pink);
+      font-size: 17px;
+      margin-bottom: 14px;
+    }
+
+    .product-description p {
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .product-detail-heading {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: 21px;
+      color: var(--bubblegum-pink);
+      margin: 18px 0 8px;
+    }
+
+    .fabric-weight {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: 18px;
+      color: var(--baby-blue);
+      margin-bottom: 4px !important;
+    }
+
+    .fabric-quality {
+      font-weight: 700 !important;
+      margin-bottom: 14px !important;
+    }
+
+    .product-details {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .product-details li {
+      font-weight: 700;
+      margin-bottom: 7px;
+      padding-left: 18px;
+      position: relative;
+    }
+
+    .product-details li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--bubblegum-pink);
+      font-size: 18px;
+    }
+
     .size-label {
       display: block;
       font-weight: 900;
@@ -1097,6 +1169,21 @@
 
       .clothing-card {
         padding: 18px;
+      }
+
+      /* PRODUCT DESCRIPTION MOBILE - ADDED */
+
+      .product-description {
+        padding: 18px;
+        border-radius: 20px;
+      }
+
+      .product-description h4 {
+        font-size: 23px;
+      }
+
+      .product-detail-heading {
+        font-size: 19px;
       }
 
     }
@@ -2002,6 +2089,58 @@
             $325
           </div>
 
+          <!-- PRODUCT DESCRIPTION - ADDED -->
+
+          <div class="product-description">
+
+            <h4>
+              TASTY STRAINS OVERSIZED TEE
+            </h4>
+
+            <p class="product-tagline">
+              Heavyweight. Relaxed. Made to stand out.
+            </p>
+
+            <p>
+              The TastyStrains Oversized Tee features a premium
+              heavyweight feel with a relaxed oversized fit.
+              Built for everyday streetwear, it delivers a clean,
+              structured look with standout chenille lettering
+              and dimensional 3D printing.
+            </p>
+
+            <h5 class="product-detail-heading">
+              FABRIC & QUALITY
+            </h5>
+
+            <p class="fabric-weight">
+              350 GSM PREMIUM-WEIGHT FABRIC
+            </p>
+
+            <p class="fabric-quality">
+              Substantial, soft and structured with a premium feel
+              designed to hold its shape and last.
+            </p>
+
+            <h5 class="product-detail-heading">
+              SIGNATURE DETAILS
+            </h5>
+
+            <ul class="product-details">
+
+              <li>Sewn-On Chenille Lettering</li>
+              <li>3D Printed Design</li>
+              <li>Oversized Relaxed Silhouette</li>
+              <li>350 GSM Heavyweight Construction</li>
+              <li>Ribbed Crewneck</li>
+              <li>Washed Finish</li>
+              <li>TastyStrains Signature Branding</li>
+              <li>Designed for Everyday Wear</li>
+
+            </ul>
+
+          </div>
+
           <label
             class="size-label"
             for="shirt-size"
@@ -2411,7 +2550,6 @@
 
     });
 
-
     /* TASTYSTRAINS OVERSIZED TOP BUY NOW */
 
     function openShirtCheckout() {
@@ -2440,7 +2578,6 @@
       });
 
     }
-
 
     function closeShirtCheckout() {
 
