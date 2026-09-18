@@ -509,7 +509,7 @@ section {
 }
 
 /* =========================
-   ORIGINAL 8-FLAVOR CAROUSEL
+   FLAVOR CAROUSEL
 ========================= */
 
 .flavor-area {
@@ -576,8 +576,6 @@ section {
 
   border: none;
 
-  border-radius: 0;
-
   padding: 0;
 
   box-shadow: none;
@@ -600,63 +598,44 @@ section {
 
   border: none;
 
-  border-radius: 0;
-
   box-shadow: none;
 
   mix-blend-mode: multiply;
 }
 
 .flavor-card:nth-child(1) {
-  transform:
-    rotateY(0deg)
-    translateZ(285px);
+  transform: rotateY(0deg) translateZ(285px);
 }
 
 .flavor-card:nth-child(2) {
-  transform:
-    rotateY(45deg)
-    translateZ(285px);
+  transform: rotateY(45deg) translateZ(285px);
 }
 
 .flavor-card:nth-child(3) {
-  transform:
-    rotateY(90deg)
-    translateZ(285px);
+  transform: rotateY(90deg) translateZ(285px);
 }
 
 .flavor-card:nth-child(4) {
-  transform:
-    rotateY(135deg)
-    translateZ(285px);
+  transform: rotateY(135deg) translateZ(285px);
 }
 
 .flavor-card:nth-child(5) {
-  transform:
-    rotateY(180deg)
-    translateZ(285px);
+  transform: rotateY(180deg) translateZ(285px);
 }
 
 .flavor-card:nth-child(6) {
-  transform:
-    rotateY(225deg)
-    translateZ(285px);
+  transform: rotateY(225deg) translateZ(285px);
 }
 
 .flavor-card:nth-child(7) {
-  transform:
-    rotateY(270deg)
-    translateZ(285px);
+  transform: rotateY(270deg) translateZ(285px);
 }
 
 .flavor-card:nth-child(8) {
-  transform:
-    rotateY(315deg)
-    translateZ(285px);
+  transform: rotateY(315deg) translateZ(285px);
 }
 
 @keyframes spin {
-
   from {
     transform: rotateY(0deg);
   }
@@ -664,12 +643,10 @@ section {
   to {
     transform: rotateY(360deg);
   }
-
 }
 
 /* =========================
-   NEW 7-FLAVOR SPINNING
-   COMING SOON CAROUSEL
+   COMING SOON
 ========================= */
 
 .coming-soon-area {
@@ -691,8 +668,6 @@ section {
   color: var(--baby-blue);
 
   margin-bottom: 25px;
-
-  letter-spacing: .5px;
 }
 
 .coming-soon-carousel {
@@ -750,8 +725,6 @@ section {
   padding: 0;
 
   backface-visibility: hidden;
-
-  -webkit-backface-visibility: hidden;
 }
 
 .coming-soon-cup img {
@@ -798,49 +771,34 @@ section {
 }
 
 .coming-soon-cup:nth-child(1) {
-  transform:
-    rotateY(0deg)
-    translateZ(300px);
+  transform: rotateY(0deg) translateZ(300px);
 }
 
 .coming-soon-cup:nth-child(2) {
-  transform:
-    rotateY(51.43deg)
-    translateZ(300px);
+  transform: rotateY(51.43deg) translateZ(300px);
 }
 
 .coming-soon-cup:nth-child(3) {
-  transform:
-    rotateY(102.86deg)
-    translateZ(300px);
+  transform: rotateY(102.86deg) translateZ(300px);
 }
 
 .coming-soon-cup:nth-child(4) {
-  transform:
-    rotateY(154.29deg)
-    translateZ(300px);
+  transform: rotateY(154.29deg) translateZ(300px);
 }
 
 .coming-soon-cup:nth-child(5) {
-  transform:
-    rotateY(205.72deg)
-    translateZ(300px);
+  transform: rotateY(205.72deg) translateZ(300px);
 }
 
 .coming-soon-cup:nth-child(6) {
-  transform:
-    rotateY(257.15deg)
-    translateZ(300px);
+  transform: rotateY(257.15deg) translateZ(300px);
 }
 
 .coming-soon-cup:nth-child(7) {
-  transform:
-    rotateY(308.58deg)
-    translateZ(300px);
+  transform: rotateY(308.58deg) translateZ(300px);
 }
 
 @keyframes comingSoonSpin {
-
   from {
     transform: rotateY(0deg);
   }
@@ -848,7 +806,6 @@ section {
   to {
     transform: rotateY(360deg);
   }
-
 }
 
 .coming-soon-label {
@@ -867,8 +824,6 @@ section {
     sans-serif;
 
   font-size: 18px;
-
-  letter-spacing: .5px;
 
   padding: 9px 20px;
 
@@ -1155,8 +1110,6 @@ section {
   font-weight: 900;
 
   margin-bottom: 7px;
-
-  color: #222;
 }
 
 .required {
@@ -1186,8 +1139,6 @@ section {
   color: #222;
 
   outline: none;
-
-  transition: .2s ease;
 }
 
 .form-group input:focus,
@@ -1288,9 +1239,9 @@ section {
   font-weight: 900;
 }
 
-/* =========================
-   CLOTHING
-========================= */
+/* =========================================================
+   CLOTHING — CLEANED & OPTIMIZED
+========================================================= */
 
 .clothing-intro {
   max-width: 850px;
@@ -1306,14 +1257,18 @@ section {
   border-radius: 25px;
 
   font-weight: 600;
+
+  box-shadow:
+    0 8px 22px rgba(0,0,0,.10);
 }
 
 .clothing-grid {
   display: grid;
 
-  grid-template-columns: repeat(2,minmax(0,1fr));
+  grid-template-columns:
+    repeat(2,minmax(0,1fr));
 
-  gap: 25px;
+  gap: 30px;
 
   max-width: 1200px;
 
@@ -1321,9 +1276,9 @@ section {
 }
 
 .clothing-card {
-  background: rgba(255,255,255,.94);
+  background: rgba(255,255,255,.96);
 
-  padding: 25px;
+  padding: 28px;
 
   border-radius: 30px;
 
@@ -1331,7 +1286,13 @@ section {
     0 12px 30px rgba(0,0,0,.15);
 
   text-align: center;
+
+  overflow: hidden;
 }
+
+/* =========================
+   PRODUCT SPIN AREA
+========================= */
 
 .product-spin {
   width: 100%;
@@ -1340,9 +1301,15 @@ section {
 
   height: 520px;
 
-  margin: 0 auto 20px;
+  margin: 0 auto 18px;
 
-  perspective: 1200px;
+  perspective: 1400px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 25px;
 }
 
 .product-spin-inner {
@@ -1355,13 +1322,19 @@ section {
   transform-style: preserve-3d;
 
   animation:
-    shirtSpin 8s linear infinite;
+    apparelSpin 8s linear infinite;
+
+  will-change: transform;
 }
 
 .product-face {
   position: absolute;
 
   inset: 0;
+
+  width: 100%;
+
+  height: 100%;
 
   display: flex;
 
@@ -1372,6 +1345,16 @@ section {
   backface-visibility: hidden;
 
   -webkit-backface-visibility: hidden;
+
+  transform-style: preserve-3d;
+}
+
+.product-face.front {
+  transform: rotateY(0deg);
+}
+
+.product-face.back {
+  transform: rotateY(180deg);
 }
 
 .product-face img {
@@ -1380,6 +1363,8 @@ section {
   height: 100%;
 
   object-fit: contain;
+
+  object-position: center;
 
   display: block;
 
@@ -1390,23 +1375,27 @@ section {
   box-shadow: none;
 
   mix-blend-mode: normal;
+
+  user-select: none;
+
+  -webkit-user-drag: none;
 }
 
-.product-face.back {
-  transform: rotateY(180deg);
-}
+@keyframes apparelSpin {
 
-@keyframes shirtSpin {
-
-  from {
+  0% {
     transform: rotateY(0deg);
   }
 
-  to {
+  100% {
     transform: rotateY(360deg);
   }
 
 }
+
+/* =========================
+   PRODUCT INFO
+========================= */
 
 .clothing-card h3 {
   font-family:
@@ -1416,6 +1405,8 @@ section {
     sans-serif;
 
   font-size: 30px;
+
+  line-height: 1.05;
 
   color: var(--baby-blue);
 
@@ -1528,6 +1519,10 @@ section {
   font-size: 18px;
 }
 
+/* =========================
+   SIZE SELECT
+========================= */
+
 .size-label {
   display: block;
 
@@ -1557,6 +1552,17 @@ section {
   background: #fff;
 
   margin-bottom: 18px;
+
+  cursor: pointer;
+}
+
+.size-select:focus {
+  outline: none;
+
+  border-color: var(--baby-blue);
+
+  box-shadow:
+    0 0 0 3px rgba(94,203,255,.18);
 }
 
 .product-note {
@@ -1566,6 +1572,10 @@ section {
 
   font-size: 14px;
 }
+
+/* =========================
+   APPAREL CHECKOUT
+========================= */
 
 .shirt-checkout {
   display: none;
@@ -1586,6 +1596,22 @@ section {
     0 12px 30px rgba(0,0,0,.15);
 
   text-align: center;
+
+  animation: checkoutFade .25s ease;
+}
+
+@keyframes checkoutFade {
+
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 }
 
 .shirt-checkout h4 {
@@ -1880,6 +1906,12 @@ footer .footer-brand .pink {
     max-width: 650px;
   }
 
+  .product-spin {
+    max-width: 520px;
+
+    height: 520px;
+  }
+
 }
 
 /* =========================
@@ -1944,12 +1976,50 @@ footer .footer-brand .pink {
     padding: 35px 20px;
   }
 
-  .product-spin {
-    height: 400px;
+  /* =========================
+     MOBILE APPAREL
+  ========================= */
+
+  .clothing-grid {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    max-width: 100%;
   }
 
   .clothing-card {
     padding: 18px;
+
+    border-radius: 25px;
+  }
+
+  .product-spin {
+    width: 100%;
+
+    height: 390px;
+
+    max-width: 100%;
+
+    margin-bottom: 15px;
+
+    perspective: 1100px;
+  }
+
+  .product-face img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+  }
+
+  .clothing-card h3 {
+    font-size: 27px;
+  }
+
+  .product-price {
+    font-size: 28px;
   }
 
   .product-description {
@@ -1964,6 +2034,20 @@ footer .footer-brand .pink {
 
   .product-detail-heading {
     font-size: 19px;
+  }
+
+  .size-select {
+    max-width: 100%;
+  }
+
+  .shirt-checkout {
+    padding: 20px;
+
+    border-radius: 22px;
+  }
+
+  .shirt-checkout .btn {
+    width: 100%;
   }
 
   .coming-soon-carousel {
@@ -2238,94 +2322,38 @@ MORE FLAVORS COMING SOON
 <div class="coming-soon-carousel-inner">
 
 <div class="coming-soon-cup">
-
-<img
-src="coco-coconut.PNG"
-alt="Coco Coconut Water Ice"
->
-
-<div class="coming-soon-name">
-COCO COCONUT
-</div>
-
+<img src="coco-coconut.PNG" alt="Coco Coconut Water Ice">
+<div class="coming-soon-name">COCO COCONUT</div>
 </div>
 
 <div class="coming-soon-cup">
-
-<img
-src="chocolate .PNG"
-alt="Chocolate Water Ice"
->
-
-<div class="coming-soon-name">
-CHOCOLATE
-</div>
-
+<img src="chocolate .PNG" alt="Chocolate Water Ice">
+<div class="coming-soon-name">CHOCOLATE</div>
 </div>
 
 <div class="coming-soon-cup">
-
-<img
-src="atomic-blast.PNG"
-alt="Atomic Blast Water Ice"
->
-
-<div class="coming-soon-name">
-ATOMIC BLAST
-</div>
-
+<img src="atomic-blast.PNG" alt="Atomic Blast Water Ice">
+<div class="coming-soon-name">ATOMIC BLAST</div>
 </div>
 
 <div class="coming-soon-cup">
-
-<img
-src="cosmic-ice.PNG"
-alt="Cosmic Ice Water Ice"
->
-
-<div class="coming-soon-name">
-COSMIC ICE
-</div>
-
+<img src="cosmic-ice.PNG" alt="Cosmic Ice Water Ice">
+<div class="coming-soon-name">COSMIC ICE</div>
 </div>
 
 <div class="coming-soon-cup">
-
-<img
-src="mermaid-ice.PNG"
-alt="Mermaid Ice Water Ice"
->
-
-<div class="coming-soon-name">
-MERMAID ICE
-</div>
-
+<img src="mermaid-ice.PNG" alt="Mermaid Ice Water Ice">
+<div class="coming-soon-name">MERMAID ICE</div>
 </div>
 
 <div class="coming-soon-cup">
-
-<img
-src="sour-apple.PNG"
-alt="Sour Apple Water Ice"
->
-
-<div class="coming-soon-name">
-SOUR APPLE
-</div>
-
+<img src="sour-apple.PNG" alt="Sour Apple Water Ice">
+<div class="coming-soon-name">SOUR APPLE</div>
 </div>
 
 <div class="coming-soon-cup">
-
-<img
-src="mangonada.PNG"
-alt="Mangonada Water Ice"
->
-
-<div class="coming-soon-name">
-MANGONADA
-</div>
-
+<img src="mangonada.PNG" alt="Mangonada Water Ice">
+<div class="coming-soon-name">MANGONADA</div>
 </div>
 
 </div>
@@ -2367,8 +2395,7 @@ Find a location near you.
 <div class="location-card">
 <h3>Mobil</h3>
 <p>10001 Fenkell, Detroit, MI 48238</p>
-<a
-class="btn btn-blue"
+<a class="btn btn-blue"
 href="https://www.google.com/maps/search/?api=1&query=10001+Fenkell+Detroit+MI+48238"
 target="_blank">
 MAP
@@ -2378,8 +2405,7 @@ MAP
 <div class="location-card">
 <h3>Kennedy Liquor</h3>
 <p>13344 Seven Mile, Detroit, MI 48219</p>
-<a
-class="btn btn-pink"
+<a class="btn btn-pink"
 href="https://www.google.com/maps/search/?api=1&query=13344+Seven+Mile+Detroit+MI+48219"
 target="_blank">
 MAP
@@ -2389,8 +2415,7 @@ MAP
 <div class="location-card">
 <h3>W Liquor</h3>
 <p>3325 E Seven Mile, Detroit, MI 48234</p>
-<a
-class="btn btn-blue"
+<a class="btn btn-blue"
 href="https://www.google.com/maps/search/?api=1&query=3325+E+Seven+Mile+Detroit+MI+48234"
 target="_blank">
 MAP
@@ -2400,8 +2425,7 @@ MAP
 <div class="location-card">
 <h3>AMOCO</h3>
 <p>38030 W 10 Mile Rd, Farmington, MI 48335</p>
-<a
-class="btn btn-pink"
+<a class="btn btn-pink"
 href="https://www.google.com/maps/search/?api=1&query=38030+W+10+Mile+Rd+Farmington+MI+48335"
 target="_blank">
 MAP
@@ -2411,8 +2435,7 @@ MAP
 <div class="location-card">
 <h3>Grand Liquor</h3>
 <p>12889 Woodward, Highland Park, MI 48203</p>
-<a
-class="btn btn-blue"
+<a class="btn btn-blue"
 href="https://www.google.com/maps/search/?api=1&query=12889+Woodward+Highland+Park+MI+48203"
 target="_blank">
 MAP
@@ -2422,8 +2445,7 @@ MAP
 <div class="location-card">
 <h3>Imperial Fresh</h3>
 <p>14424 Schaefer, Detroit, MI 48227</p>
-<a
-class="btn btn-pink"
+<a class="btn btn-pink"
 href="https://www.google.com/maps/search/?api=1&query=14424+Schaefer+Detroit+MI+48227"
 target="_blank">
 MAP
@@ -2433,8 +2455,7 @@ MAP
 <div class="location-card">
 <h3>Martell Liquor</h3>
 <p>19137 Seven Mile, Detroit, MI 48219</p>
-<a
-class="btn btn-blue"
+<a class="btn btn-blue"
 href="https://www.google.com/maps/search/?api=1&query=19137+Seven+Mile+Detroit+MI+48219"
 target="_blank">
 MAP
@@ -2444,8 +2465,7 @@ MAP
 <div class="location-card">
 <h3>Heydens Liquor</h3>
 <p>20201 Seven Mile, Detroit, MI 48219</p>
-<a
-class="btn btn-pink"
+<a class="btn btn-pink"
 href="https://www.google.com/maps/search/?api=1&query=20201+Seven+Mile+Detroit+MI+48219"
 target="_blank">
 MAP
@@ -2455,8 +2475,7 @@ MAP
 <div class="location-card">
 <h3>BP</h3>
 <p>30435 Cherry Hill, Westland, MI 48186</p>
-<a
-class="btn btn-blue"
+<a class="btn btn-blue"
 href="https://www.google.com/maps/search/?api=1&query=30435+Cherry+Hill+Westland+MI+48186"
 target="_blank">
 MAP
@@ -2466,8 +2485,7 @@ MAP
 <div class="location-card">
 <h3>Vintage Village Liquor</h3>
 <p>28927 Southfield Rd, Lathrup Village, MI 48076</p>
-<a
-class="btn btn-pink"
+<a class="btn btn-pink"
 href="https://www.google.com/maps/search/?api=1&query=28927+Southfield+Rd+Lathrup+Village+MI+48076"
 target="_blank">
 MAP
@@ -2477,8 +2495,7 @@ MAP
 <div class="location-card">
 <h3>Greenfield Market</h3>
 <p>15530 Puritan, Detroit, MI 48227</p>
-<a
-class="btn btn-blue"
+<a class="btn btn-blue"
 href="https://www.google.com/maps/search/?api=1&query=15530+Puritan+Detroit+MI+48227"
 target="_blank">
 MAP
@@ -2488,8 +2505,7 @@ MAP
 <div class="location-card">
 <h3>Big V Liquor</h3>
 <p>14111 Greenfield Rd, Detroit, MI 48227</p>
-<a
-class="btn btn-pink"
+<a class="btn btn-pink"
 href="https://www.google.com/maps/search/?api=1&query=14111+Greenfield+Rd+Detroit+MI+48227"
 target="_blank">
 MAP
@@ -2499,8 +2515,7 @@ MAP
 <div class="location-card">
 <h3>United Liquor</h3>
 <p>22040 Seven Mile, Detroit, MI 48219</p>
-<a
-class="btn btn-blue"
+<a class="btn btn-blue"
 href="https://www.google.com/maps/search/?api=1&query=22040+Seven+Mile+Detroit+MI+48219"
 target="_blank">
 MAP
@@ -2510,8 +2525,7 @@ MAP
 <div class="location-card">
 <h3>Marathon</h3>
 <p>10550 W Jefferson Ave, River Rouge, MI 48218</p>
-<a
-class="btn btn-pink"
+<a class="btn btn-pink"
 href="https://www.google.com/maps/search/?api=1&query=10550+W+Jefferson+Ave+River+Rouge+MI+48218"
 target="_blank">
 MAP
@@ -2552,312 +2566,127 @@ action="https://formsubmit.co/ajax/tastystrains313@yahoo.com"
 method="POST"
 >
 
-<input
-type="hidden"
-name="_subject"
-value="NEW TASTY STRAINS CATERING REQUEST"
->
-
-<input
-type="hidden"
-name="_template"
-value="table"
->
-
-<input
-type="hidden"
-name="_captcha"
-value="true"
->
+<input type="hidden" name="_subject" value="NEW TASTY STRAINS CATERING REQUEST">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="true">
 
 <div class="form-grid">
 
 <div class="form-group">
-
 <label for="name">
-Full Name
-<span class="required">*</span>
+Full Name <span class="required">*</span>
 </label>
-
-<input
-type="text"
-id="name"
-name="name"
-placeholder="Enter your full name"
-required
->
-
+<input type="text" id="name" name="name" placeholder="Enter your full name" required>
 </div>
 
 <div class="form-group">
-
 <label for="phone">
-Phone Number
-<span class="required">*</span>
+Phone Number <span class="required">*</span>
 </label>
-
-<input
-type="tel"
-id="phone"
-name="phone"
-placeholder="Enter your phone number"
-required
->
-
+<input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
 </div>
 
 <div class="form-group">
-
 <label for="email">
-Email Address
-<span class="required">*</span>
+Email Address <span class="required">*</span>
 </label>
-
-<input
-type="email"
-id="email"
-name="email"
-placeholder="Enter your email address"
-required
->
-
+<input type="email" id="email" name="email" placeholder="Enter your email address" required>
 </div>
 
 <div class="form-group">
-
 <label for="event-type">
-Event Type
-<span class="required">*</span>
+Event Type <span class="required">*</span>
 </label>
 
-<select
-id="event-type"
-name="event_type"
-required
->
-
-<option value="">
-Select event type
-</option>
-
-<option value="Birthday Party">
-Birthday Party
-</option>
-
-<option value="Wedding">
-Wedding
-</option>
-
-<option value="Graduation">
-Graduation
-</option>
-
-<option value="Baby Shower">
-Baby Shower
-</option>
-
-<option value="Corporate Event">
-Corporate Event
-</option>
-
-<option value="Private Celebration">
-Private Celebration
-</option>
-
-<option value="Family Reunion">
-Family Reunion
-</option>
-
-<option value="Community Event">
-Community Event
-</option>
-
-<option value="Other">
-Other
-</option>
-
+<select id="event-type" name="event_type" required>
+<option value="">Select event type</option>
+<option value="Birthday Party">Birthday Party</option>
+<option value="Wedding">Wedding</option>
+<option value="Graduation">Graduation</option>
+<option value="Baby Shower">Baby Shower</option>
+<option value="Corporate Event">Corporate Event</option>
+<option value="Private Celebration">Private Celebration</option>
+<option value="Family Reunion">Family Reunion</option>
+<option value="Community Event">Community Event</option>
+<option value="Other">Other</option>
 </select>
-
 </div>
 
 <div class="form-group">
-
 <label for="event-date">
-Event Date
-<span class="required">*</span>
+Event Date <span class="required">*</span>
 </label>
-
-<input
-type="date"
-id="event-date"
-name="event_date"
-required
->
-
+<input type="date" id="event-date" name="event_date" required>
 </div>
 
 <div class="form-group">
-
 <label for="event-time">
-Event Time
-<span class="required">*</span>
+Event Time <span class="required">*</span>
 </label>
-
-<input
-type="time"
-id="event-time"
-name="event_time"
-required
->
-
+<input type="time" id="event-time" name="event_time" required>
 </div>
 
 <div class="form-group">
-
 <label for="guests">
-Number of Guests
-<span class="required">*</span>
+Number of Guests <span class="required">*</span>
 </label>
-
-<input
-type="number"
-id="guests"
-name="number_of_guests"
-min="1"
-placeholder="Example: 75"
-required
->
-
+<input type="number" id="guests" name="number_of_guests" min="1" placeholder="Example: 75" required>
 </div>
 
 <div class="form-group">
-
 <label for="package">
-Catering Package
-<span class="required">*</span>
+Catering Package <span class="required">*</span>
 </label>
 
-<select
-id="package"
-name="catering_package"
-required
->
-
-<option value="">
-Select package
-</option>
-
-<option value="Small Event">
-Small Event
-</option>
-
-<option value="Medium Event">
-Medium Event
-</option>
-
-<option value="Large Event">
-Large Event
-</option>
-
-<option value="Not Sure">
-Not Sure
-</option>
-
+<select id="package" name="catering_package" required>
+<option value="">Select package</option>
+<option value="Small Event">Small Event</option>
+<option value="Medium Event">Medium Event</option>
+<option value="Large Event">Large Event</option>
+<option value="Not Sure">Not Sure</option>
 </select>
-
 </div>
 
 <div class="form-group full">
-
 <label for="location">
-Event Location
-<span class="required">*</span>
+Event Location <span class="required">*</span>
 </label>
-
-<input
-type="text"
-id="location"
-name="event_location"
-placeholder="Enter the event address or venue"
-required
->
-
+<input type="text" id="location" name="event_location" placeholder="Enter the event address or venue" required>
 </div>
 
 <div class="form-group full">
-
 <label for="flavors">
 Preferred Water Ice Flavors
 </label>
-
-<input
-type="text"
-id="flavors"
-name="preferred_flavors"
-placeholder="Example: Cherry, Lemon, Blueberry"
->
-
+<input type="text" id="flavors" name="preferred_flavors" placeholder="Example: Cherry, Lemon, Blueberry">
 </div>
 
 <div class="form-group full">
-
 <label for="details">
 Tell Us About Your Event
 </label>
-
 <textarea
 id="details"
 name="event_details"
 placeholder="Tell us anything else we should know about your event, including special requests."
 ></textarea>
-
 </div>
 
 <div class="form-group full">
-
 <label for="how-found">
 How Did You Hear About TastyStrains?
 </label>
 
-<select
-id="how-found"
-name="how_you_heard"
->
-
-<option value="">
-Select one
-</option>
-
-<option value="Instagram">
-Instagram
-</option>
-
-<option value="TikTok">
-TikTok
-</option>
-
-<option value="Facebook">
-Facebook
-</option>
-
-<option value="Google">
-Google
-</option>
-
-<option value="Friend or Family">
-Friend or Family
-</option>
-
-<option value="Retail Location">
-Retail Location
-</option>
-
-<option value="Other">
-Other
-</option>
-
+<select id="how-found" name="how_you_heard">
+<option value="">Select one</option>
+<option value="Instagram">Instagram</option>
+<option value="TikTok">TikTok</option>
+<option value="Facebook">Facebook</option>
+<option value="Google">Google</option>
+<option value="Friend or Family">Friend or Family</option>
+<option value="Retail Location">Retail Location</option>
+<option value="Other">Other</option>
 </select>
-
 </div>
 
 </div>
@@ -2880,9 +2709,7 @@ are non-refundable.
 type="submit"
 class="btn btn-pink submit-btn"
 >
-
 SUBMIT CATERING REQUEST
-
 </button>
 
 </div>
@@ -2891,10 +2718,7 @@ SUBMIT CATERING REQUEST
 
 </div>
 
-<div
-id="cateringConfirmation"
-class="catering-confirmation"
->
+<div id="cateringConfirmation" class="catering-confirmation">
 
 <div class="confirmation-check">
 ✓
@@ -2926,10 +2750,7 @@ event details. Your $150 deposit is applied toward
 the final balance.
 </p>
 
-<div
-class="buttons"
-style="margin-top:25px;"
->
+<div class="buttons" style="margin-top:25px;">
 
 <a
 href="https://square.link/u/XVt5l5n5?src=sheet"
@@ -2937,9 +2758,7 @@ target="_blank"
 rel="noopener noreferrer"
 class="btn btn-blue"
 >
-
 PAY CATERING DEPOSIT
-
 </a>
 
 </div>
@@ -2963,10 +2782,7 @@ cold, colorful and unforgettable touch to your event.
 <div class="catering-grid">
 
 <div class="catering-card">
-
-<h3>
-MAKE YOUR EVENT A TASTY ONE
-</h3>
+<h3>MAKE YOUR EVENT A TASTY ONE</h3>
 
 <p>
 Whether you're celebrating with family, friends,
@@ -2974,17 +2790,12 @@ coworkers or your community, TastyStrains can help
 make your event extra refreshing with bold
 Philadelphia Water Ice flavors.
 </p>
-
 </div>
 
 <div class="catering-card">
-
-<h3>
-PERFECT FOR
-</h3>
+<h3>PERFECT FOR</h3>
 
 <ul>
-
 <li>Birthday Parties</li>
 <li>Weddings</li>
 <li>Graduations</li>
@@ -2993,40 +2804,28 @@ PERFECT FOR
 <li>Private Celebrations</li>
 <li>Family Reunions</li>
 <li>Community Events</li>
-
 </ul>
-
 </div>
 
 <div class="catering-card">
-
-<h3>
-WHAT WE OFFER
-</h3>
+<h3>WHAT WE OFFER</h3>
 
 <ul>
-
 <li>Philadelphia Water Ice catering</li>
 <li>A variety of bold flavors</li>
 <li>Catering options based on your event</li>
 <li>Packages designed around your guest count</li>
 <li>Detroit & Metro Detroit service</li>
-
 </ul>
-
 </div>
 
 <div class="catering-card">
-
-<h3>
-SERVICE AREA
-</h3>
+<h3>SERVICE AREA</h3>
 
 <p>
 Proudly serving Detroit and Metro Detroit.
 Contact us about events outside our normal service area.
 </p>
-
 </div>
 
 </div>
@@ -3034,45 +2833,30 @@ Contact us about events outside our normal service area.
 <div class="package-grid">
 
 <div class="package">
-
-<h4>
-SMALL EVENT
-</h4>
-
+<h4>SMALL EVENT</h4>
 <p>
 Ideal for smaller gatherings.
 Guest count and Water Ice quantity will be
 customized for your event.
 </p>
-
 </div>
 
 <div class="package">
-
-<h4>
-MEDIUM EVENT
-</h4>
-
+<h4>MEDIUM EVENT</h4>
 <p>
 A great option for larger parties, celebrations
 and family gatherings. Guest count and Water Ice
 quantity will be customized for your event.
 </p>
-
 </div>
 
 <div class="package">
-
-<h4>
-LARGE EVENT
-</h4>
-
+<h4>LARGE EVENT</h4>
 <p>
 Designed for major celebrations, corporate events
 and large gatherings. Guest count and Water Ice
 quantity will be customized for your event.
 </p>
-
 </div>
 
 </div>
@@ -3109,9 +2893,9 @@ the agreed-upon booking terms.
 
 </section>
 
-<!-- =========================
+<!-- =========================================================
      CLOTHING
-========================= -->
+========================================================= -->
 
 <section id="clothing">
 
@@ -3147,13 +2931,13 @@ Shop the official TastyStrains ICY collection below.
 
 <div class="clothing-grid">
 
-<!-- =========================
-     HOODIE
-========================= -->
+<!-- =====================================================
+     HOODIE PRODUCT
+===================================================== -->
 
 <div class="clothing-card">
 
-<div class="product-spin">
+<div class="product-spin" aria-label="TastyStrains SOO ICY Hoodie rotating product preview">
 
 <div class="product-spin-inner">
 
@@ -3161,7 +2945,9 @@ Shop the official TastyStrains ICY collection below.
 
 <img
 src="tastystrains-hoodie-front.PNG"
-alt="TastyStrains SOO ICY Hoodie - Front"
+alt="TastyStrains SOO ICY Hoodie front"
+loading="lazy"
+draggable="false"
 >
 
 </div>
@@ -3170,7 +2956,9 @@ alt="TastyStrains SOO ICY Hoodie - Front"
 
 <img
 src="tastystrains-hoodie-back.JPEG"
-alt="TastyStrains SOO ICY Hoodie - Back"
+alt="TastyStrains SOO ICY Hoodie back"
+loading="lazy"
+draggable="false"
 >
 
 </div>
@@ -3221,9 +3009,7 @@ SIGNATURE DETAILS
 class="size-label"
 for="hoodie-size"
 >
-
 SELECT SIZE
-
 </label>
 
 <select
@@ -3235,21 +3021,10 @@ class="size-select"
 Select Size
 </option>
 
-<option value="S">
-S
-</option>
-
-<option value="M">
-M
-</option>
-
-<option value="L">
-L
-</option>
-
-<option value="XL">
-XL
-</option>
+<option value="S">S</option>
+<option value="M">M</option>
+<option value="L">L</option>
+<option value="XL">XL</option>
 
 </select>
 
@@ -3260,9 +3035,7 @@ type="button"
 class="btn btn-pink"
 onclick="openApparelCheckout('hoodie')"
 >
-
 BUY NOW
-
 </button>
 
 </div>
@@ -3306,9 +3079,7 @@ target="_blank"
 rel="noopener noreferrer"
 class="btn btn-blue"
 >
-
 CONTINUE TO PAYMENT
-
 </a>
 
 <br>
@@ -3319,22 +3090,20 @@ type="button"
 class="btn btn-pink"
 onclick="closeApparelCheckout('hoodie')"
 >
-
 CHANGE SIZE
-
 </button>
 
 </div>
 
 </div>
 
-<!-- =========================
-     JOGGING PANTS
-========================= -->
+<!-- =====================================================
+     JOGGING PANTS PRODUCT
+===================================================== -->
 
 <div class="clothing-card">
 
-<div class="product-spin">
+<div class="product-spin" aria-label="TastyStrains SOO ICY Jogging Pants rotating product preview">
 
 <div class="product-spin-inner">
 
@@ -3342,7 +3111,9 @@ CHANGE SIZE
 
 <img
 src="tastystrains-jogging-pants-front.heic"
-alt="TastyStrains SOO ICY Jogging Pants - Front"
+alt="TastyStrains SOO ICY Jogging Pants front"
+loading="lazy"
+draggable="false"
 >
 
 </div>
@@ -3351,7 +3122,9 @@ alt="TastyStrains SOO ICY Jogging Pants - Front"
 
 <img
 src="tastystrains-jogging-pants-back.PNG"
-alt="TastyStrains SOO ICY Jogging Pants - Back"
+alt="TastyStrains SOO ICY Jogging Pants back"
+loading="lazy"
+draggable="false"
 >
 
 </div>
@@ -3402,9 +3175,7 @@ SIGNATURE DETAILS
 class="size-label"
 for="joggers-size"
 >
-
 SELECT SIZE
-
 </label>
 
 <select
@@ -3416,21 +3187,10 @@ class="size-select"
 Select Size
 </option>
 
-<option value="S">
-S
-</option>
-
-<option value="M">
-M
-</option>
-
-<option value="L">
-L
-</option>
-
-<option value="XL">
-XL
-</option>
+<option value="S">S</option>
+<option value="M">M</option>
+<option value="L">L</option>
+<option value="XL">XL</option>
 
 </select>
 
@@ -3441,9 +3201,7 @@ type="button"
 class="btn btn-pink"
 onclick="openApparelCheckout('joggers')"
 >
-
 BUY NOW
-
 </button>
 
 </div>
@@ -3487,9 +3245,7 @@ target="_blank"
 rel="noopener noreferrer"
 class="btn btn-blue"
 >
-
 CONTINUE TO PAYMENT
-
 </a>
 
 <br>
@@ -3500,9 +3256,7 @@ type="button"
 class="btn btn-pink"
 onclick="closeApparelCheckout('joggers')"
 >
-
 CHANGE SIZE
-
 </button>
 
 </div>
@@ -3737,9 +3491,7 @@ or working with TastyStrains? Get in touch.
 href="tel:313-591-3034"
 class="btn btn-blue"
 >
-
 CALL 313-591-3034
-
 </a>
 
 <a
@@ -3748,9 +3500,7 @@ target="_blank"
 rel="noopener noreferrer"
 class="btn btn-pink"
 >
-
 INSTAGRAM
-
 </a>
 
 </div>
