@@ -695,8 +695,6 @@ section {
   letter-spacing: .5px;
 }
 
-/* Separate 3D carousel */
-
 .coming-soon-carousel {
   width: 390px;
 
@@ -721,8 +719,6 @@ section {
   animation:
     comingSoonSpin 26s linear infinite;
 }
-
-/* Individual new cups */
 
 .coming-soon-cup {
   position: absolute;
@@ -801,8 +797,6 @@ section {
     0 5px 12px rgba(0,0,0,.12);
 }
 
-/* Seven positions around the ring */
-
 .coming-soon-cup:nth-child(1) {
   transform:
     rotateY(0deg)
@@ -856,8 +850,6 @@ section {
   }
 
 }
-
-/* COMING SOON BADGE */
 
 .coming-soon-label {
   display: inline-block;
@@ -1319,11 +1311,11 @@ section {
 .clothing-grid {
   display: grid;
 
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2,minmax(0,1fr));
 
   gap: 25px;
 
-  max-width: 650px;
+  max-width: 1200px;
 
   margin: auto;
 }
@@ -1396,6 +1388,8 @@ section {
   border: none;
 
   box-shadow: none;
+
+  mix-blend-mode: normal;
 }
 
 .product-face.back {
@@ -1421,7 +1415,7 @@ section {
     "Arial Narrow Bold",
     sans-serif;
 
-  font-size: 32px;
+  font-size: 30px;
 
   color: var(--baby-blue);
 
@@ -1502,26 +1496,6 @@ section {
   color: var(--bubblegum-pink);
 
   margin: 18px 0 8px;
-}
-
-.fabric-weight {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
-
-  font-size: 18px;
-
-  color: var(--baby-blue);
-
-  margin-bottom: 4px !important;
-}
-
-.fabric-quality {
-  font-weight: 700 !important;
-
-  margin-bottom: 14px !important;
 }
 
 .product-details {
@@ -1900,6 +1874,12 @@ footer .footer-brand .pink {
     grid-column: auto;
   }
 
+  .clothing-grid {
+    grid-template-columns: 1fr;
+
+    max-width: 650px;
+  }
+
 }
 
 /* =========================
@@ -1986,8 +1966,6 @@ footer .footer-brand .pink {
     font-size: 19px;
   }
 
-  /* New spinning carousel on mobile */
-
   .coming-soon-carousel {
     width: 300px;
 
@@ -2053,7 +2031,6 @@ footer .footer-brand .pink {
 
 </header>
 
-
 <!-- =========================
      HOME
 ========================= -->
@@ -2104,7 +2081,6 @@ BOOK CATERING
 
 </section>
 
-
 <!-- =========================
      FEATURES
 ========================= -->
@@ -2152,7 +2128,6 @@ Created for community.
 </div>
 
 </section>
-
 
 <!-- =========================
      WATER ICE
@@ -2206,11 +2181,6 @@ FENKELL & WYOMING
 
 </div>
 
-
-<!-- =========================
-     ORIGINAL FLAVORS
-========================= -->
-
 <div class="flavor-area">
 
 <h3>
@@ -2222,61 +2192,40 @@ MORE FLAVORS. ONE VIBE.
 <div class="carousel-inner">
 
 <div class="flavor-card">
-<img
-src="lemon.png"
-alt="Lemon Water Ice">
+<img src="lemon.png" alt="Lemon Water Ice">
 </div>
 
 <div class="flavor-card">
-<img
-src="tropical-rainbow.png"
-alt="Tropical Rainbow Water Ice">
+<img src="tropical-rainbow.png" alt="Tropical Rainbow Water Ice">
 </div>
 
 <div class="flavor-card">
-<img
-src="cherry .png"
-alt="Cherry Water Ice">
+<img src="cherry .png" alt="Cherry Water Ice">
 </div>
 
 <div class="flavor-card">
-<img
-src="watermelon .png"
-alt="Watermelon Water Ice">
+<img src="watermelon .png" alt="Watermelon Water Ice">
 </div>
 
 <div class="flavor-card">
-<img
-src="blueberry .png"
-alt="Blueberry Water Ice">
+<img src="blueberry .png" alt="Blueberry Water Ice">
 </div>
 
 <div class="flavor-card">
-<img
-src="cotton-candy.png"
-alt="Cotton Candy Water Ice">
+<img src="cotton-candy.png" alt="Cotton Candy Water Ice">
 </div>
 
 <div class="flavor-card">
-<img
-src="fireworks.png"
-alt="Fireworks Water Ice">
+<img src="fireworks.png" alt="Fireworks Water Ice">
 </div>
 
 <div class="flavor-card">
-<img
-src="mango.png"
-alt="Mango Water Ice">
+<img src="mango.png" alt="Mango Water Ice">
 </div>
 
 </div>
 
 </div>
-
-
-<!-- =========================
-     7 NEW SPINNING FLAVORS
-========================= -->
 
 <div class="coming-soon-area">
 
@@ -2287,7 +2236,6 @@ MORE FLAVORS COMING SOON
 <div class="coming-soon-carousel">
 
 <div class="coming-soon-carousel-inner">
-
 
 <div class="coming-soon-cup">
 
@@ -2302,7 +2250,6 @@ COCO COCONUT
 
 </div>
 
-
 <div class="coming-soon-cup">
 
 <img
@@ -2315,7 +2262,6 @@ CHOCOLATE
 </div>
 
 </div>
-
 
 <div class="coming-soon-cup">
 
@@ -2330,7 +2276,6 @@ ATOMIC BLAST
 
 </div>
 
-
 <div class="coming-soon-cup">
 
 <img
@@ -2343,7 +2288,6 @@ COSMIC ICE
 </div>
 
 </div>
-
 
 <div class="coming-soon-cup">
 
@@ -2358,7 +2302,6 @@ MERMAID ICE
 
 </div>
 
-
 <div class="coming-soon-cup">
 
 <img
@@ -2372,7 +2315,6 @@ SOUR APPLE
 
 </div>
 
-
 <div class="coming-soon-cup">
 
 <img
@@ -2385,7 +2327,6 @@ MANGONADA
 </div>
 
 </div>
-
 
 </div>
 
@@ -2402,7 +2343,6 @@ COMING SOON
 </div>
 
 </section>
-
 
 <!-- =========================
      LOCATIONS
@@ -2424,7 +2364,6 @@ Find a location near you.
 
 <div class="locations-grid">
 
-
 <div class="location-card">
 <h3>Mobil</h3>
 <p>10001 Fenkell, Detroit, MI 48238</p>
@@ -2435,7 +2374,6 @@ target="_blank">
 MAP
 </a>
 </div>
-
 
 <div class="location-card">
 <h3>Kennedy Liquor</h3>
@@ -2448,7 +2386,6 @@ MAP
 </a>
 </div>
 
-
 <div class="location-card">
 <h3>W Liquor</h3>
 <p>3325 E Seven Mile, Detroit, MI 48234</p>
@@ -2459,7 +2396,6 @@ target="_blank">
 MAP
 </a>
 </div>
-
 
 <div class="location-card">
 <h3>AMOCO</h3>
@@ -2472,7 +2408,6 @@ MAP
 </a>
 </div>
 
-
 <div class="location-card">
 <h3>Grand Liquor</h3>
 <p>12889 Woodward, Highland Park, MI 48203</p>
@@ -2483,7 +2418,6 @@ target="_blank">
 MAP
 </a>
 </div>
-
 
 <div class="location-card">
 <h3>Imperial Fresh</h3>
@@ -2496,7 +2430,6 @@ MAP
 </a>
 </div>
 
-
 <div class="location-card">
 <h3>Martell Liquor</h3>
 <p>19137 Seven Mile, Detroit, MI 48219</p>
@@ -2507,7 +2440,6 @@ target="_blank">
 MAP
 </a>
 </div>
-
 
 <div class="location-card">
 <h3>Heydens Liquor</h3>
@@ -2520,7 +2452,6 @@ MAP
 </a>
 </div>
 
-
 <div class="location-card">
 <h3>BP</h3>
 <p>30435 Cherry Hill, Westland, MI 48186</p>
@@ -2531,7 +2462,6 @@ target="_blank">
 MAP
 </a>
 </div>
-
 
 <div class="location-card">
 <h3>Vintage Village Liquor</h3>
@@ -2544,7 +2474,6 @@ MAP
 </a>
 </div>
 
-
 <div class="location-card">
 <h3>Greenfield Market</h3>
 <p>15530 Puritan, Detroit, MI 48227</p>
@@ -2555,7 +2484,6 @@ target="_blank">
 MAP
 </a>
 </div>
-
 
 <div class="location-card">
 <h3>Big V Liquor</h3>
@@ -2568,7 +2496,6 @@ MAP
 </a>
 </div>
 
-
 <div class="location-card">
 <h3>United Liquor</h3>
 <p>22040 Seven Mile, Detroit, MI 48219</p>
@@ -2579,7 +2506,6 @@ target="_blank">
 MAP
 </a>
 </div>
-
 
 <div class="location-card">
 <h3>Marathon</h3>
@@ -2592,13 +2518,11 @@ MAP
 </a>
 </div>
 
-
 </div>
 
 </div>
 
 </section>
-
 
 <!-- =========================
      CATERING
@@ -2613,7 +2537,6 @@ MAP
 <span class="blue"> CATERING</span>
 </h2>
 
-
 <div class="catering-form-box" id="cateringFormBox">
 
 <h3>REQUEST CATERING</h3>
@@ -2622,7 +2545,6 @@ MAP
 Fill out the form below and your catering request
 will be sent directly to TastyStrains.
 </p>
-
 
 <form
 id="cateringForm"
@@ -2648,9 +2570,7 @@ name="_captcha"
 value="true"
 >
 
-
 <div class="form-grid">
-
 
 <div class="form-group">
 
@@ -2669,7 +2589,6 @@ required
 
 </div>
 
-
 <div class="form-group">
 
 <label for="phone">
@@ -2687,7 +2606,6 @@ required
 
 </div>
 
-
 <div class="form-group">
 
 <label for="email">
@@ -2704,7 +2622,6 @@ required
 >
 
 </div>
-
 
 <div class="form-group">
 
@@ -2763,7 +2680,6 @@ Other
 
 </div>
 
-
 <div class="form-group">
 
 <label for="event-date">
@@ -2780,7 +2696,6 @@ required
 
 </div>
 
-
 <div class="form-group">
 
 <label for="event-time">
@@ -2796,7 +2711,6 @@ required
 >
 
 </div>
-
 
 <div class="form-group">
 
@@ -2815,7 +2729,6 @@ required
 >
 
 </div>
-
 
 <div class="form-group">
 
@@ -2854,7 +2767,6 @@ Not Sure
 
 </div>
 
-
 <div class="form-group full">
 
 <label for="location">
@@ -2872,7 +2784,6 @@ required
 
 </div>
 
-
 <div class="form-group full">
 
 <label for="flavors">
@@ -2888,7 +2799,6 @@ placeholder="Example: Cherry, Lemon, Blueberry"
 
 </div>
 
-
 <div class="form-group full">
 
 <label for="details">
@@ -2902,7 +2812,6 @@ placeholder="Tell us anything else we should know about your event, including sp
 ></textarea>
 
 </div>
-
 
 <div class="form-group full">
 
@@ -2953,7 +2862,6 @@ Other
 
 </div>
 
-
 <div class="form-note">
 
 <strong>IMPORTANT:</strong>
@@ -2965,7 +2873,6 @@ catering balance. All security deposits and payments
 are non-refundable.
 
 </div>
-
 
 <div class="submit-area">
 
@@ -2983,7 +2890,6 @@ SUBMIT CATERING REQUEST
 </form>
 
 </div>
-
 
 <div
 id="cateringConfirmation"
@@ -3040,7 +2946,6 @@ PAY CATERING DEPOSIT
 
 </div>
 
-
 <div class="catering-hero">
 
 <h3>
@@ -3055,9 +2960,7 @@ cold, colorful and unforgettable touch to your event.
 
 </div>
 
-
 <div class="catering-grid">
-
 
 <div class="catering-card">
 
@@ -3073,7 +2976,6 @@ Philadelphia Water Ice flavors.
 </p>
 
 </div>
-
 
 <div class="catering-card">
 
@@ -3096,7 +2998,6 @@ PERFECT FOR
 
 </div>
 
-
 <div class="catering-card">
 
 <h3>
@@ -3115,7 +3016,6 @@ WHAT WE OFFER
 
 </div>
 
-
 <div class="catering-card">
 
 <h3>
@@ -3129,12 +3029,9 @@ Contact us about events outside our normal service area.
 
 </div>
 
-
 </div>
 
-
 <div class="package-grid">
-
 
 <div class="package">
 
@@ -3150,7 +3047,6 @@ customized for your event.
 
 </div>
 
-
 <div class="package">
 
 <h4>
@@ -3164,7 +3060,6 @@ quantity will be customized for your event.
 </p>
 
 </div>
-
 
 <div class="package">
 
@@ -3180,9 +3075,7 @@ quantity will be customized for your event.
 
 </div>
 
-
 </div>
-
 
 <div class="policy">
 
@@ -3216,7 +3109,6 @@ the agreed-upon booking terms.
 
 </section>
 
-
 <!-- =========================
      CLOTHING
 ========================= -->
@@ -3237,7 +3129,6 @@ TASTY
 
 </h2>
 
-
 <div class="clothing-intro">
 
 <p>
@@ -3249,88 +3140,67 @@ colors and ICY attitude into premium streetwear.
 <br>
 
 <p>
-Shop the official TastyStrains ICY shirt below.
+Shop the official TastyStrains ICY collection below.
 </p>
 
 </div>
 
-
 <div class="clothing-grid">
 
-<div class="clothing-card">
+<!-- =========================
+     HOODIE
+========================= -->
 
+<div class="clothing-card">
 
 <div class="product-spin">
 
 <div class="product-spin-inner">
 
-
 <div class="product-face front">
 
 <img
-src="tastystrains-shirt-front.png"
-alt="TastyStrains SOO ICY Oversized Top - Front"
+src="tastystrains-hoodie-front.PNG"
+alt="TastyStrains SOO ICY Hoodie - Front"
 >
 
 </div>
-
 
 <div class="product-face back">
 
 <img
-src="tastystrains-shirt-back.png"
-alt="TastyStrains SOO ICY Oversized Top - Back"
+src="tastystrains-hoodie-back.JPEG"
+alt="TastyStrains SOO ICY Hoodie - Back"
 >
 
 </div>
 
-
 </div>
 
 </div>
-
 
 <h3>
-TASTYSTRAINS SOO ICY OVERSIZED TOP
+OVERSIZED SOO ICY HOODIE
 </h3>
 
 <div class="product-price">
-$325
+$300
 </div>
-
 
 <div class="product-description">
 
 <h4>
-TASTY STRAINS OVERSIZED TEE
+SOO ICY HOODIE
 </h4>
 
 <p class="product-tagline">
-Heavyweight. Relaxed. Made to stand out.
+Bold. Oversized. Made to stand out.
 </p>
 
 <p>
-The TastyStrains Oversized Tee features a premium
-heavyweight feel with a relaxed oversized fit.
-Built for everyday streetwear, it delivers a clean,
-structured look with standout chenille lettering
-and dimensional 3D printing.
+The OVERSIZED SOO ICY HOODIE brings the ICY
+streetwear look to a bold, relaxed hoodie design.
 </p>
-
-
-<h5 class="product-detail-heading">
-FABRIC & QUALITY
-</h5>
-
-<p class="fabric-weight">
-350 GSM PREMIUM-WEIGHT FABRIC
-</p>
-
-<p class="fabric-quality">
-Substantial, soft and structured with a premium feel
-designed to hold its shape and last.
-</p>
-
 
 <h5 class="product-detail-heading">
 SIGNATURE DETAILS
@@ -3338,32 +3208,26 @@ SIGNATURE DETAILS
 
 <ul class="product-details">
 
-<li>Sewn-On Chenille Lettering</li>
-<li>3D Printed Design</li>
-<li>Oversized Relaxed Silhouette</li>
-<li>350 GSM Heavyweight Construction</li>
-<li>Ribbed Crewneck</li>
-<li>Washed Finish</li>
-<li>TastyStrains Signature Branding</li>
+<li>OVERSIZED SOO ICY Design</li>
+<li>Relaxed Streetwear Look</li>
+<li>Bold ICY Styling</li>
 <li>Designed for Everyday Wear</li>
 
 </ul>
 
 </div>
 
-
 <label
 class="size-label"
-for="shirt-size"
+for="hoodie-size"
 >
 
 SELECT SIZE
 
 </label>
 
-
 <select
-id="shirt-size"
+id="hoodie-size"
 class="size-select"
 >
 
@@ -3389,13 +3253,12 @@ XL
 
 </select>
 
-
 <div class="buttons">
 
 <button
 type="button"
 class="btn btn-pink"
-onclick="openShirtCheckout()"
+onclick="openApparelCheckout('hoodie')"
 >
 
 BUY NOW
@@ -3404,14 +3267,12 @@ BUY NOW
 
 </div>
 
-
 <p class="product-note">
 Available in S, M, L and XL.
 </p>
 
-
 <div
-id="shirtCheckout"
+id="hoodieCheckout"
 class="shirt-checkout"
 >
 
@@ -3420,22 +3281,22 @@ YOUR TASTY STRAINS ORDER
 </h4>
 
 <div class="checkout-line">
-<span>Oversized Top</span>
-<span>$325.00</span>
+<span>SOO ICY Hoodie</span>
+<span>$300.00</span>
 </div>
 
 <div class="checkout-line">
 <span>Tax</span>
-<span>$19.50</span>
+<span>$18.00</span>
 </div>
 
 <div class="checkout-line checkout-total">
 <span>TOTAL</span>
-<span>$344.50</span>
+<span>$318.00</span>
 </div>
 
 <p
-id="selectedShirtSize"
+id="selectedHoodieSize"
 class="checkout-message">
 </p>
 
@@ -3456,7 +3317,7 @@ CONTINUE TO PAYMENT
 <button
 type="button"
 class="btn btn-pink"
-onclick="closeShirtCheckout()"
+onclick="closeApparelCheckout('hoodie')"
 >
 
 CHANGE SIZE
@@ -3465,6 +3326,186 @@ CHANGE SIZE
 
 </div>
 
+</div>
+
+<!-- =========================
+     JOGGING PANTS
+========================= -->
+
+<div class="clothing-card">
+
+<div class="product-spin">
+
+<div class="product-spin-inner">
+
+<div class="product-face front">
+
+<img
+src="tastystrains-jogging-pants-front.heic"
+alt="TastyStrains SOO ICY Jogging Pants - Front"
+>
+
+</div>
+
+<div class="product-face back">
+
+<img
+src="tastystrains-jogging-pants-back.PNG"
+alt="TastyStrains SOO ICY Jogging Pants - Back"
+>
+
+</div>
+
+</div>
+
+</div>
+
+<h3>
+OVERSIZED SOO ICY JOGGING PANTS
+</h3>
+
+<div class="product-price">
+$275
+</div>
+
+<div class="product-description">
+
+<h4>
+SOO ICY JOGGING PANTS
+</h4>
+
+<p class="product-tagline">
+Relaxed. Bold. Made to move.
+</p>
+
+<p>
+The OVERSIZED SOO ICY JOGGING PANTS bring the
+ICY streetwear look to a relaxed, oversized fit.
+</p>
+
+<h5 class="product-detail-heading">
+SIGNATURE DETAILS
+</h5>
+
+<ul class="product-details">
+
+<li>OVERSIZED SOO ICY Design</li>
+<li>Relaxed Streetwear Look</li>
+<li>Bold ICY Styling</li>
+<li>Designed for Everyday Wear</li>
+
+</ul>
+
+</div>
+
+<label
+class="size-label"
+for="joggers-size"
+>
+
+SELECT SIZE
+
+</label>
+
+<select
+id="joggers-size"
+class="size-select"
+>
+
+<option value="">
+Select Size
+</option>
+
+<option value="S">
+S
+</option>
+
+<option value="M">
+M
+</option>
+
+<option value="L">
+L
+</option>
+
+<option value="XL">
+XL
+</option>
+
+</select>
+
+<div class="buttons">
+
+<button
+type="button"
+class="btn btn-pink"
+onclick="openApparelCheckout('joggers')"
+>
+
+BUY NOW
+
+</button>
+
+</div>
+
+<p class="product-note">
+Available in S, M, L and XL.
+</p>
+
+<div
+id="joggersCheckout"
+class="shirt-checkout"
+>
+
+<h4>
+YOUR TASTY STRAINS ORDER
+</h4>
+
+<div class="checkout-line">
+<span>SOO ICY Jogging Pants</span>
+<span>$275.00</span>
+</div>
+
+<div class="checkout-line">
+<span>Tax</span>
+<span>$16.50</span>
+</div>
+
+<div class="checkout-line checkout-total">
+<span>TOTAL</span>
+<span>$291.50</span>
+</div>
+
+<p
+id="selectedJoggersSize"
+class="checkout-message">
+</p>
+
+<a
+href="https://square.link/u/Sots570c?src=sheet"
+target="_blank"
+rel="noopener noreferrer"
+class="btn btn-blue"
+>
+
+CONTINUE TO PAYMENT
+
+</a>
+
+<br>
+<br>
+
+<button
+type="button"
+class="btn btn-pink"
+onclick="closeApparelCheckout('joggers')"
+>
+
+CHANGE SIZE
+
+</button>
+
+</div>
 
 </div>
 
@@ -3473,7 +3514,6 @@ CHANGE SIZE
 </div>
 
 </section>
-
 
 <!-- =========================
      OUR STORY
@@ -3495,14 +3535,12 @@ OUR
 
 </h2>
 
-
 <div class="story-card">
 
 <img
 src="about-us.jpg"
 alt="TastyStrains Detroit story"
 >
-
 
 <h3>
 BORN IN DETROIT. BUILT THROUGH RESILIENCE.
@@ -3553,7 +3591,6 @@ Years later, it became part of the inspiration
 behind TastyStrains.
 </p>
 
-
 <h4>
 FROM A CHILDHOOD MEMORY TO A BUSINESS
 </h4>
@@ -3587,7 +3624,6 @@ the future.
 TastyStrains is proof that even the smallest moments
 can inspire something much bigger.
 </p>
-
 
 <h4>
 ROOTED IN DETROIT. BUILT FOR THE FUTURE.
@@ -3623,7 +3659,6 @@ It becomes a memory.
 And sometimes, a memory becomes a mission.
 </p>
 
-
 <h4>
 THIS IS TASTY STRAINS.
 </h4>
@@ -3645,7 +3680,6 @@ The story began in one Detroit neighborhood.
 The vision is to take it everywhere.
 </p>
 
-
 <div class="owner-photo-wrap">
 
 <img
@@ -3665,7 +3699,6 @@ THE FOUNDER OF TASTY STRAINS
 </div>
 
 </section>
-
 
 <!-- =========================
      CONTACT
@@ -3687,7 +3720,6 @@ GET IN
 
 </h2>
 
-
 <div class="contact-card">
 
 <h3>
@@ -3699,7 +3731,6 @@ Interested in retail placement, catering, apparel
 or working with TastyStrains? Get in touch.
 </p>
 
-
 <div class="buttons">
 
 <a
@@ -3710,7 +3741,6 @@ class="btn btn-blue"
 CALL 313-591-3034
 
 </a>
-
 
 <a
 href="https://www.instagram.com/tastystrains313/"
@@ -3730,7 +3760,6 @@ INSTAGRAM
 </div>
 
 </section>
-
 
 <!-- =========================
      FOOTER
@@ -3777,7 +3806,6 @@ Detroit, Michigan
 
 </footer>
 
-
 <!-- =========================
      JAVASCRIPT
 ========================= -->
@@ -3797,7 +3825,6 @@ document.getElementById("cateringFormBox");
 const cateringConfirmation =
 document.getElementById("cateringConfirmation");
 
-
 cateringForm.addEventListener(
 "submit",
 async function(event) {
@@ -3813,7 +3840,6 @@ async function(event) {
 
   submitButton.textContent =
     "SUBMITTING...";
-
 
   try {
 
@@ -3832,10 +3858,8 @@ async function(event) {
         }
       );
 
-
     const data =
       await response.json();
-
 
     if (
       response.ok &&
@@ -3884,28 +3908,51 @@ async function(event) {
 
 });
 
-
 /* =========================
-   SHIRT CHECKOUT
+   APPAREL CHECKOUT
 ========================= */
 
-function openShirtCheckout() {
+function openApparelCheckout(product) {
+
+  const settings = {
+
+    hoodie: {
+      sizeId: "hoodie-size",
+      checkoutId: "hoodieCheckout",
+      selectedId: "selectedHoodieSize",
+      total: "$318.00"
+    },
+
+    joggers: {
+      sizeId: "joggers-size",
+      checkoutId: "joggersCheckout",
+      selectedId: "selectedJoggersSize",
+      total: "$291.50"
+    }
+
+  };
+
+  const item =
+    settings[product];
+
+  if (!item) {
+    return;
+  }
 
   const size =
     document.getElementById(
-      "shirt-size"
+      item.sizeId
     ).value;
 
   const checkout =
     document.getElementById(
-      "shirtCheckout"
+      item.checkoutId
     );
 
   const selectedSize =
     document.getElementById(
-      "selectedShirtSize"
+      item.selectedId
     );
-
 
   if (!size) {
 
@@ -3916,16 +3963,14 @@ function openShirtCheckout() {
     return;
   }
 
-
   selectedSize.textContent =
     "Selected Size: " +
     size +
-    " | Total: $344.50";
-
+    " | Total: " +
+    item.total;
 
   checkout.style.display =
     "block";
-
 
   checkout.scrollIntoView({
     behavior: "smooth",
@@ -3934,11 +3979,15 @@ function openShirtCheckout() {
 
 }
 
+function closeApparelCheckout(product) {
 
-function closeShirtCheckout() {
+  const checkoutId =
+    product === "hoodie"
+      ? "hoodieCheckout"
+      : "joggersCheckout";
 
   document.getElementById(
-    "shirtCheckout"
+    checkoutId
   ).style.display = "none";
 
 }
