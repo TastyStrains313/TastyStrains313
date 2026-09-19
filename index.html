@@ -7,8 +7,8 @@
 <title>TastyStrains | Detroit Frozen Desserts</title>
 
 <meta
-  name="description"
-  content="TastyStrains — Detroit frozen desserts, Philadelphia Water Ice, catering and apparel."
+  name="description"
+  content="TastyStrains — Detroit frozen desserts, Philadelphia Water Ice, catering and apparel."
 >
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,2068 +17,2006 @@
 <style>
 
 :root {
-  --baby-blue: #5ecbff;
-  --bubblegum-pink: #ff77c8;
-  --light-pink: #ffb6df;
-  --white: #ffffff;
-  --dark: #151515;
+  --baby-blue: #5ecbff;
+  --bubblegum-pink: #ff77c8;
+  --light-pink: #ffb6df;
+  --white: #ffffff;
+  --dark: #151515;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Andalus", "Times New Roman", serif;
-  color: var(--dark);
-  line-height: 1.6;
+  font-family: "Andalus", "Times New Roman", serif;
+  color: var(--dark);
+  line-height: 1.6;
 
-  background-image: url("tastystrains-background.PNG");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-image: url("tastystrains-background.PNG");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 /* =========================
-   HEADER
+   HEADER
 ========================= */
 
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
-  background: rgba(255,255,255,.94);
-  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,.94);
+  backdrop-filter: blur(10px);
 
-  border-bottom: 4px solid var(--baby-blue);
+  border-bottom: 4px solid var(--baby-blue);
 
-  box-shadow: 0 4px 20px rgba(0,0,0,.12);
+  box-shadow: 0 4px 20px rgba(0,0,0,.12);
 }
 
 .nav-container {
-  max-width: 1250px;
-  margin: auto;
+  max-width: 1250px;
+  margin: auto;
 
-  min-height: 90px;
-  padding: 12px 22px;
+  min-height: 90px;
+  padding: 12px 22px;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  gap: 20px;
+  gap: 20px;
 }
 
 .brand {
-  position: relative;
-  display: inline-block;
+  position: relative;
+  display: inline-block;
 
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 
-  font-size: clamp(34px,5vw,52px);
-  font-weight: 900;
+  font-size: clamp(34px,5vw,52px);
+  font-weight: 900;
 
-  letter-spacing: -2px;
-  line-height: 1;
+  letter-spacing: -2px;
+  line-height: 1;
 
-  white-space: nowrap;
-  text-decoration: none;
+  white-space: nowrap;
+  text-decoration: none;
 
-  z-index: 1;
+  z-index: 1;
 }
 
 .brand::before {
-  content: "";
+  content: "";
 
-  position: absolute;
+  position: absolute;
 
-  left: 50%;
-  top: 50%;
+  left: 50%;
+  top: 50%;
 
-  width: 105%;
-  height: 100%;
+  width: 105%;
+  height: 100%;
 
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 
-  background:
-    linear-gradient(
-      90deg,
-      rgba(94,203,255,.28),
-      rgba(255,119,200,.28)
-    );
+  background:
+    linear-gradient(
+      90deg,
+      rgba(94,203,255,.28),
+      rgba(255,119,200,.28)
+    );
 
-  filter: blur(12px);
+  filter: blur(12px);
 
-  border-radius: 50%;
+  border-radius: 50%;
 
-  z-index: -1;
+  z-index: -1;
 
-  pointer-events: none;
+  pointer-events: none;
 }
 
 .brand-tasty {
-  color: #5ecbff;
+  color: #5ecbff;
 
-  text-shadow:
-    0 0 4px rgba(94,203,255,.55),
-    2px 2px 0 #fff;
+  text-shadow:
+    0 0 4px rgba(94,203,255,.55),
+    2px 2px 0 #fff;
 }
 
 .brand-strains {
-  color: #ff77c8;
+  color: #ff77c8;
 
-  text-shadow:
-    0 0 4px rgba(255,119,200,.55),
-    2px 2px 0 #fff;
+  text-shadow:
+    0 0 4px rgba(255,119,200,.55),
+    2px 2px 0 #fff;
 }
 
 nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-  gap: 8px;
+  gap: 8px;
 }
 
 nav a {
-  text-decoration: none;
+  text-decoration: none;
 
-  font-family: "Andalus", "Times New Roman", serif;
+  font-family: "Andalus", "Times New Roman", serif;
 
-  font-size: 13px;
-  font-weight: 800;
+  font-size: 13px;
+  font-weight: 800;
 
-  color: #222;
+  color: #222;
 
-  padding: 8px 11px;
+  padding: 8px 11px;
 
-  border-radius: 999px;
+  border-radius: 999px;
 
-  transition: .25s ease;
+  transition: .25s ease;
 }
 
 nav a:hover {
-  color: var(--bubblegum-pink);
+  color: var(--bubblegum-pink);
 
-  background: rgba(94,203,255,.14);
+  background: rgba(94,203,255,.14);
 
-  transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 /* =========================
-   GENERAL
+   GENERAL
 ========================= */
 
 section {
-  padding: 90px 20px;
-  background: transparent;
+  padding: 90px 20px;
+  background: transparent;
 }
 
 .container {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .section-title {
-  text-align: center;
+  text-align: center;
 
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: clamp(34px,6vw,62px);
+  font-size: clamp(34px,6vw,62px);
 
-  line-height: 1.05;
+  line-height: 1.05;
 
-  letter-spacing: -1.5px;
+  letter-spacing: -1.5px;
 
-  margin-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .section-title .blue {
-  color: var(--baby-blue);
+  color: var(--baby-blue);
 }
 
 .section-title .pink {
-  color: var(--bubblegum-pink);
+  color: var(--bubblegum-pink);
 }
 
 .section-subtitle {
-  max-width: 850px;
+  max-width: 850px;
 
-  margin: 0 auto 45px;
+  margin: 0 auto 45px;
 
-  text-align: center;
+  text-align: center;
 
-  font-size: 17px;
+  font-size: 17px;
 
-  font-weight: 600;
+  font-weight: 600;
 
-  background: rgba(255,255,255,.88);
+  background: rgba(255,255,255,.88);
 
-  padding: 18px 24px;
+  padding: 18px 24px;
 
-  border-radius: 20px;
+  border-radius: 20px;
 }
 
 /* =========================
-   HERO
+   HERO
 ========================= */
 
 .hero {
-  min-height: 88vh;
+  min-height: 88vh;
 
-  display: flex;
+  display: flex;
 
-  align-items: center;
-  justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-  text-align: center;
+  text-align: center;
 }
 
 .hero-content {
-  max-width: 1050px;
-  margin: auto;
+  max-width: 1050px;
+  margin: auto;
 }
 
 .hero-video {
-  width: min(430px,90vw);
+  width: min(430px,90vw);
 
-  max-height: 300px;
+  max-height: 300px;
 
-  object-fit: contain;
+  object-fit: contain;
 
-  border-radius: 25px;
+  border-radius: 25px;
 
-  margin-bottom: 15px;
+  margin-bottom: 15px;
 
-  filter:
-    drop-shadow(
-      0 15px 25px rgba(0,0,0,.2)
-    );
+  filter:
+    drop-shadow(
+      0 15px 25px rgba(0,0,0,.2)
+    );
 }
 
 .detroit-desserts-logo {
-  width: min(900px,95vw);
+  width: min(900px,95vw);
 
-  height: auto;
+  height: auto;
 
-  display: block;
+  display: block;
 
-  margin: 0 auto 25px;
+  margin: 0 auto 25px;
 
-  background: transparent;
+  background: transparent;
 
-  border: none;
+  border: none;
 
-  box-shadow: none;
+  box-shadow: none;
 
-  filter:
-    drop-shadow(
-      0 15px 25px rgba(0,0,0,.18)
-    );
+  filter:
+    drop-shadow(
+      0 15px 25px rgba(0,0,0,.18)
+    );
 }
 
 .hero h1 {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: clamp(40px,8vw,82px);
+  font-size: clamp(40px,8vw,82px);
 
-  line-height: .98;
+  line-height: .98;
 
-  margin-bottom: 25px;
+  margin-bottom: 25px;
 
-  letter-spacing: -2px;
+  letter-spacing: -2px;
 }
 
 .hero h1 .blue {
-  color: var(--baby-blue);
+  color: var(--baby-blue);
 }
 
 .hero h1 .pink {
-  color: var(--bubblegum-pink);
+  color: var(--bubblegum-pink);
 }
 
 .hero p {
-  max-width: 800px;
+  max-width: 800px;
 
-  margin: auto auto 30px;
+  margin: auto auto 30px;
 
-  font-size: clamp(17px,2vw,21px);
+  font-size: clamp(17px,2vw,21px);
 
-  font-weight: 600;
+  font-weight: 600;
 
-  background: rgba(255,255,255,.9);
+  background: rgba(255,255,255,.9);
 
-  padding: 20px 25px;
+  padding: 20px 25px;
 
-  border-radius: 22px;
+  border-radius: 22px;
 }
 
 .buttons {
-  display: flex;
+  display: flex;
 
-  justify-content: center;
+  justify-content: center;
 
-  flex-wrap: wrap;
+  flex-wrap: wrap;
 
-  gap: 14px;
+  gap: 14px;
 }
 
 .btn {
-  display: inline-block;
+  display: inline-block;
 
-  text-decoration: none;
+  text-decoration: none;
 
-  font-family:
-    "Andalus",
-    "Times New Roman",
-    serif;
+  font-family:
+    "Andalus",
+    "Times New Roman",
+    serif;
 
-  font-weight: 900;
+  font-weight: 900;
 
-  padding: 14px 24px;
+  padding: 14px 24px;
 
-  border-radius: 999px;
+  border-radius: 999px;
 
-  transition: .25s ease;
+  transition: .25s ease;
 
-  box-shadow:
-    0 8px 18px rgba(0,0,0,.15);
+  box-shadow:
+    0 8px 18px rgba(0,0,0,.15);
 
-  border: none;
+  border: none;
 
-  cursor: pointer;
+  cursor: pointer;
 }
 
 .btn-blue {
-  background: var(--baby-blue);
-  color: #fff;
+  background: var(--baby-blue);
+  color: #fff;
 }
 
 .btn-pink {
-  background: var(--bubblegum-pink);
-  color: #fff;
+  background: var(--bubblegum-pink);
+  color: #fff;
 }
 
 .btn:hover {
-  transform:
-    translateY(-3px)
-    scale(1.02);
+  transform:
+    translateY(-3px)
+    scale(1.02);
 }
 
 /* =========================
-   FEATURE CARDS
+   FEATURE CARDS
 ========================= */
 
 .feature-grid {
-  display: grid;
+  display: grid;
 
-  grid-template-columns:
-    repeat(4,1fr);
+  grid-template-columns:
+    repeat(4,1fr);
 
-  gap: 20px;
+  gap: 20px;
 }
 
 .feature-card {
-  background: rgba(255,255,255,.92);
+  background: rgba(255,255,255,.92);
 
-  padding: 30px 22px;
+  padding: 30px 22px;
 
-  border-radius: 28px;
+  border-radius: 28px;
 
-  text-align: center;
+  text-align: center;
 
-  box-shadow:
-    0 12px 30px rgba(0,0,0,.15);
+  box-shadow:
+    0 12px 30px rgba(0,0,0,.15);
 
-  transition: .25s ease;
+  transition: .25s ease;
 }
 
 .feature-card:hover {
-  transform: translateY(-7px);
+  transform: translateY(-7px);
 }
 
 .feature-card h3 {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 24px;
+  font-size: 24px;
 
-  margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .feature-card:nth-child(odd) h3 {
-  color: var(--baby-blue);
+  color: var(--baby-blue);
 }
 
 .feature-card:nth-child(even) h3 {
-  color: var(--bubblegum-pink);
+  color: var(--bubblegum-pink);
 }
 
 .feature-card p {
-  font-weight: 600;
+  font-weight: 600;
 }
 
 /* =========================
-   WATER ICE
+   WATER ICE
 ========================= */
 
 .water-ice-content {
-  display: grid;
+  display: grid;
 
-  grid-template-columns:
-    1fr 1fr;
+  grid-template-columns:
+    1fr 1fr;
 
-  gap: 35px;
+  gap: 35px;
 
-  align-items: center;
+  align-items: center;
 }
 
 .water-ice-image {
-  width: 100%;
+  width: 100%;
 
-  border-radius: 30px;
+  border-radius: 30px;
 
-  box-shadow:
-    0 15px 35px rgba(0,0,0,.2);
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.2);
 }
 
 .info-card {
-  background: rgba(255,255,255,.93);
+  background: rgba(255,255,255,.93);
 
-  padding: 35px;
+  padding: 35px;
 
-  border-radius: 30px;
+  border-radius: 30px;
 
-  box-shadow:
-    0 15px 35px rgba(0,0,0,.15);
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.15);
 }
 
 .info-card h3 {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 32px;
+  font-size: 32px;
 
-  line-height: 1.05;
+  line-height: 1.05;
 
-  margin-bottom: 15px;
+  margin-bottom: 15px;
 
-  color: var(--bubblegum-pink);
+  color: var(--bubblegum-pink);
 }
 
 .info-card p {
-  font-weight: 600;
+  font-weight: 600;
 
-  margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .location-highlight {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 27px;
+  font-size: 27px;
 
-  color: var(--baby-blue);
+  color: var(--baby-blue);
 
-  margin-top: 20px;
+  margin-top: 20px;
 }
 
 /* =========================
-   FLAVOR CAROUSEL
+   ORIGINAL 8-FLAVOR CAROUSEL
 ========================= */
 
 .flavor-area {
-  margin-top: 70px;
+  margin-top: 70px;
 
-  text-align: center;
+  text-align: center;
 }
 
 .flavor-area h3 {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 36px;
+  font-size: 36px;
 
-  color: var(--bubblegum-pink);
+  color: var(--bubblegum-pink);
 
-  margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .carousel {
-  width: 320px;
+  width: 320px;
 
-  height: 330px;
+  height: 330px;
 
-  margin: 0 auto;
+  margin: 0 auto;
 
-  perspective: 1200px;
+  perspective: 1200px;
 
-  position: relative;
+  position: relative;
 }
 
 .carousel-inner {
-  width: 100%;
+  width: 100%;
 
-  height: 100%;
+  height: 100%;
 
-  position: relative;
+  position: relative;
 
-  transform-style: preserve-3d;
+  transform-style: preserve-3d;
 
-  animation:
-    spin 22s linear infinite;
+  animation:
+    spin 22s linear infinite;
 }
 
 .flavor-card {
-  position: absolute;
+  position: absolute;
 
-  width: 180px;
+  width: 180px;
 
-  height: 220px;
+  height: 220px;
 
-  left: 50%;
+  left: 50%;
 
-  top: 50%;
+  top: 50%;
 
-  margin-left: -90px;
+  margin-left: -90px;
 
-  margin-top: -110px;
+  margin-top: -110px;
 
-  background: transparent !important;
+  background: transparent !important;
 
-  border: none;
+  border: none;
 
-  padding: 0;
+  border-radius: 0;
 
-  box-shadow: none;
+  padding: 0;
 
-  backface-visibility: hidden;
+  box-shadow: none;
 
-  overflow: visible;
+  backface-visibility: hidden;
+
+  overflow: visible;
 }
 
 .flavor-card img {
-  width: 100%;
+  width: 100%;
 
-  height: 100%;
+  height: 100%;
 
-  object-fit: contain;
+  object-fit: contain;
 
-  display: block;
+  display: block;
 
-  background: transparent !important;
+  background: transparent !important;
 
-  border: none;
+  border: none;
 
-  box-shadow: none;
+  border-radius: 0;
 
-  mix-blend-mode: multiply;
+  box-shadow: none;
+
+  mix-blend-mode: multiply;
 }
 
 .flavor-card:nth-child(1) {
-  transform: rotateY(0deg) translateZ(285px);
+  transform:
+    rotateY(0deg)
+    translateZ(285px);
 }
 
 .flavor-card:nth-child(2) {
-  transform: rotateY(45deg) translateZ(285px);
+  transform:
+    rotateY(45deg)
+    translateZ(285px);
 }
 
 .flavor-card:nth-child(3) {
-  transform: rotateY(90deg) translateZ(285px);
+  transform:
+    rotateY(90deg)
+    translateZ(285px);
 }
 
 .flavor-card:nth-child(4) {
-  transform: rotateY(135deg) translateZ(285px);
+  transform:
+    rotateY(135deg)
+    translateZ(285px);
 }
 
 .flavor-card:nth-child(5) {
-  transform: rotateY(180deg) translateZ(285px);
+  transform:
+    rotateY(180deg)
+    translateZ(285px);
 }
 
 .flavor-card:nth-child(6) {
-  transform: rotateY(225deg) translateZ(285px);
+  transform:
+    rotateY(225deg)
+    translateZ(285px);
 }
 
 .flavor-card:nth-child(7) {
-  transform: rotateY(270deg) translateZ(285px);
+  transform:
+    rotateY(270deg)
+    translateZ(285px);
 }
 
 .flavor-card:nth-child(8) {
-  transform: rotateY(315deg) translateZ(285px);
+  transform:
+    rotateY(315deg)
+    translateZ(285px);
 }
 
 @keyframes spin {
-  from {
-    transform: rotateY(0deg);
-  }
 
-  to {
-    transform: rotateY(360deg);
-  }
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+
 }
 
 /* =========================
-   COMING SOON
+   NEW 7-FLAVOR SPINNING
+   COMING SOON CAROUSEL
 ========================= */
 
 .coming-soon-area {
-  margin-top: 80px;
+  margin-top: 80px;
 
-  text-align: center;
+  text-align: center;
 }
 
 .coming-soon-title {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size:
-    clamp(30px,5vw,46px);
+  font-size:
+    clamp(30px,5vw,46px);
 
-  color: var(--baby-blue);
+  color: var(--baby-blue);
 
-  margin-bottom: 25px;
+  margin-bottom: 25px;
+
+  letter-spacing: .5px;
 }
 
+/* Separate 3D carousel */
+
 .coming-soon-carousel {
-  width: 390px;
+  width: 390px;
 
-  height: 420px;
+  height: 420px;
 
-  margin: 0 auto;
+  margin: 0 auto;
 
-  perspective: 1200px;
+  perspective: 1200px;
 
-  position: relative;
+  position: relative;
 }
 
 .coming-soon-carousel-inner {
-  width: 100%;
+  width: 100%;
 
-  height: 100%;
+  height: 100%;
 
-  position: relative;
+  position: relative;
 
-  transform-style: preserve-3d;
+  transform-style: preserve-3d;
 
-  animation:
-    comingSoonSpin 26s linear infinite;
+  animation:
+    comingSoonSpin 26s linear infinite;
 }
 
+/* Individual new cups */
+
 .coming-soon-cup {
-  position: absolute;
+  position: absolute;
 
-  width: 190px;
+  width: 190px;
 
-  height: 300px;
+  height: 300px;
 
-  left: 50%;
+  left: 50%;
 
-  top: 50%;
+  top: 50%;
 
-  margin-left: -95px;
+  margin-left: -95px;
 
-  margin-top: -150px;
+  margin-top: -150px;
 
-  display: flex;
+  display: flex;
 
-  flex-direction: column;
+  flex-direction: column;
 
-  align-items: center;
+  align-items: center;
 
-  justify-content: flex-start;
+  justify-content: flex-start;
 
-  background: transparent;
+  background: transparent;
 
-  border: none;
+  border: none;
 
-  padding: 0;
+  padding: 0;
 
-  backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  -webkit-backface-visibility: hidden;
 }
 
 .coming-soon-cup img {
-  width: 190px;
+  width: 190px;
 
-  height: 235px;
+  height: 235px;
 
-  object-fit: contain;
+  object-fit: contain;
 
-  display: block;
+  display: block;
 
-  background: transparent;
+  background: transparent;
 
-  border: none;
+  border: none;
 
-  box-shadow: none;
+  box-shadow: none;
 
-  mix-blend-mode: multiply;
+  mix-blend-mode: multiply;
 }
 
 .coming-soon-name {
-  margin-top: 5px;
+  margin-top: 5px;
 
-  padding: 6px 13px;
+  padding: 6px 13px;
 
-  background: rgba(255,255,255,.96);
+  background: rgba(255,255,255,.96);
 
-  border-radius: 999px;
+  border-radius: 999px;
 
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 16px;
+  font-size: 16px;
 
-  color: var(--baby-blue);
+  color: var(--baby-blue);
 
-  white-space: nowrap;
+  white-space: nowrap;
 
-  box-shadow:
-    0 5px 12px rgba(0,0,0,.12);
+  box-shadow:
+    0 5px 12px rgba(0,0,0,.12);
 }
 
+/* Seven positions around the ring */
+
 .coming-soon-cup:nth-child(1) {
-  transform: rotateY(0deg) translateZ(300px);
+  transform:
+    rotateY(0deg)
+    translateZ(300px);
 }
 
 .coming-soon-cup:nth-child(2) {
-  transform: rotateY(51.43deg) translateZ(300px);
+  transform:
+    rotateY(51.43deg)
+    translateZ(300px);
 }
 
 .coming-soon-cup:nth-child(3) {
-  transform: rotateY(102.86deg) translateZ(300px);
+  transform:
+    rotateY(102.86deg)
+    translateZ(300px);
 }
 
 .coming-soon-cup:nth-child(4) {
-  transform: rotateY(154.29deg) translateZ(300px);
+  transform:
+    rotateY(154.29deg)
+    translateZ(300px);
 }
 
 .coming-soon-cup:nth-child(5) {
-  transform: rotateY(205.72deg) translateZ(300px);
+  transform:
+    rotateY(205.72deg)
+    translateZ(300px);
 }
 
 .coming-soon-cup:nth-child(6) {
-  transform: rotateY(257.15deg) translateZ(300px);
+  transform:
+    rotateY(257.15deg)
+    translateZ(300px);
 }
 
 .coming-soon-cup:nth-child(7) {
-  transform: rotateY(308.58deg) translateZ(300px);
+  transform:
+    rotateY(308.58deg)
+    translateZ(300px);
 }
 
 @keyframes comingSoonSpin {
-  from {
-    transform: rotateY(0deg);
-  }
 
-  to {
-    transform: rotateY(360deg);
-  }
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+
 }
 
+/* COMING SOON BADGE */
+
 .coming-soon-label {
-  display: inline-block;
+  display: inline-block;
 
-  margin-top: 5px;
+  margin-top: 5px;
 
-  background: var(--bubblegum-pink);
+  background: var(--bubblegum-pink);
 
-  color: #fff;
+  color: #fff;
 
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 18px;
+  font-size: 18px;
 
-  padding: 9px 20px;
+  letter-spacing: .5px;
 
-  border-radius: 999px;
+  padding: 9px 20px;
 
-  box-shadow:
-    0 7px 18px rgba(0,0,0,.18);
+  border-radius: 999px;
+
+  box-shadow:
+    0 7px 18px rgba(0,0,0,.18);
 }
 
 /* =========================
-   LOCATIONS
+   LOCATIONS
 ========================= */
 
 .locations-grid {
-  display: grid;
+  display: grid;
 
-  grid-template-columns:
-    repeat(2,1fr);
+  grid-template-columns:
+    repeat(2,1fr);
 
-  gap: 18px;
+  gap: 18px;
 }
 
 .location-card {
-  background: rgba(255,255,255,.94);
+  background: rgba(255,255,255,.94);
 
-  padding: 22px;
+  padding: 22px;
 
-  border-radius: 22px;
+  border-radius: 22px;
 
-  box-shadow:
-    0 8px 20px rgba(0,0,0,.12);
+  box-shadow:
+    0 8px 20px rgba(0,0,0,.12);
 }
 
 .location-card h3 {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 20px;
+  font-size: 20px;
 
-  color: var(--baby-blue);
+  color: var(--baby-blue);
 
-  margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .location-card p {
-  font-weight: 600;
+  font-weight: 600;
 
-  margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 /* =========================
-   CATERING
+   CATERING
 ========================= */
 
 .catering-hero {
-  max-width: 1000px;
+  max-width: 1000px;
 
-  margin: auto auto 40px;
+  margin: auto auto 40px;
 
-  background: rgba(255,255,255,.94);
+  background: rgba(255,255,255,.94);
 
-  padding: 40px;
+  padding: 40px;
 
-  border-radius: 30px;
+  border-radius: 30px;
 
-  text-align: center;
+  text-align: center;
 
-  box-shadow:
-    0 15px 35px rgba(0,0,0,.15);
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.15);
 }
 
 .catering-hero h3 {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size:
-    clamp(30px,5vw,48px);
+  font-size:
+    clamp(30px,5vw,48px);
 
-  color: var(--baby-blue);
+  color: var(--baby-blue);
 
-  margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .catering-hero p {
-  font-weight: 600;
+  font-weight: 600;
 
-  font-size: 17px;
+  font-size: 17px;
 }
 
 .catering-grid {
-  display: grid;
+  display: grid;
 
-  grid-template-columns:
-    repeat(2,1fr);
+  grid-template-columns:
+    repeat(2,1fr);
 
-  gap: 25px;
+  gap: 25px;
 
-  margin-top: 25px;
+  margin-top: 25px;
 }
 
 .catering-card {
-  background: rgba(255,255,255,.94);
+  background: rgba(255,255,255,.94);
 
-  padding: 30px;
+  padding: 30px;
 
-  border-radius: 28px;
+  border-radius: 28px;
 
-  box-shadow:
-    0 12px 28px rgba(0,0,0,.13);
+  box-shadow:
+    0 12px 28px rgba(0,0,0,.13);
 }
 
 .catering-card h3 {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  color: var(--bubblegum-pink);
+  color: var(--bubblegum-pink);
 
-  font-size: 28px;
+  font-size: 28px;
 
-  margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .catering-card ul {
-  padding-left: 20px;
+  padding-left: 20px;
 }
 
 .catering-card li {
-  margin-bottom: 8px;
+  margin-bottom: 8px;
 
-  font-weight: 600;
+  font-weight: 600;
 }
 
 .package-grid {
-  display: grid;
+  display: grid;
 
-  grid-template-columns:
-    repeat(3,1fr);
+  grid-template-columns:
+    repeat(3,1fr);
 
-  gap: 20px;
+  gap: 20px;
 
-  margin-top: 25px;
+  margin-top: 25px;
 }
 
 .package {
-  background: rgba(255,255,255,.95);
+  background: rgba(255,255,255,.95);
 
-  padding: 28px;
+  padding: 28px;
 
-  border-radius: 25px;
+  border-radius: 25px;
 
-  text-align: center;
+  text-align: center;
 
-  box-shadow:
-    0 10px 25px rgba(0,0,0,.13);
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.13);
 }
 
 .package h4 {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 25px;
+  font-size: 25px;
 
-  color: var(--baby-blue);
+  color: var(--baby-blue);
 
-  margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .package p {
-  font-weight: 600;
+  font-weight: 600;
 }
 
 .policy {
-  margin-top: 30px;
+  margin-top: 30px;
 
-  background: rgba(255,255,255,.96);
+  background: rgba(255,255,255,.96);
 
-  border: 4px solid var(--bubblegum-pink);
+  border: 4px solid var(--bubblegum-pink);
 
-  padding: 30px;
+  padding: 30px;
 
-  border-radius: 25px;
+  border-radius: 25px;
 
-  text-align: center;
+  text-align: center;
 }
 
 .policy h3 {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  color: var(--bubblegum-pink);
+  color: var(--bubblegum-pink);
 
-  margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .nonrefundable {
-  font-weight: 900;
+  font-weight: 900;
 
-  color: #e60070;
+  color: #e60070;
 
-  font-size: 18px;
+  font-size: 18px;
 
-  margin-top: 12px;
+  margin-top: 12px;
 }
 
 /* =========================
-   CATERING FORM
+   CATERING FORM
 ========================= */
 
 .catering-form-box {
-  max-width: 950px;
+  max-width: 950px;
 
-  margin: 0 auto 45px;
+  margin: 0 auto 45px;
 
-  background: rgba(255,255,255,.96);
+  background: rgba(255,255,255,.96);
 
-  padding: 35px;
+  padding: 35px;
 
-  border-radius: 30px;
+  border-radius: 30px;
 
-  box-shadow:
-    0 15px 35px rgba(0,0,0,.15);
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.15);
 }
 
 .catering-form-box h3 {
-  text-align: center;
+  text-align: center;
 
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  color: var(--baby-blue);
+  color: var(--baby-blue);
 
-  font-size:
-    clamp(28px,5vw,44px);
+  font-size:
+    clamp(28px,5vw,44px);
 
-  margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .form-intro {
-  text-align: center;
+  text-align: center;
 
-  font-weight: 600;
+  font-weight: 600;
 
-  margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .form-grid {
-  display: grid;
+  display: grid;
 
-  grid-template-columns:
-    repeat(2,1fr);
+  grid-template-columns:
+    repeat(2,1fr);
 
-  gap: 20px;
+  gap: 20px;
 }
 
 .form-group {
-  display: flex;
+  display: flex;
 
-  flex-direction: column;
+  flex-direction: column;
 }
 
 .form-group.full {
-  grid-column: 1 / -1;
+  grid-column: 1 / -1;
 }
 
 .form-group label {
-  font-weight: 900;
+  font-weight: 900;
 
-  margin-bottom: 7px;
+  margin-bottom: 7px;
+
+  color: #222;
 }
 
 .required {
-  color: var(--bubblegum-pink);
+  color: var(--bubblegum-pink);
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
-  width: 100%;
+  width: 100%;
 
-  padding: 14px 16px;
+  padding: 14px 16px;
 
-  border: 2px solid #d9d9d9;
+  border: 2px solid #d9d9d9;
 
-  border-radius: 14px;
+  border-radius: 14px;
 
-  font-family:
-    "Andalus",
-    "Times New Roman",
-    serif;
+  font-family:
+    "Andalus",
+    "Times New Roman",
+    serif;
 
-  font-size: 15px;
+  font-size: 15px;
 
-  background: #fff;
+  background: #fff;
 
-  color: #222;
+  color: #222;
 
-  outline: none;
+  outline: none;
+
+  transition: .2s ease;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: var(--baby-blue);
+  border-color: var(--baby-blue);
 
-  box-shadow:
-    0 0 0 3px rgba(94,203,255,.18);
+  box-shadow:
+    0 0 0 3px rgba(94,203,255,.18);
 }
 
 .form-group textarea {
-  min-height: 140px;
+  min-height: 140px;
 
-  resize: vertical;
+  resize: vertical;
 }
 
 .form-note {
-  margin-top: 20px;
+  margin-top: 20px;
 
-  padding: 16px;
+  padding: 16px;
 
-  background:
-    rgba(94,203,255,.12);
+  background:
+    rgba(94,203,255,.12);
 
-  border-radius: 15px;
+  border-radius: 15px;
 
-  text-align: center;
+  text-align: center;
 
-  font-weight: 600;
+  font-weight: 600;
 
-  font-size: 14px;
+  font-size: 14px;
 }
 
 .submit-area {
-  text-align: center;
+  text-align: center;
 
-  margin-top: 28px;
+  margin-top: 28px;
 }
 
 .submit-btn {
-  min-width: 260px;
+  min-width: 260px;
 
-  font-size: 16px;
+  font-size: 16px;
 }
 
 .catering-confirmation {
-  display: none;
+  display: none;
 
-  max-width: 950px;
+  max-width: 950px;
 
-  margin: 0 auto 45px;
+  margin: 0 auto 45px;
 
-  background: rgba(255,255,255,.97);
+  background: rgba(255,255,255,.97);
 
-  border: 5px solid var(--baby-blue);
+  border: 5px solid var(--baby-blue);
 
-  padding: 45px 30px;
+  padding: 45px 30px;
 
-  border-radius: 30px;
+  border-radius: 30px;
 
-  text-align: center;
+  text-align: center;
 
-  box-shadow:
-    0 15px 35px rgba(0,0,0,.15);
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.15);
 }
 
 .catering-confirmation h3 {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size:
-    clamp(30px,6vw,50px);
+  font-size:
+    clamp(30px,6vw,50px);
 
-  color: var(--bubblegum-pink);
+  color: var(--bubblegum-pink);
 
-  margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .catering-confirmation p {
-  font-weight: 600;
+  font-weight: 600;
 
-  font-size: 17px;
+  font-size: 17px;
 
-  margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .confirmation-check {
-  font-size: 55px;
+  font-size: 55px;
 
-  color: var(--baby-blue);
+  color: var(--baby-blue);
 
-  margin-bottom: 10px;
+  margin-bottom: 10px;
 
-  font-weight: 900;
+  font-weight: 900;
 }
 
-/* =========================================================
-   CLOTHING — CLEANED & OPTIMIZED
-========================================================= */
+/* =========================
+   CLOTHING
+========================= */
 
 .clothing-intro {
-  max-width: 850px;
+  max-width: 850px;
 
-  margin: auto auto 35px;
+  margin: auto auto 35px;
 
-  text-align: center;
+  text-align: center;
 
-  background: rgba(255,255,255,.93);
+  background: rgba(255,255,255,.93);
 
-  padding: 25px;
+  padding: 25px;
 
-  border-radius: 25px;
+  border-radius: 25px;
 
-  font-weight: 600;
-
-  box-shadow:
-    0 8px 22px rgba(0,0,0,.10);
+  font-weight: 600;
 }
 
 .clothing-grid {
-  display: grid;
+  display: grid;
 
-  grid-template-columns:
-    repeat(2,minmax(0,1fr));
+  grid-template-columns: 1fr;
 
-  gap: 30px;
+  gap: 25px;
 
-  max-width: 1200px;
+  max-width: 650px;
 
-  margin: auto;
+  margin: auto;
 }
 
 .clothing-card {
-  background: rgba(255,255,255,.96);
+  background: rgba(255,255,255,.94);
 
-  padding: 28px;
+  padding: 25px;
 
-  border-radius: 30px;
+  border-radius: 30px;
 
-  box-shadow:
-    0 12px 30px rgba(0,0,0,.15);
+  box-shadow:
+    0 12px 30px rgba(0,0,0,.15);
 
-  text-align: center;
-
-  overflow: hidden;
+  text-align: center;
 }
 
-/* =========================
-   PRODUCT SPIN AREA
-========================= */
-
 .product-spin {
-  width: 100%;
+  width: 100%;
 
-  max-width: 500px;
+  max-width: 500px;
 
-  height: 520px;
+  height: 520px;
 
-  margin: 0 auto 18px;
+  margin: 0 auto 20px;
 
-  perspective: 1400px;
-
-  position: relative;
-
-  overflow: hidden;
-
-  border-radius: 25px;
+  perspective: 1200px;
 }
 
 .product-spin-inner {
-  width: 100%;
+  width: 100%;
 
-  height: 100%;
+  height: 100%;
 
-  position: relative;
+  position: relative;
 
-  transform-style: preserve-3d;
+  transform-style: preserve-3d;
 
-  animation:
-    apparelSpin 8s linear infinite;
-
-  will-change: transform;
+  animation:
+    shirtSpin 8s linear infinite;
 }
 
 .product-face {
-  position: absolute;
+  position: absolute;
 
-  inset: 0;
+  inset: 0;
 
-  width: 100%;
+  display: flex;
 
-  height: 100%;
+  align-items: center;
 
-  display: flex;
+  justify-content: center;
 
-  align-items: center;
+  backface-visibility: hidden;
 
-  justify-content: center;
-
-  backface-visibility: hidden;
-
-  -webkit-backface-visibility: hidden;
-
-  transform-style: preserve-3d;
-}
-
-.product-face.front {
-  transform: rotateY(0deg);
-}
-
-.product-face.back {
-  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
 }
 
 .product-face img {
-  width: 100%;
+  width: 100%;
 
-  height: 100%;
+  height: 100%;
 
-  object-fit: contain;
+  object-fit: contain;
 
-  object-position: center;
+  display: block;
 
-  display: block;
+  background: transparent;
 
-  background: transparent;
+  border: none;
 
-  border: none;
-
-  box-shadow: none;
-
-  mix-blend-mode: normal;
-
-  user-select: none;
-
-  -webkit-user-drag: none;
+  box-shadow: none;
 }
 
-@keyframes apparelSpin {
-
-  0% {
-    transform: rotateY(0deg);
-  }
-
-  100% {
-    transform: rotateY(360deg);
-  }
-
+.product-face.back {
+  transform: rotateY(180deg);
 }
 
-/* =========================
-   PRODUCT INFO
-========================= */
+@keyframes shirtSpin {
+
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+
+}
 
 .clothing-card h3 {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 30px;
+  font-size: 32px;
 
-  line-height: 1.05;
+  color: var(--baby-blue);
 
-  color: var(--baby-blue);
-
-  margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .product-price {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 30px;
+  font-size: 30px;
 
-  color: var(--bubblegum-pink);
+  color: var(--bubblegum-pink);
 
-  margin-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .product-description {
-  max-width: 560px;
+  max-width: 560px;
 
-  margin: 0 auto 25px;
+  margin: 0 auto 25px;
 
-  padding: 22px;
+  padding: 22px;
 
-  text-align: left;
+  text-align: left;
 
-  background: rgba(255,255,255,.88);
+  background: rgba(255,255,255,.88);
 
-  border-radius: 22px;
+  border-radius: 22px;
 
-  border: 2px solid rgba(94,203,255,.35);
+  border: 2px solid rgba(94,203,255,.35);
 }
 
 .product-description h4 {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 25px;
+  font-size: 25px;
 
-  color: var(--baby-blue);
+  color: var(--baby-blue);
 
-  margin-bottom: 6px;
+  margin-bottom: 6px;
 
-  line-height: 1.1;
+  line-height: 1.1;
 }
 
 .product-tagline {
-  font-weight: 900;
+  font-weight: 900;
 
-  color: var(--bubblegum-pink);
+  color: var(--bubblegum-pink);
 
-  font-size: 17px;
+  font-size: 17px;
 
-  margin-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 .product-description p {
-  font-weight: 600;
+  font-weight: 600;
 
-  margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .product-detail-heading {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 21px;
+  font-size: 21px;
 
-  color: var(--bubblegum-pink);
+  color: var(--bubblegum-pink);
 
-  margin: 18px 0 8px;
+  margin: 18px 0 8px;
+}
+
+.fabric-weight {
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
+
+  font-size: 18px;
+
+  color: var(--baby-blue);
+
+  margin-bottom: 4px !important;
+}
+
+.fabric-quality {
+  font-weight: 700 !important;
+
+  margin-bottom: 14px !important;
 }
 
 .product-details {
-  list-style: none;
+  list-style: none;
 
-  padding: 0;
+  padding: 0;
 
-  margin: 0;
+  margin: 0;
 }
 
 .product-details li {
-  font-weight: 700;
+  font-weight: 700;
 
-  margin-bottom: 7px;
+  margin-bottom: 7px;
 
-  padding-left: 18px;
+  padding-left: 18px;
 
-  position: relative;
+  position: relative;
 }
 
 .product-details li::before {
-  content: "•";
+  content: "•";
 
-  position: absolute;
+  position: absolute;
 
-  left: 0;
+  left: 0;
 
-  color: var(--bubblegum-pink);
+  color: var(--bubblegum-pink);
 
-  font-size: 18px;
+  font-size: 18px;
 }
 
-/* =========================
-   SIZE SELECT
-========================= */
-
 .size-label {
-  display: block;
+  display: block;
 
-  font-weight: 900;
+  font-weight: 900;
 
-  margin-bottom: 7px;
+  margin-bottom: 7px;
 }
 
 .size-select {
-  width: 100%;
+  width: 100%;
 
-  max-width: 260px;
+  max-width: 260px;
 
-  padding: 13px 15px;
+  padding: 13px 15px;
 
-  border: 2px solid #d9d9d9;
+  border: 2px solid #d9d9d9;
 
-  border-radius: 14px;
+  border-radius: 14px;
 
-  font-family:
-    "Andalus",
-    "Times New Roman",
-    serif;
+  font-family:
+    "Andalus",
+    "Times New Roman",
+    serif;
 
-  font-size: 16px;
+  font-size: 16px;
 
-  background: #fff;
+  background: #fff;
 
-  margin-bottom: 18px;
-
-  cursor: pointer;
-}
-
-.size-select:focus {
-  outline: none;
-
-  border-color: var(--baby-blue);
-
-  box-shadow:
-    0 0 0 3px rgba(94,203,255,.18);
+  margin-bottom: 18px;
 }
 
 .product-note {
-  margin-top: 15px;
+  margin-top: 15px;
 
-  font-weight: 600;
+  font-weight: 600;
 
-  font-size: 14px;
+  font-size: 14px;
 }
-
-/* =========================
-   APPAREL CHECKOUT
-========================= */
 
 .shirt-checkout {
-  display: none;
+  display: none;
 
-  margin: 25px auto 0;
+  margin: 25px auto 0;
 
-  max-width: 430px;
+  max-width: 430px;
 
-  background: rgba(255,255,255,.98);
+  background: rgba(255,255,255,.98);
 
-  border: 4px solid var(--baby-blue);
+  border: 4px solid var(--baby-blue);
 
-  padding: 25px;
+  padding: 25px;
 
-  border-radius: 25px;
+  border-radius: 25px;
 
-  box-shadow:
-    0 12px 30px rgba(0,0,0,.15);
+  box-shadow:
+    0 12px 30px rgba(0,0,0,.15);
 
-  text-align: center;
-
-  animation: checkoutFade .25s ease;
-}
-
-@keyframes checkoutFade {
-
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
+  text-align: center;
 }
 
 .shirt-checkout h4 {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 28px;
+  font-size: 28px;
 
-  color: var(--bubblegum-pink);
+  color: var(--bubblegum-pink);
 
-  margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .checkout-line {
-  display: flex;
+  display: flex;
 
-  justify-content: space-between;
+  justify-content: space-between;
 
-  gap: 15px;
+  gap: 15px;
 
-  font-weight: 800;
+  font-weight: 800;
 
-  padding: 5px 0;
+  padding: 5px 0;
 }
 
 .checkout-total {
-  border-top: 2px solid #ddd;
+  border-top: 2px solid #ddd;
 
-  margin-top: 10px;
+  margin-top: 10px;
 
-  padding-top: 10px;
+  padding-top: 10px;
 
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 25px;
+  font-size: 25px;
 
-  color: var(--baby-blue);
+  color: var(--baby-blue);
 }
 
 .checkout-message {
-  margin: 12px 0 18px;
+  margin: 12px 0 18px;
 
-  font-weight: 700;
+  font-weight: 700;
 
-  font-size: 14px;
+  font-size: 14px;
 }
 
 /* =========================
-   STORY
+   STORY
 ========================= */
 
 .story-card {
-  max-width: 1000px;
+  max-width: 1000px;
 
-  margin: auto;
+  margin: auto;
 
-  background: rgba(255,255,255,.94);
+  background: rgba(255,255,255,.94);
 
-  padding: 45px;
+  padding: 45px;
 
-  border-radius: 30px;
+  border-radius: 30px;
 
-  box-shadow:
-    0 15px 35px rgba(0,0,0,.15);
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.15);
 }
 
 .story-card > img {
-  width: 100%;
+  width: 100%;
 
-  border-radius: 25px;
+  border-radius: 25px;
 
-  margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .story-card h3 {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 30px;
+  font-size: 30px;
 
-  color: var(--baby-blue);
+  color: var(--baby-blue);
 
-  margin: 35px 0 12px;
+  margin: 35px 0 12px;
 }
 
 .story-card h4 {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 24px;
+  font-size: 24px;
 
-  color: var(--bubblegum-pink);
+  color: var(--bubblegum-pink);
 
-  margin-top: 30px;
+  margin-top: 30px;
 }
 
 .story-card p {
-  font-weight: 600;
+  font-weight: 600;
 
-  margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .owner-photo-wrap {
-  max-width: 900px;
+  max-width: 900px;
 
-  margin: 35px auto 0;
+  margin: 35px auto 0;
 
-  text-align: center;
+  text-align: center;
 }
 
 .owner-photo {
-  width: 100%;
+  width: 100%;
 
-  max-height: 650px;
+  max-height: 650px;
 
-  object-fit: cover;
+  object-fit: cover;
 
-  border-radius: 30px;
+  border-radius: 30px;
 
-  border: 6px solid white;
+  border: 6px solid white;
 
-  box-shadow:
-    0 15px 35px rgba(0,0,0,.2);
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.2);
 }
 
 .owner-photo-caption {
-  display: inline-block;
+  display: inline-block;
 
-  margin-top: 15px;
+  margin-top: 15px;
 
-  background: var(--bubblegum-pink);
+  background: var(--bubblegum-pink);
 
-  color: #fff;
+  color: #fff;
 
-  padding: 10px 20px;
+  padding: 10px 20px;
 
-  border-radius: 999px;
+  border-radius: 999px;
 
-  font-weight: 900;
+  font-weight: 900;
 
-  font-size: 14px;
+  font-size: 14px;
 }
 
 /* =========================
-   CONTACT
+   CONTACT
 ========================= */
 
 .contact-card {
-  max-width: 850px;
+  max-width: 850px;
 
-  margin: auto;
+  margin: auto;
 
-  text-align: center;
+  text-align: center;
 
-  background: rgba(255,255,255,.94);
+  background: rgba(255,255,255,.94);
 
-  padding: 45px;
+  padding: 45px;
 
-  border-radius: 30px;
+  border-radius: 30px;
 
-  box-shadow:
-    0 15px 35px rgba(0,0,0,.15);
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.15);
 }
 
 .contact-card h3 {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 40px;
+  font-size: 40px;
 
-  color: var(--baby-blue);
+  color: var(--baby-blue);
 
-  margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .contact-card p {
-  font-weight: 600;
+  font-weight: 600;
 
-  margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 /* =========================
-   FOOTER
+   FOOTER
 ========================= */
 
 footer {
-  background: rgba(255,255,255,.96);
+  background: rgba(255,255,255,.96);
 
-  padding: 45px 20px;
+  padding: 45px 20px;
 
-  text-align: center;
+  text-align: center;
 
-  border-top: 5px solid var(--bubblegum-pink);
+  border-top: 5px solid var(--bubblegum-pink);
 }
 
 .footer-video {
-  width: 230px;
+  width: 230px;
 
-  max-width: 80vw;
+  max-width: 80vw;
 
-  margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 footer p {
-  font-weight: 700;
+  font-weight: 700;
 
-  margin: 5px;
+  margin: 5px;
 }
 
 footer .footer-brand {
-  font-family:
-    Impact,
-    Haettenschweiler,
-    "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
 
-  font-size: 32px;
+  font-size: 32px;
 
-  margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 footer .footer-brand .blue {
-  color: var(--baby-blue);
+  color: var(--baby-blue);
 }
 
 footer .footer-brand .pink {
-  color: var(--bubblegum-pink);
+  color: var(--bubblegum-pink);
 }
 
 /* =========================
-   TABLET
+   TABLET
 ========================= */
 
 @media (max-width:900px) {
 
-  .nav-container {
-    flex-direction: column;
-  }
+  .nav-container {
+    flex-direction: column;
+  }
 
-  nav {
-    width: 100%;
-  }
+  nav {
+    width: 100%;
+  }
 
-  .feature-grid {
-    grid-template-columns:
-      repeat(2,1fr);
-  }
+  .feature-grid {
+    grid-template-columns:
+      repeat(2,1fr);
+  }
 
-  .water-ice-content {
-    grid-template-columns: 1fr;
-  }
+  .water-ice-content {
+    grid-template-columns: 1fr;
+  }
 
-  .catering-grid {
-    grid-template-columns: 1fr;
-  }
+  .catering-grid {
+    grid-template-columns: 1fr;
+  }
 
-  .package-grid {
-    grid-template-columns: 1fr;
-  }
+  .package-grid {
+    grid-template-columns: 1fr;
+  }
 
-  .locations-grid {
-    grid-template-columns: 1fr;
-  }
+  .locations-grid {
+    grid-template-columns: 1fr;
+  }
 
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
 
-  .form-group.full {
-    grid-column: auto;
-  }
-
-  .clothing-grid {
-    grid-template-columns: 1fr;
-
-    max-width: 650px;
-  }
-
-  .product-spin {
-    max-width: 520px;
-
-    height: 520px;
-  }
+  .form-group.full {
+    grid-column: auto;
+  }
 
 }
 
 /* =========================
-   MOBILE
+   MOBILE
 ========================= */
 
 @media (max-width:600px) {
 
-  section {
-    padding: 65px 15px;
-  }
+  section {
+    padding: 65px 15px;
+  }
 
-  .feature-grid {
-    grid-template-columns: 1fr;
-  }
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
 
-  .story-card,
-  .contact-card,
-  .catering-hero,
-  .catering-card {
-    padding: 25px;
-  }
+  .story-card,
+  .contact-card,
+  .catering-hero,
+  .catering-card {
+    padding: 25px;
+  }
 
-  .brand {
-    font-size: 36px;
-  }
+  .brand {
+    font-size: 36px;
+  }
 
-  nav a {
-    font-size: 12px;
+  nav a {
+    font-size: 12px;
 
-    padding:
-      7px 9px;
-  }
+    padding:
+      7px 9px;
+  }
 
-  .carousel {
-    transform: scale(.82);
+  .carousel {
+    transform: scale(.82);
 
-    margin-top: -20px;
+    margin-top: -20px;
 
-    margin-bottom: -20px;
-  }
+    margin-bottom: -20px;
+  }
 
-  .detroit-desserts-logo {
-    width: 95vw;
+  .detroit-desserts-logo {
+    width: 95vw;
 
-    max-width: 95vw;
+    max-width: 95vw;
 
-    margin-bottom: 22px;
-  }
+    margin-bottom: 22px;
+  }
 
-  .catering-form-box {
-    padding: 20px;
+  .catering-form-box {
+    padding: 20px;
 
-    border-radius: 22px;
-  }
+    border-radius: 22px;
+  }
 
-  .submit-btn {
-    width: 100%;
-  }
+  .submit-btn {
+    width: 100%;
+  }
 
-  .catering-confirmation {
-    padding: 35px 20px;
-  }
+  .catering-confirmation {
+    padding: 35px 20px;
+  }
 
-  /* =========================
-     MOBILE APPAREL
-  ========================= */
+  .product-spin {
+    height: 400px;
+  }
 
-  .clothing-grid {
-    grid-template-columns: 1fr;
+  .clothing-card {
+    padding: 18px;
+  }
 
-    gap: 25px;
+  .product-description {
+    padding: 18px;
 
-    max-width: 100%;
-  }
+    border-radius: 20px;
+  }
 
-  .clothing-card {
-    padding: 18px;
+  .product-description h4 {
+    font-size: 23px;
+  }
 
-    border-radius: 25px;
-  }
+  .product-detail-heading {
+    font-size: 19px;
+  }
 
-  .product-spin {
-    width: 100%;
+  /* New spinning carousel on mobile */
 
-    height: 390px;
+  .coming-soon-carousel {
+    width: 300px;
 
-    max-width: 100%;
+    height: 360px;
 
-    margin-bottom: 15px;
+    transform: scale(.76);
 
-    perspective: 1100px;
-  }
+    margin-top: -25px;
 
-  .product-face img {
-    width: 100%;
+    margin-bottom: -25px;
+  }
 
-    height: 100%;
-
-    object-fit: contain;
-  }
-
-  .clothing-card h3 {
-    font-size: 27px;
-  }
-
-  .product-price {
-    font-size: 28px;
-  }
-
-  .product-description {
-    padding: 18px;
-
-    border-radius: 20px;
-  }
-
-  .product-description h4 {
-    font-size: 23px;
-  }
-
-  .product-detail-heading {
-    font-size: 19px;
-  }
-
-  .size-select {
-    max-width: 100%;
-  }
-
-  .shirt-checkout {
-    padding: 20px;
-
-    border-radius: 22px;
-  }
-
-  .shirt-checkout .btn {
-    width: 100%;
-  }
-
-  .coming-soon-carousel {
-    width: 300px;
-
-    height: 360px;
-
-    transform: scale(.76);
-
-    margin-top: -25px;
-
-    margin-bottom: -25px;
-  }
-
-  .coming-soon-title {
-    margin-bottom: 15px;
-  }
+  .coming-soon-title {
+    margin-bottom: 15px;
+  }
 
 }
 
 /* =========================
-   ACCESSIBILITY
+   ACCESSIBILITY
 ========================= */
 
 @media (prefers-reduced-motion: reduce) {
 
-  .carousel-inner,
-  .coming-soon-carousel-inner,
-  .product-spin-inner {
-    animation-play-state: paused;
-  }
+  .carousel-inner,
+  .coming-soon-carousel-inner,
+  .product-spin-inner {
+    animation-play-state: paused;
+  }
 
 }
 
@@ -2088,7 +2026,7 @@ footer .footer-brand .pink {
 <body>
 
 <!-- =========================
-     HEADER
+     HEADER
 ========================= -->
 
 <header>
@@ -2116,7 +2054,7 @@ footer .footer-brand .pink {
 </header>
 
 <!-- =========================
-     HOME
+     HOME
 ========================= -->
 
 <section id="home" class="hero">
@@ -2124,18 +2062,18 @@ footer .footer-brand .pink {
 <div class="hero-content">
 
 <video
-  class="hero-video"
-  src="tastystrains-logo.MP4"
-  autoplay
-  muted
-  loop
-  playsinline>
+  class="hero-video"
+  src="tastystrains-logo.MP4"
+  autoplay
+  muted
+  loop
+  playsinline>
 </video>
 
 <img
-  src="detroits-frozen-desserts.PNG"
-  alt="Detroit's Frozen Desserts - Philadelphia Water Ice, Catering and Apparel"
-  class="detroit-desserts-logo"
+  src="detroits-frozen-desserts.PNG"
+  alt="Detroit's Frozen Desserts - Philadelphia Water Ice, Catering and Apparel"
+  class="detroit-desserts-logo"
 >
 
 <h1>
@@ -2166,7 +2104,7 @@ BOOK CATERING
 </section>
 
 <!-- =========================
-     FEATURES
+     FEATURES
 ========================= -->
 
 <section>
@@ -2214,7 +2152,7 @@ Created for community.
 </section>
 
 <!-- =========================
-     WATER ICE
+     WATER ICE
 ========================= -->
 
 <section id="water-ice">
@@ -2236,9 +2174,9 @@ ice-cream-truck feeling back to Detroit.
 <div>
 
 <img
-  src="water-ice.PNG"
-  alt="TastyStrains Philadelphia Water Ice"
-  class="water-ice-image"
+  src="water-ice.PNG"
+  alt="TastyStrains Philadelphia Water Ice"
+  class="water-ice-image"
 >
 
 </div>
@@ -2265,6 +2203,10 @@ FENKELL & WYOMING
 
 </div>
 
+<!-- =========================
+     ORIGINAL FLAVORS
+========================= -->
+
 <div class="flavor-area">
 
 <h3>
@@ -2276,40 +2218,60 @@ MORE FLAVORS. ONE VIBE.
 <div class="carousel-inner">
 
 <div class="flavor-card">
-<img src="lemon.png" alt="Lemon Water Ice">
+<img
+src="lemon.png"
+alt="Lemon Water Ice">
 </div>
 
 <div class="flavor-card">
-<img src="tropical-rainbow.png" alt="Tropical Rainbow Water Ice">
+<img
+src="tropical-rainbow.png"
+alt="Tropical Rainbow Water Ice">
 </div>
 
 <div class="flavor-card">
-<img src="cherry .png" alt="Cherry Water Ice">
+<img
+src="cherry .png"
+alt="Cherry Water Ice">
 </div>
 
 <div class="flavor-card">
-<img src="watermelon .png" alt="Watermelon Water Ice">
+<img
+src="watermelon .png"
+alt="Watermelon Water Ice">
 </div>
 
 <div class="flavor-card">
-<img src="blueberry .png" alt="Blueberry Water Ice">
+<img
+src="blueberry .png"
+alt="Blueberry Water Ice">
 </div>
 
 <div class="flavor-card">
-<img src="cotton-candy.png" alt="Cotton Candy Water Ice">
+<img
+src="cotton-candy.png"
+alt="Cotton Candy Water Ice">
 </div>
 
 <div class="flavor-card">
-<img src="fireworks.png" alt="Fireworks Water Ice">
+<img
+src="fireworks.png"
+alt="Fireworks Water Ice">
 </div>
 
 <div class="flavor-card">
-<img src="mango.png" alt="Mango Water Ice">
+<img
+src="mango.png"
+alt="Mango Water Ice">
 </div>
 
 </div>
 
 </div>
+
+<!-- =========================
+     7 NEW SPINNING FLAVORS
+========================= -->
 
 <div class="coming-soon-area">
 
@@ -2322,38 +2284,94 @@ MORE FLAVORS COMING SOON
 <div class="coming-soon-carousel-inner">
 
 <div class="coming-soon-cup">
-<img src="coco-coconut.PNG" alt="Coco Coconut Water Ice">
-<div class="coming-soon-name">COCO COCONUT</div>
+
+<img
+src="coco-coconut.PNG"
+alt="Coco Coconut Water Ice"
+>
+
+<div class="coming-soon-name">
+COCO COCONUT
+</div>
+
 </div>
 
 <div class="coming-soon-cup">
-<img src="chocolate .PNG" alt="Chocolate Water Ice">
-<div class="coming-soon-name">CHOCOLATE</div>
+
+<img
+src="chocolate .PNG"
+alt="Chocolate Water Ice"
+>
+
+<div class="coming-soon-name">
+CHOCOLATE
+</div>
+
 </div>
 
 <div class="coming-soon-cup">
-<img src="atomic-blast.PNG" alt="Atomic Blast Water Ice">
-<div class="coming-soon-name">ATOMIC BLAST</div>
+
+<img
+src="atomic-blast.PNG"
+alt="Atomic Blast Water Ice"
+>
+
+<div class="coming-soon-name">
+ATOMIC BLAST
+</div>
+
 </div>
 
 <div class="coming-soon-cup">
-<img src="cosmic-ice.PNG" alt="Cosmic Ice Water Ice">
-<div class="coming-soon-name">COSMIC ICE</div>
+
+<img
+src="cosmic-ice.PNG"
+alt="Cosmic Ice Water Ice"
+>
+
+<div class="coming-soon-name">
+COSMIC ICE
+</div>
+
 </div>
 
 <div class="coming-soon-cup">
-<img src="mermaid-ice.PNG" alt="Mermaid Ice Water Ice">
-<div class="coming-soon-name">MERMAID ICE</div>
+
+<img
+src="mermaid-ice.PNG"
+alt="Mermaid Ice Water Ice"
+>
+
+<div class="coming-soon-name">
+MERMAID ICE
+</div>
+
 </div>
 
 <div class="coming-soon-cup">
-<img src="sour-apple.PNG" alt="Sour Apple Water Ice">
-<div class="coming-soon-name">SOUR APPLE</div>
+
+<img
+src="sour-apple.PNG"
+alt="Sour Apple Water Ice"
+>
+
+<div class="coming-soon-name">
+SOUR APPLE
+</div>
+
 </div>
 
 <div class="coming-soon-cup">
-<img src="mangonada.PNG" alt="Mangonada Water Ice">
-<div class="coming-soon-name">MANGONADA</div>
+
+<img
+src="mangonada.PNG"
+alt="Mangonada Water Ice"
+>
+
+<div class="coming-soon-name">
+MANGONADA
+</div>
+
 </div>
 
 </div>
@@ -2373,7 +2391,7 @@ COMING SOON
 </section>
 
 <!-- =========================
-     LOCATIONS
+     LOCATIONS
 ========================= -->
 
 <section id="locations">
@@ -2395,7 +2413,8 @@ Find a location near you.
 <div class="location-card">
 <h3>Mobil</h3>
 <p>10001 Fenkell, Detroit, MI 48238</p>
-<a class="btn btn-blue"
+<a
+class="btn btn-blue"
 href="https://www.google.com/maps/search/?api=1&query=10001+Fenkell+Detroit+MI+48238"
 target="_blank">
 MAP
@@ -2405,7 +2424,8 @@ MAP
 <div class="location-card">
 <h3>Kennedy Liquor</h3>
 <p>13344 Seven Mile, Detroit, MI 48219</p>
-<a class="btn btn-pink"
+<a
+class="btn btn-pink"
 href="https://www.google.com/maps/search/?api=1&query=13344+Seven+Mile+Detroit+MI+48219"
 target="_blank">
 MAP
@@ -2415,7 +2435,8 @@ MAP
 <div class="location-card">
 <h3>W Liquor</h3>
 <p>3325 E Seven Mile, Detroit, MI 48234</p>
-<a class="btn btn-blue"
+<a
+class="btn btn-blue"
 href="https://www.google.com/maps/search/?api=1&query=3325+E+Seven+Mile+Detroit+MI+48234"
 target="_blank">
 MAP
@@ -2425,7 +2446,8 @@ MAP
 <div class="location-card">
 <h3>AMOCO</h3>
 <p>38030 W 10 Mile Rd, Farmington, MI 48335</p>
-<a class="btn btn-pink"
+<a
+class="btn btn-pink"
 href="https://www.google.com/maps/search/?api=1&query=38030+W+10+Mile+Rd+Farmington+MI+48335"
 target="_blank">
 MAP
@@ -2435,7 +2457,8 @@ MAP
 <div class="location-card">
 <h3>Grand Liquor</h3>
 <p>12889 Woodward, Highland Park, MI 48203</p>
-<a class="btn btn-blue"
+<a
+class="btn btn-blue"
 href="https://www.google.com/maps/search/?api=1&query=12889+Woodward+Highland+Park+MI+48203"
 target="_blank">
 MAP
@@ -2445,7 +2468,8 @@ MAP
 <div class="location-card">
 <h3>Imperial Fresh</h3>
 <p>14424 Schaefer, Detroit, MI 48227</p>
-<a class="btn btn-pink"
+<a
+class="btn btn-pink"
 href="https://www.google.com/maps/search/?api=1&query=14424+Schaefer+Detroit+MI+48227"
 target="_blank">
 MAP
@@ -2455,7 +2479,8 @@ MAP
 <div class="location-card">
 <h3>Martell Liquor</h3>
 <p>19137 Seven Mile, Detroit, MI 48219</p>
-<a class="btn btn-blue"
+<a
+class="btn btn-blue"
 href="https://www.google.com/maps/search/?api=1&query=19137+Seven+Mile+Detroit+MI+48219"
 target="_blank">
 MAP
@@ -2465,7 +2490,8 @@ MAP
 <div class="location-card">
 <h3>Heydens Liquor</h3>
 <p>20201 Seven Mile, Detroit, MI 48219</p>
-<a class="btn btn-pink"
+<a
+class="btn btn-pink"
 href="https://www.google.com/maps/search/?api=1&query=20201+Seven+Mile+Detroit+MI+48219"
 target="_blank">
 MAP
@@ -2475,7 +2501,8 @@ MAP
 <div class="location-card">
 <h3>BP</h3>
 <p>30435 Cherry Hill, Westland, MI 48186</p>
-<a class="btn btn-blue"
+<a
+class="btn btn-blue"
 href="https://www.google.com/maps/search/?api=1&query=30435+Cherry+Hill+Westland+MI+48186"
 target="_blank">
 MAP
@@ -2485,7 +2512,8 @@ MAP
 <div class="location-card">
 <h3>Vintage Village Liquor</h3>
 <p>28927 Southfield Rd, Lathrup Village, MI 48076</p>
-<a class="btn btn-pink"
+<a
+class="btn btn-pink"
 href="https://www.google.com/maps/search/?api=1&query=28927+Southfield+Rd+Lathrup+Village+MI+48076"
 target="_blank">
 MAP
@@ -2495,7 +2523,8 @@ MAP
 <div class="location-card">
 <h3>Greenfield Market</h3>
 <p>15530 Puritan, Detroit, MI 48227</p>
-<a class="btn btn-blue"
+<a
+class="btn btn-blue"
 href="https://www.google.com/maps/search/?api=1&query=15530+Puritan+Detroit+MI+48227"
 target="_blank">
 MAP
@@ -2505,7 +2534,8 @@ MAP
 <div class="location-card">
 <h3>Big V Liquor</h3>
 <p>14111 Greenfield Rd, Detroit, MI 48227</p>
-<a class="btn btn-pink"
+<a
+class="btn btn-pink"
 href="https://www.google.com/maps/search/?api=1&query=14111+Greenfield+Rd+Detroit+MI+48227"
 target="_blank">
 MAP
@@ -2515,7 +2545,8 @@ MAP
 <div class="location-card">
 <h3>United Liquor</h3>
 <p>22040 Seven Mile, Detroit, MI 48219</p>
-<a class="btn btn-blue"
+<a
+class="btn btn-blue"
 href="https://www.google.com/maps/search/?api=1&query=22040+Seven+Mile+Detroit+MI+48219"
 target="_blank">
 MAP
@@ -2525,7 +2556,8 @@ MAP
 <div class="location-card">
 <h3>Marathon</h3>
 <p>10550 W Jefferson Ave, River Rouge, MI 48218</p>
-<a class="btn btn-pink"
+<a
+class="btn btn-pink"
 href="https://www.google.com/maps/search/?api=1&query=10550+W+Jefferson+Ave+River+Rouge+MI+48218"
 target="_blank">
 MAP
@@ -2539,7 +2571,7 @@ MAP
 </section>
 
 <!-- =========================
-     CATERING
+     CATERING
 ========================= -->
 
 <section id="catering">
@@ -2566,127 +2598,312 @@ action="https://formsubmit.co/ajax/tastystrains313@yahoo.com"
 method="POST"
 >
 
-<input type="hidden" name="_subject" value="NEW TASTY STRAINS CATERING REQUEST">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_captcha" value="true">
+<input
+type="hidden"
+name="_subject"
+value="NEW TASTY STRAINS CATERING REQUEST"
+>
+
+<input
+type="hidden"
+name="_template"
+value="table"
+>
+
+<input
+type="hidden"
+name="_captcha"
+value="true"
+>
 
 <div class="form-grid">
 
 <div class="form-group">
+
 <label for="name">
-Full Name <span class="required">*</span>
+Full Name
+<span class="required">*</span>
 </label>
-<input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+<input
+type="text"
+id="name"
+name="name"
+placeholder="Enter your full name"
+required
+>
+
 </div>
 
 <div class="form-group">
+
 <label for="phone">
-Phone Number <span class="required">*</span>
+Phone Number
+<span class="required">*</span>
 </label>
-<input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+<input
+type="tel"
+id="phone"
+name="phone"
+placeholder="Enter your phone number"
+required
+>
+
 </div>
 
 <div class="form-group">
+
 <label for="email">
-Email Address <span class="required">*</span>
+Email Address
+<span class="required">*</span>
 </label>
-<input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+<input
+type="email"
+id="email"
+name="email"
+placeholder="Enter your email address"
+required
+>
+
 </div>
 
 <div class="form-group">
+
 <label for="event-type">
-Event Type <span class="required">*</span>
+Event Type
+<span class="required">*</span>
 </label>
 
-<select id="event-type" name="event_type" required>
-<option value="">Select event type</option>
-<option value="Birthday Party">Birthday Party</option>
-<option value="Wedding">Wedding</option>
-<option value="Graduation">Graduation</option>
-<option value="Baby Shower">Baby Shower</option>
-<option value="Corporate Event">Corporate Event</option>
-<option value="Private Celebration">Private Celebration</option>
-<option value="Family Reunion">Family Reunion</option>
-<option value="Community Event">Community Event</option>
-<option value="Other">Other</option>
+<select
+id="event-type"
+name="event_type"
+required
+>
+
+<option value="">
+Select event type
+</option>
+
+<option value="Birthday Party">
+Birthday Party
+</option>
+
+<option value="Wedding">
+Wedding
+</option>
+
+<option value="Graduation">
+Graduation
+</option>
+
+<option value="Baby Shower">
+Baby Shower
+</option>
+
+<option value="Corporate Event">
+Corporate Event
+</option>
+
+<option value="Private Celebration">
+Private Celebration
+</option>
+
+<option value="Family Reunion">
+Family Reunion
+</option>
+
+<option value="Community Event">
+Community Event
+</option>
+
+<option value="Other">
+Other
+</option>
+
 </select>
+
 </div>
 
 <div class="form-group">
+
 <label for="event-date">
-Event Date <span class="required">*</span>
+Event Date
+<span class="required">*</span>
 </label>
-<input type="date" id="event-date" name="event_date" required>
+
+<input
+type="date"
+id="event-date"
+name="event_date"
+required
+>
+
 </div>
 
 <div class="form-group">
+
 <label for="event-time">
-Event Time <span class="required">*</span>
+Event Time
+<span class="required">*</span>
 </label>
-<input type="time" id="event-time" name="event_time" required>
+
+<input
+type="time"
+id="event-time"
+name="event_time"
+required
+>
+
 </div>
 
 <div class="form-group">
+
 <label for="guests">
-Number of Guests <span class="required">*</span>
+Number of Guests
+<span class="required">*</span>
 </label>
-<input type="number" id="guests" name="number_of_guests" min="1" placeholder="Example: 75" required>
+
+<input
+type="number"
+id="guests"
+name="number_of_guests"
+min="1"
+placeholder="Example: 75"
+required
+>
+
 </div>
 
 <div class="form-group">
+
 <label for="package">
-Catering Package <span class="required">*</span>
+Catering Package
+<span class="required">*</span>
 </label>
 
-<select id="package" name="catering_package" required>
-<option value="">Select package</option>
-<option value="Small Event">Small Event</option>
-<option value="Medium Event">Medium Event</option>
-<option value="Large Event">Large Event</option>
-<option value="Not Sure">Not Sure</option>
+<select
+id="package"
+name="catering_package"
+required
+>
+
+<option value="">
+Select package
+</option>
+
+<option value="Small Event">
+Small Event
+</option>
+
+<option value="Medium Event">
+Medium Event
+</option>
+
+<option value="Large Event">
+Large Event
+</option>
+
+<option value="Not Sure">
+Not Sure
+</option>
+
 </select>
+
 </div>
 
 <div class="form-group full">
+
 <label for="location">
-Event Location <span class="required">*</span>
+Event Location
+<span class="required">*</span>
 </label>
-<input type="text" id="location" name="event_location" placeholder="Enter the event address or venue" required>
+
+<input
+type="text"
+id="location"
+name="event_location"
+placeholder="Enter the event address or venue"
+required
+>
+
 </div>
 
 <div class="form-group full">
+
 <label for="flavors">
 Preferred Water Ice Flavors
 </label>
-<input type="text" id="flavors" name="preferred_flavors" placeholder="Example: Cherry, Lemon, Blueberry">
+
+<input
+type="text"
+id="flavors"
+name="preferred_flavors"
+placeholder="Example: Cherry, Lemon, Blueberry"
+>
+
 </div>
 
 <div class="form-group full">
+
 <label for="details">
 Tell Us About Your Event
 </label>
+
 <textarea
 id="details"
 name="event_details"
 placeholder="Tell us anything else we should know about your event, including special requests."
 ></textarea>
+
 </div>
 
 <div class="form-group full">
+
 <label for="how-found">
 How Did You Hear About TastyStrains?
 </label>
 
-<select id="how-found" name="how_you_heard">
-<option value="">Select one</option>
-<option value="Instagram">Instagram</option>
-<option value="TikTok">TikTok</option>
-<option value="Facebook">Facebook</option>
-<option value="Google">Google</option>
-<option value="Friend or Family">Friend or Family</option>
-<option value="Retail Location">Retail Location</option>
-<option value="Other">Other</option>
+<select
+id="how-found"
+name="how_you_heard"
+>
+
+<option value="">
+Select one
+</option>
+
+<option value="Instagram">
+Instagram
+</option>
+
+<option value="TikTok">
+TikTok
+</option>
+
+<option value="Facebook">
+Facebook
+</option>
+
+<option value="Google">
+Google
+</option>
+
+<option value="Friend or Family">
+Friend or Family
+</option>
+
+<option value="Retail Location">
+Retail Location
+</option>
+
+<option value="Other">
+Other
+</option>
+
 </select>
+
 </div>
 
 </div>
@@ -2709,7 +2926,9 @@ are non-refundable.
 type="submit"
 class="btn btn-pink submit-btn"
 >
+
 SUBMIT CATERING REQUEST
+
 </button>
 
 </div>
@@ -2718,7 +2937,10 @@ SUBMIT CATERING REQUEST
 
 </div>
 
-<div id="cateringConfirmation" class="catering-confirmation">
+<div
+id="cateringConfirmation"
+class="catering-confirmation"
+>
 
 <div class="confirmation-check">
 ✓
@@ -2750,7 +2972,10 @@ event details. Your $150 deposit is applied toward
 the final balance.
 </p>
 
-<div class="buttons" style="margin-top:25px;">
+<div
+class="buttons"
+style="margin-top:25px;"
+>
 
 <a
 href="https://square.link/u/XVt5l5n5?src=sheet"
@@ -2758,7 +2983,9 @@ target="_blank"
 rel="noopener noreferrer"
 class="btn btn-blue"
 >
+
 PAY CATERING DEPOSIT
+
 </a>
 
 </div>
@@ -2782,7 +3009,10 @@ cold, colorful and unforgettable touch to your event.
 <div class="catering-grid">
 
 <div class="catering-card">
-<h3>MAKE YOUR EVENT A TASTY ONE</h3>
+
+<h3>
+MAKE YOUR EVENT A TASTY ONE
+</h3>
 
 <p>
 Whether you're celebrating with family, friends,
@@ -2790,12 +3020,17 @@ coworkers or your community, TastyStrains can help
 make your event extra refreshing with bold
 Philadelphia Water Ice flavors.
 </p>
+
 </div>
 
 <div class="catering-card">
-<h3>PERFECT FOR</h3>
+
+<h3>
+PERFECT FOR
+</h3>
 
 <ul>
+
 <li>Birthday Parties</li>
 <li>Weddings</li>
 <li>Graduations</li>
@@ -2804,28 +3039,40 @@ Philadelphia Water Ice flavors.
 <li>Private Celebrations</li>
 <li>Family Reunions</li>
 <li>Community Events</li>
+
 </ul>
+
 </div>
 
 <div class="catering-card">
-<h3>WHAT WE OFFER</h3>
+
+<h3>
+WHAT WE OFFER
+</h3>
 
 <ul>
+
 <li>Philadelphia Water Ice catering</li>
 <li>A variety of bold flavors</li>
 <li>Catering options based on your event</li>
 <li>Packages designed around your guest count</li>
 <li>Detroit & Metro Detroit service</li>
+
 </ul>
+
 </div>
 
 <div class="catering-card">
-<h3>SERVICE AREA</h3>
+
+<h3>
+SERVICE AREA
+</h3>
 
 <p>
 Proudly serving Detroit and Metro Detroit.
 Contact us about events outside our normal service area.
 </p>
+
 </div>
 
 </div>
@@ -2833,30 +3080,45 @@ Contact us about events outside our normal service area.
 <div class="package-grid">
 
 <div class="package">
-<h4>SMALL EVENT</h4>
+
+<h4>
+SMALL EVENT
+</h4>
+
 <p>
 Ideal for smaller gatherings.
 Guest count and Water Ice quantity will be
 customized for your event.
 </p>
+
 </div>
 
 <div class="package">
-<h4>MEDIUM EVENT</h4>
+
+<h4>
+MEDIUM EVENT
+</h4>
+
 <p>
 A great option for larger parties, celebrations
 and family gatherings. Guest count and Water Ice
 quantity will be customized for your event.
 </p>
+
 </div>
 
 <div class="package">
-<h4>LARGE EVENT</h4>
+
+<h4>
+LARGE EVENT
+</h4>
+
 <p>
 Designed for major celebrations, corporate events
 and large gatherings. Guest count and Water Ice
 quantity will be customized for your event.
 </p>
+
 </div>
 
 </div>
@@ -2893,9 +3155,9 @@ the agreed-upon booking terms.
 
 </section>
 
-<!-- =========================================================
-     CLOTHING
-========================================================= -->
+<!-- =========================
+     CLOTHING
+========================= -->
 
 <section id="clothing">
 
@@ -2924,30 +3186,24 @@ colors and ICY attitude into premium streetwear.
 <br>
 
 <p>
-Shop the official TastyStrains ICY collection below.
+Shop the official TastyStrains ICY shirt below.
 </p>
 
 </div>
 
 <div class="clothing-grid">
 
-<!-- =====================================================
-     HOODIE PRODUCT
-===================================================== -->
-
 <div class="clothing-card">
 
-<div class="product-spin" aria-label="TastyStrains SOO ICY Hoodie rotating product preview">
+<div class="product-spin">
 
 <div class="product-spin-inner">
 
 <div class="product-face front">
 
 <img
-src="tastystrains-hoodie-front.PNG"
-alt="TastyStrains SOO ICY Hoodie front"
-loading="lazy"
-draggable="false"
+src="tastystrains-shirt-front.png"
+alt="TastyStrains SOO ICY Oversized Top - Front"
 >
 
 </div>
@@ -2955,10 +3211,8 @@ draggable="false"
 <div class="product-face back">
 
 <img
-src="tastystrains-hoodie-back.JPEG"
-alt="TastyStrains SOO ICY Hoodie back"
-loading="lazy"
-draggable="false"
+src="tastystrains-shirt-back.png"
+alt="TastyStrains SOO ICY Oversized Top - Back"
 >
 
 </div>
@@ -2968,26 +3222,42 @@ draggable="false"
 </div>
 
 <h3>
-OVERSIZED SOO ICY HOODIE
+TASTYSTRAINS SOO ICY OVERSIZED TOP
 </h3>
 
 <div class="product-price">
-$300
+$325
 </div>
 
 <div class="product-description">
 
 <h4>
-SOO ICY HOODIE
+TASTY STRAINS OVERSIZED TEE
 </h4>
 
 <p class="product-tagline">
-Bold. Oversized. Made to stand out.
+Heavyweight. Relaxed. Made to stand out.
 </p>
 
 <p>
-The OVERSIZED SOO ICY HOODIE brings the ICY
-streetwear look to a bold, relaxed hoodie design.
+The TastyStrains Oversized Tee features a premium
+heavyweight feel with a relaxed oversized fit.
+Built for everyday streetwear, it delivers a clean,
+structured look with standout chenille lettering
+and dimensional 3D printing.
+</p>
+
+<h5 class="product-detail-heading">
+FABRIC & QUALITY
+</h5>
+
+<p class="fabric-weight">
+350 GSM PREMIUM-WEIGHT FABRIC
+</p>
+
+<p class="fabric-quality">
+Substantial, soft and structured with a premium feel
+designed to hold its shape and last.
 </p>
 
 <h5 class="product-detail-heading">
@@ -2996,9 +3266,13 @@ SIGNATURE DETAILS
 
 <ul class="product-details">
 
-<li>OVERSIZED SOO ICY Design</li>
-<li>Relaxed Streetwear Look</li>
-<li>Bold ICY Styling</li>
+<li>Sewn-On Chenille Lettering</li>
+<li>3D Printed Design</li>
+<li>Oversized Relaxed Silhouette</li>
+<li>350 GSM Heavyweight Construction</li>
+<li>Ribbed Crewneck</li>
+<li>Washed Finish</li>
+<li>TastyStrains Signature Branding</li>
 <li>Designed for Everyday Wear</li>
 
 </ul>
@@ -3007,13 +3281,15 @@ SIGNATURE DETAILS
 
 <label
 class="size-label"
-for="hoodie-size"
+for="shirt-size"
 >
+
 SELECT SIZE
+
 </label>
 
 <select
-id="hoodie-size"
+id="shirt-size"
 class="size-select"
 >
 
@@ -3021,10 +3297,21 @@ class="size-select"
 Select Size
 </option>
 
-<option value="S">S</option>
-<option value="M">M</option>
-<option value="L">L</option>
-<option value="XL">XL</option>
+<option value="S">
+S
+</option>
+
+<option value="M">
+M
+</option>
+
+<option value="L">
+L
+</option>
+
+<option value="XL">
+XL
+</option>
 
 </select>
 
@@ -3033,9 +3320,11 @@ Select Size
 <button
 type="button"
 class="btn btn-pink"
-onclick="openApparelCheckout('hoodie')"
+onclick="openShirtCheckout()"
 >
+
 BUY NOW
+
 </button>
 
 </div>
@@ -3045,7 +3334,7 @@ Available in S, M, L and XL.
 </p>
 
 <div
-id="hoodieCheckout"
+id="shirtCheckout"
 class="shirt-checkout"
 >
 
@@ -3054,22 +3343,22 @@ YOUR TASTY STRAINS ORDER
 </h4>
 
 <div class="checkout-line">
-<span>SOO ICY Hoodie</span>
-<span>$300.00</span>
+<span>Oversized Top</span>
+<span>$325.00</span>
 </div>
 
 <div class="checkout-line">
 <span>Tax</span>
-<span>$18.00</span>
+<span>$19.50</span>
 </div>
 
 <div class="checkout-line checkout-total">
 <span>TOTAL</span>
-<span>$318.00</span>
+<span>$344.50</span>
 </div>
 
 <p
-id="selectedHoodieSize"
+id="selectedShirtSize"
 class="checkout-message">
 </p>
 
@@ -3079,7 +3368,9 @@ target="_blank"
 rel="noopener noreferrer"
 class="btn btn-blue"
 >
+
 CONTINUE TO PAYMENT
+
 </a>
 
 <br>
@@ -3088,175 +3379,11 @@ CONTINUE TO PAYMENT
 <button
 type="button"
 class="btn btn-pink"
-onclick="closeApparelCheckout('hoodie')"
+onclick="closeShirtCheckout()"
 >
+
 CHANGE SIZE
-</button>
 
-</div>
-
-</div>
-
-<!-- =====================================================
-     JOGGING PANTS PRODUCT
-===================================================== -->
-
-<div class="clothing-card">
-
-<div class="product-spin" aria-label="TastyStrains SOO ICY Jogging Pants rotating product preview">
-
-<div class="product-spin-inner">
-
-<div class="product-face front">
-
-<img
-src="tastystrains-jogging-pants-front.heic"
-alt="TastyStrains SOO ICY Jogging Pants front"
-loading="lazy"
-draggable="false"
->
-
-</div>
-
-<div class="product-face back">
-
-<img
-src="tastystrains-jogging-pants-back.PNG"
-alt="TastyStrains SOO ICY Jogging Pants back"
-loading="lazy"
-draggable="false"
->
-
-</div>
-
-</div>
-
-</div>
-
-<h3>
-OVERSIZED SOO ICY JOGGING PANTS
-</h3>
-
-<div class="product-price">
-$275
-</div>
-
-<div class="product-description">
-
-<h4>
-SOO ICY JOGGING PANTS
-</h4>
-
-<p class="product-tagline">
-Relaxed. Bold. Made to move.
-</p>
-
-<p>
-The OVERSIZED SOO ICY JOGGING PANTS bring the
-ICY streetwear look to a relaxed, oversized fit.
-</p>
-
-<h5 class="product-detail-heading">
-SIGNATURE DETAILS
-</h5>
-
-<ul class="product-details">
-
-<li>OVERSIZED SOO ICY Design</li>
-<li>Relaxed Streetwear Look</li>
-<li>Bold ICY Styling</li>
-<li>Designed for Everyday Wear</li>
-
-</ul>
-
-</div>
-
-<label
-class="size-label"
-for="joggers-size"
->
-SELECT SIZE
-</label>
-
-<select
-id="joggers-size"
-class="size-select"
->
-
-<option value="">
-Select Size
-</option>
-
-<option value="S">S</option>
-<option value="M">M</option>
-<option value="L">L</option>
-<option value="XL">XL</option>
-
-</select>
-
-<div class="buttons">
-
-<button
-type="button"
-class="btn btn-pink"
-onclick="openApparelCheckout('joggers')"
->
-BUY NOW
-</button>
-
-</div>
-
-<p class="product-note">
-Available in S, M, L and XL.
-</p>
-
-<div
-id="joggersCheckout"
-class="shirt-checkout"
->
-
-<h4>
-YOUR TASTY STRAINS ORDER
-</h4>
-
-<div class="checkout-line">
-<span>SOO ICY Jogging Pants</span>
-<span>$275.00</span>
-</div>
-
-<div class="checkout-line">
-<span>Tax</span>
-<span>$16.50</span>
-</div>
-
-<div class="checkout-line checkout-total">
-<span>TOTAL</span>
-<span>$291.50</span>
-</div>
-
-<p
-id="selectedJoggersSize"
-class="checkout-message">
-</p>
-
-<a
-href="https://square.link/u/Sots570c?src=sheet"
-target="_blank"
-rel="noopener noreferrer"
-class="btn btn-blue"
->
-CONTINUE TO PAYMENT
-</a>
-
-<br>
-<br>
-
-<button
-type="button"
-class="btn btn-pink"
-onclick="closeApparelCheckout('joggers')"
->
-CHANGE SIZE
 </button>
 
 </div>
@@ -3270,7 +3397,7 @@ CHANGE SIZE
 </section>
 
 <!-- =========================
-     OUR STORY
+     OUR STORY
 ========================= -->
 
 <section id="about">
@@ -3455,7 +3582,7 @@ THE FOUNDER OF TASTY STRAINS
 </section>
 
 <!-- =========================
-     CONTACT
+     CONTACT
 ========================= -->
 
 <section id="contact">
@@ -3491,7 +3618,9 @@ or working with TastyStrains? Get in touch.
 href="tel:313-591-3034"
 class="btn btn-blue"
 >
-CALL 313-591-3034
+
+CALL 313-591-3034 (tel:313-591-3034)
+
 </a>
 
 <a
@@ -3500,7 +3629,9 @@ target="_blank"
 rel="noopener noreferrer"
 class="btn btn-pink"
 >
+
 INSTAGRAM
+
 </a>
 
 </div>
@@ -3512,7 +3643,7 @@ INSTAGRAM
 </section>
 
 <!-- =========================
-     FOOTER
+     FOOTER
 ========================= -->
 
 <footer>
@@ -3543,7 +3674,7 @@ Detroit, Michigan
 </p>
 
 <p>
-313-591-3034
+313-591-3034 (tel:313-591-3034)
 </p>
 
 <p>
@@ -3557,13 +3688,13 @@ Detroit, Michigan
 </footer>
 
 <!-- =========================
-     JAVASCRIPT
+     JAVASCRIPT
 ========================= -->
 
 <script>
 
 /* =========================
-   CATERING FORM
+   CATERING FORM
 ========================= */
 
 const cateringForm =
@@ -3579,166 +3710,135 @@ cateringForm.addEventListener(
 "submit",
 async function(event) {
 
-  event.preventDefault();
+  event.preventDefault();
 
-  const submitButton =
-    cateringForm.querySelector(
-      'button[type="submit"]'
-    );
+  const submitButton =
+    cateringForm.querySelector(
+      'button[type="submit"]'
+    );
 
-  submitButton.disabled = true;
+  submitButton.disabled = true;
 
-  submitButton.textContent =
-    "SUBMITTING...";
+  submitButton.textContent =
+    "SUBMITTING...";
 
-  try {
+  try {
 
-    const response =
-      await fetch(
-        "https://formsubmit.co/ajax/tastystrains313@yahoo.com",
-        {
-          method: "POST",
+    const response =
+      await fetch(
+        "https://formsubmit.co/ajax/tastystrains313@yahoo.com",
+        {
+          method: "POST",
 
-          body:
-            new FormData(cateringForm),
+          body:
+            new FormData(cateringForm),
 
-          headers: {
-            "Accept": "application/json"
-          }
-        }
-      );
+          headers: {
+            "Accept": "application/json"
+          }
+        }
+      );
 
-    const data =
-      await response.json();
+    const data =
+      await response.json();
 
-    if (
-      response.ok &&
-      data.success !== false
-    ) {
+    if (
+      response.ok &&
+      data.success !== false
+    ) {
 
-      cateringForm.reset();
+      cateringForm.reset();
 
-      cateringFormBox.style.display =
-        "none";
+      cateringFormBox.style.display =
+        "none";
 
-      cateringConfirmation.style.display =
-        "block";
+      cateringConfirmation.style.display =
+        "block";
 
-      cateringConfirmation.scrollIntoView({
-        behavior: "smooth",
-        block: "center"
-      });
+      cateringConfirmation.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
 
-    } else {
+    } else {
 
-      throw new Error(
-        data.message ||
-        "The catering request could not be submitted."
-      );
+      throw new Error(
+        data.message ||
+        "The catering request could not be submitted."
+      );
 
-    }
+    }
 
-  } catch(error) {
+  } catch(error) {
 
-    console.error(
-      "Catering form error:",
-      error
-    );
+    console.error(
+      "Catering form error:",
+      error
+    );
 
-    alert(
-      "We couldn't submit your catering request right now. Please try again or call 313-591-3034."
-    );
+    alert(
+      "We couldn't submit your catering request right now. Please try again or call 313-591-3034 (tel:313-591-3034)."
+    );
 
-    submitButton.disabled = false;
+    submitButton.disabled = false;
 
-    submitButton.textContent =
-      "SUBMIT CATERING REQUEST";
+    submitButton.textContent =
+      "SUBMIT CATERING REQUEST";
 
-  }
+  }
 
 });
 
 /* =========================
-   APPAREL CHECKOUT
+   SHIRT CHECKOUT
 ========================= */
 
-function openApparelCheckout(product) {
+function openShirtCheckout() {
 
-  const settings = {
+  const size =
+    document.getElementById(
+      "shirt-size"
+    ).value;
 
-    hoodie: {
-      sizeId: "hoodie-size",
-      checkoutId: "hoodieCheckout",
-      selectedId: "selectedHoodieSize",
-      total: "$318.00"
-    },
+  const checkout =
+    document.getElementById(
+      "shirtCheckout"
+    );
 
-    joggers: {
-      sizeId: "joggers-size",
-      checkoutId: "joggersCheckout",
-      selectedId: "selectedJoggersSize",
-      total: "$291.50"
-    }
+  const selectedSize =
+    document.getElementById(
+      "selectedShirtSize"
+    );
 
-  };
+  if (!size) {
 
-  const item =
-    settings[product];
+    alert(
+      "Please select a size before clicking BUY NOW."
+    );
 
-  if (!item) {
-    return;
-  }
+    return;
+  }
 
-  const size =
-    document.getElementById(
-      item.sizeId
-    ).value;
+  selectedSize.textContent =
+    "Selected Size: " +
+    size +
+    " | Total: $344.50";
 
-  const checkout =
-    document.getElementById(
-      item.checkoutId
-    );
+  checkout.style.display =
+    "block";
 
-  const selectedSize =
-    document.getElementById(
-      item.selectedId
-    );
-
-  if (!size) {
-
-    alert(
-      "Please select a size before clicking BUY NOW."
-    );
-
-    return;
-  }
-
-  selectedSize.textContent =
-    "Selected Size: " +
-    size +
-    " | Total: " +
-    item.total;
-
-  checkout.style.display =
-    "block";
-
-  checkout.scrollIntoView({
-    behavior: "smooth",
-    block: "center"
-  });
+  checkout.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
 
 }
 
-function closeApparelCheckout(product) {
+function closeShirtCheckout() {
 
-  const checkoutId =
-    product === "hoodie"
-      ? "hoodieCheckout"
-      : "joggersCheckout";
-
-  document.getElementById(
-    checkoutId
-  ).style.display = "none";
+  document.getElementById(
+    "shirtCheckout"
+  ).style.display = "none";
 
 }
 
