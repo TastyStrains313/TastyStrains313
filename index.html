@@ -933,22 +933,21 @@
       font-weight: 900;
     }
 
-    /* APPAREL PURCHASE AREA */
+    /* APPAREL PURCHASE */
 
     .apparel-purchase {
-      margin-top: 20px;
-      padding: 18px;
-      background: rgba(255, 119, 200, 0.08);
-      border: 2px solid rgba(255, 119, 200, 0.22);
-      border-radius: 20px;
+      margin-top: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: stretch;
     }
 
     .size-label {
-      display: block;
-      text-align: left;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 900;
-      margin-bottom: 8px;
+      text-align: left;
+      color: #222;
     }
 
     .size-select {
@@ -956,13 +955,13 @@
       padding: 13px 15px;
       border: 2px solid #d9d9d9;
       border-radius: 14px;
-      background: #ffffff;
-      color: #222;
       font-family: "Poppins", Arial, sans-serif;
       font-size: 15px;
       font-weight: 700;
-      outline: none;
+      background: #ffffff;
+      color: #222;
       cursor: pointer;
+      outline: none;
       transition: 0.2s ease;
     }
 
@@ -973,15 +972,13 @@
 
     .buy-now-btn {
       width: 100%;
-      margin-top: 12px;
       text-align: center;
-      font-size: 15px;
-      display: block;
+      border: none;
     }
 
     .size-warning {
       display: none;
-      margin-top: 9px;
+      margin-top: -4px;
       color: #e60070;
       font-size: 12px;
       font-weight: 900;
@@ -1938,6 +1935,8 @@
           the agreed-upon booking terms.
         </p>
 
+        <!-- CORRECT CATERING PAYMENT LINK -->
+
         <a
           href="https://square.link/u/XVt5l5n5?src=sheet"
           target="_blank"
@@ -2204,6 +2203,8 @@
 
           </div>
 
+          <!-- SHIRT SIZE + BUY NOW -->
+
           <div class="apparel-purchase">
 
             <label
@@ -2229,13 +2230,13 @@
               id="shirt-size-warning"
               class="size-warning"
             >
-              PLEASE SELECT A SIZE BEFORE CONTINUING.
+              PLEASE SELECT A SIZE BEFORE BUYING.
             </div>
+
+            <!-- CORRECT SHIRT PAYMENT LINK -->
 
             <a
               href="https://square.link/u/vsFGI3MO?src=sheet"
-              target="_blank"
-              rel="noopener noreferrer"
               class="btn btn-blue buy-now-btn"
               data-size-select="shirt-size"
             >
@@ -2312,6 +2313,8 @@
 
           </div>
 
+          <!-- HOODIE SIZE + BUY NOW -->
+
           <div class="apparel-purchase">
 
             <label
@@ -2337,13 +2340,13 @@
               id="hoodie-size-warning"
               class="size-warning"
             >
-              PLEASE SELECT A SIZE BEFORE CONTINUING.
+              PLEASE SELECT A SIZE BEFORE BUYING.
             </div>
+
+            <!-- CORRECT HOODIE PAYMENT LINK -->
 
             <a
               href="https://square.link/u/Sots570c?src=sheet"
-              target="_blank"
-              rel="noopener noreferrer"
               class="btn btn-pink buy-now-btn"
               data-size-select="hoodie-size"
             >
@@ -2605,6 +2608,62 @@
 
   </footer>
 
+  <!-- APPAREL SIZE SELECTION -->
+
+  <script>
+
+    document.querySelectorAll(".buy-now-btn").forEach(function(button) {
+
+      button.addEventListener("click", function(event) {
+
+        const selectId =
+          button.getAttribute("data-size-select");
+
+        const sizeSelect =
+          document.getElementById(selectId);
+
+        const warning =
+          document.getElementById(
+            selectId + "-warning"
+          );
+
+        if (!sizeSelect.value) {
+
+          event.preventDefault();
+
+          warning.style.display = "block";
+
+          sizeSelect.focus();
+
+          return;
+
+        }
+
+        warning.style.display = "none";
+
+      });
+
+    });
+
+    document.querySelectorAll(".size-select").forEach(function(select) {
+
+      select.addEventListener("change", function() {
+
+        const warning =
+          document.getElementById(
+            select.id + "-warning"
+          );
+
+        if (warning) {
+          warning.style.display = "none";
+        }
+
+      });
+
+    });
+
+  </script>
+
   <!-- CATERING FORM AJAX SYSTEM -->
 
   <script>
@@ -2695,69 +2754,6 @@
 
       }
     );
-
-
-    /* APPAREL SIZE SELECTION */
-
-    const buyNowButtons =
-      document.querySelectorAll(".buy-now-btn");
-
-    buyNowButtons.forEach(function(button) {
-
-      button.addEventListener("click", function(event) {
-
-        const selectId =
-          button.getAttribute("data-size-select");
-
-        const sizeSelect =
-          document.getElementById(selectId);
-
-        const warning =
-          document.getElementById(
-            selectId.replace("-size", "-size-warning")
-          );
-
-        if (!sizeSelect.value) {
-
-          event.preventDefault();
-
-          warning.style.display = "block";
-
-          sizeSelect.focus();
-
-          setTimeout(function() {
-            warning.style.display = "none";
-          }, 3000);
-
-          return;
-
-        }
-
-        warning.style.display = "none";
-
-      });
-
-    });
-
-
-    /* CLEAR SIZE WARNING WHEN SIZE IS CHANGED */
-
-    document.querySelectorAll(".size-select").forEach(function(select) {
-
-      select.addEventListener("change", function() {
-
-        const warning =
-          document.getElementById(
-            select.id.replace("-size", "-size-warning")
-          );
-
-        if (select.value) {
-          warning.style.display = "none";
-        }
-
-      });
-
-    });
 
   </script>
 
