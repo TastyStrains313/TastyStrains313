@@ -395,14 +395,11 @@
       top: 50%;
       margin-left: -90px;
       margin-top: -110px;
-
-      /* NO WHITE OR YELLOW BOX */
       background: transparent;
       border: none;
       border-radius: 0;
       padding: 0;
       box-shadow: none;
-
       backface-visibility: hidden;
       overflow: visible;
     }
@@ -412,7 +409,6 @@
       height: 100%;
       object-fit: contain;
       display: block;
-
       background: transparent;
       border: none;
       border-radius: 0;
@@ -590,7 +586,7 @@
       margin-top: 12px;
     }
 
-    /* REAL CATERING FORM */
+    /* CATERING FORM */
 
     .catering-form-box {
       max-width: 950px;
@@ -687,7 +683,7 @@
       font-size: 16px;
     }
 
-    /* CATERING SUCCESS MESSAGE */
+    /* CATERING CONFIRMATION */
 
     .catering-confirmation {
       display: none;
@@ -733,29 +729,15 @@
       font-weight: 600;
     }
 
+    /*
+      MODEL PHOTOS REMOVED.
+      Clothing products can be added here later.
+    */
+
     .clothing-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
-    }
-
-    .clothing-card {
-      background: rgba(255, 255, 255, 0.94);
-      padding: 12px;
-      border-radius: 25px;
-      overflow: hidden;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-      transition: 0.25s ease;
-    }
-
-    .clothing-card:hover {
-      transform: translateY(-6px);
-    }
-
-    .clothing-card img {
-      width: 100%;
-      display: block;
-      border-radius: 18px;
     }
 
     /* STORY */
@@ -1125,7 +1107,7 @@
         <div>
 
           <img
-            src="water-ice.jpg"
+            src="water-ice.PNG"
             alt="TastyStrains Philadelphia Water Ice"
             class="water-ice-image"
           >
@@ -1154,7 +1136,7 @@
 
       </div>
 
-      <!-- UPDATED 8-FLAVOR ROTATING CUPS -->
+      <!-- 8-FLAVOR ROTATING CUPS -->
 
       <div class="flavor-area">
 
@@ -1166,56 +1148,56 @@
 
             <div class="flavor-card">
               <img
-                src="lemon.jpg"
+                src="lemon.png"
                 alt="Lemon Water Ice"
               >
             </div>
 
             <div class="flavor-card">
               <img
-                src="tropical-rainbow.jpg"
+                src="tropical-rainbow.png"
                 alt="Tropical Rainbow Water Ice"
               >
             </div>
 
             <div class="flavor-card">
               <img
-                src="cherry .jpg"
+                src="cherry.png"
                 alt="Cherry Water Ice"
               >
             </div>
 
             <div class="flavor-card">
               <img
-                src="watermelon .jpg"
+                src="watermelon.png"
                 alt="Watermelon Water Ice"
               >
             </div>
 
             <div class="flavor-card">
               <img
-                src="blueberry .jpg"
+                src="blueberry.png"
                 alt="Blueberry Water Ice"
               >
             </div>
 
             <div class="flavor-card">
               <img
-                src="cotton candy .jpg"
+                src="cotton-candy.png"
                 alt="Cotton Candy Water Ice"
               >
             </div>
 
             <div class="flavor-card">
               <img
-                src="fireworks.jpg"
+                src="fireworks.png"
                 alt="Fireworks Water Ice"
               >
             </div>
 
             <div class="flavor-card">
               <img
-                src="mango.jpg"
+                src="mango.png"
                 alt="Mango Water Ice"
               >
             </div>
@@ -1349,8 +1331,6 @@
         <span class="blue"> CATERING</span>
       </h2>
 
-      <!-- REAL FILLABLE CATERING FORM -->
-
       <div class="catering-form-box" id="cateringFormBox">
 
         <h3>REQUEST CATERING</h3>
@@ -1387,7 +1367,6 @@
           <div class="form-grid">
 
             <div class="form-group">
-
               <label for="name">
                 Full Name <span class="required">*</span>
               </label>
@@ -1399,11 +1378,9 @@
                 placeholder="Enter your full name"
                 required
               >
-
             </div>
 
             <div class="form-group">
-
               <label for="phone">
                 Phone Number <span class="required">*</span>
               </label>
@@ -1415,11 +1392,9 @@
                 placeholder="Enter your phone number"
                 required
               >
-
             </div>
 
             <div class="form-group">
-
               <label for="email">
                 Email Address <span class="required">*</span>
               </label>
@@ -1431,67 +1406,28 @@
                 placeholder="Enter your email address"
                 required
               >
-
             </div>
 
             <div class="form-group">
-
               <label for="event-type">
                 Event Type <span class="required">*</span>
               </label>
 
-              <select
-                id="event-type"
-                name="event_type"
-                required
-              >
-
-                <option value="">
-                  Select event type
-                </option>
-
-                <option value="Birthday Party">
-                  Birthday Party
-                </option>
-
-                <option value="Wedding">
-                  Wedding
-                </option>
-
-                <option value="Graduation">
-                  Graduation
-                </option>
-
-                <option value="Baby Shower">
-                  Baby Shower
-                </option>
-
-                <option value="Corporate Event">
-                  Corporate Event
-                </option>
-
-                <option value="Private Celebration">
-                  Private Celebration
-                </option>
-
-                <option value="Family Reunion">
-                  Family Reunion
-                </option>
-
-                <option value="Community Event">
-                  Community Event
-                </option>
-
-                <option value="Other">
-                  Other
-                </option>
-
+              <select id="event-type" name="event_type" required>
+                <option value="">Select event type</option>
+                <option value="Birthday Party">Birthday Party</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Graduation">Graduation</option>
+                <option value="Baby Shower">Baby Shower</option>
+                <option value="Corporate Event">Corporate Event</option>
+                <option value="Private Celebration">Private Celebration</option>
+                <option value="Family Reunion">Family Reunion</option>
+                <option value="Community Event">Community Event</option>
+                <option value="Other">Other</option>
               </select>
-
             </div>
 
             <div class="form-group">
-
               <label for="event-date">
                 Event Date <span class="required">*</span>
               </label>
@@ -1502,11 +1438,9 @@
                 name="event_date"
                 required
               >
-
             </div>
 
             <div class="form-group">
-
               <label for="event-time">
                 Event Time <span class="required">*</span>
               </label>
@@ -1517,11 +1451,9 @@
                 name="event_time"
                 required
               >
-
             </div>
 
             <div class="form-group">
-
               <label for="guests">
                 Number of Guests <span class="required">*</span>
               </label>
@@ -1534,47 +1466,23 @@
                 placeholder="Example: 75"
                 required
               >
-
             </div>
 
             <div class="form-group">
-
               <label for="package">
                 Catering Package <span class="required">*</span>
               </label>
 
-              <select
-                id="package"
-                name="catering_package"
-                required
-              >
-
-                <option value="">
-                  Select package
-                </option>
-
-                <option value="Small Event">
-                  Small Event
-                </option>
-
-                <option value="Medium Event">
-                  Medium Event
-                </option>
-
-                <option value="Large Event">
-                  Large Event
-                </option>
-
-                <option value="Not Sure">
-                  Not Sure
-                </option>
-
+              <select id="package" name="catering_package" required>
+                <option value="">Select package</option>
+                <option value="Small Event">Small Event</option>
+                <option value="Medium Event">Medium Event</option>
+                <option value="Large Event">Large Event</option>
+                <option value="Not Sure">Not Sure</option>
               </select>
-
             </div>
 
             <div class="form-group full">
-
               <label for="location">
                 Event Location <span class="required">*</span>
               </label>
@@ -1586,11 +1494,9 @@
                 placeholder="Enter the event address or venue"
                 required
               >
-
             </div>
 
             <div class="form-group full">
-
               <label for="flavors">
                 Preferred Water Ice Flavors
               </label>
@@ -1601,11 +1507,9 @@
                 name="preferred_flavors"
                 placeholder="Example: Cherry, Lemon, Blueberry"
               >
-
             </div>
 
             <div class="form-group full">
-
               <label for="details">
                 Tell Us About Your Event
               </label>
@@ -1615,66 +1519,33 @@
                 name="event_details"
                 placeholder="Tell us anything else we should know about your event, including special requests."
               ></textarea>
-
             </div>
 
             <div class="form-group full">
-
               <label for="how-found">
                 How Did You Hear About TastyStrains?
               </label>
 
-              <select
-                id="how-found"
-                name="how_you_heard"
-              >
-
-                <option value="">
-                  Select one
-                </option>
-
-                <option value="Instagram">
-                  Instagram
-                </option>
-
-                <option value="TikTok">
-                  TikTok
-                </option>
-
-                <option value="Facebook">
-                  Facebook
-                </option>
-
-                <option value="Google">
-                  Google
-                </option>
-
-                <option value="Friend or Family">
-                  Friend or Family
-                </option>
-
-                <option value="Retail Location">
-                  Retail Location
-                </option>
-
-                <option value="Other">
-                  Other
-                </option>
-
+              <select id="how-found" name="how_you_heard">
+                <option value="">Select one</option>
+                <option value="Instagram">Instagram</option>
+                <option value="TikTok">TikTok</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Google">Google</option>
+                <option value="Friend or Family">Friend or Family</option>
+                <option value="Retail Location">Retail Location</option>
+                <option value="Other">Other</option>
               </select>
-
             </div>
 
           </div>
 
           <div class="form-note">
-
             <strong>IMPORTANT:</strong>
             Submitting this form is a catering request only.
             Your event date is not officially reserved until
             the required 50% security deposit has been received.
             All security deposits and payments are non-refundable.
-
           </div>
 
           <div class="submit-area">
@@ -1900,33 +1771,7 @@
 
       </div>
 
-      <div class="clothing-grid">
-
-        <div class="clothing-card">
-          <img src="clothing-model-1.PNG" alt="TastyStrains clothing model">
-        </div>
-
-        <div class="clothing-card">
-          <img src="clothing-model2.PNG" alt="TastyStrains clothing model">
-        </div>
-
-        <div class="clothing-card">
-          <img src="clothing-model3.jpg" alt="TastyStrains clothing model">
-        </div>
-
-        <div class="clothing-card">
-          <img src="clothing-model4.PNG" alt="TastyStrains clothing model">
-        </div>
-
-        <div class="clothing-card">
-          <img src="clothing-model5.PNG" alt="TastyStrains clothing model">
-        </div>
-
-        <div class="clothing-card">
-          <img src="clothing-model6.PNG" alt="TastyStrains clothing model">
-        </div>
-
-      </div>
+      <!-- MODEL PICTURES REMOVED -->
 
       <div class="buttons" style="margin-top:35px;">
 
@@ -2175,7 +2020,10 @@
   <script>
 
     const cateringForm = document.getElementById("cateringForm");
-    const cateringFormBox = document.getElementById("cateringFormBox");
+
+    const cateringFormBox =
+      document.getElementById("cateringFormBox");
+
     const cateringConfirmation =
       document.getElementById("cateringConfirmation");
 
@@ -2236,6 +2084,7 @@
         );
 
         submitButton.disabled = false;
+
         submitButton.textContent =
           "SUBMIT CATERING REQUEST";
 
