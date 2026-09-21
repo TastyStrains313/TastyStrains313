@@ -510,27 +510,45 @@
 
     .locations-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
     }
 
     .location-card {
       background: rgba(255, 255, 255, 0.94);
-      padding: 22px;
-      border-radius: 22px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      padding: 17px;
+      border-radius: 18px;
+      box-shadow: 0 7px 17px rgba(0, 0, 0, 0.11);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 150px;
     }
 
     .location-card h3 {
       font-family: "Archivo Black", Impact, sans-serif;
-      font-size: 20px;
+      font-size: 18px;
+      line-height: 1.15;
       color: var(--baby-blue);
-      margin-bottom: 4px;
+      margin-bottom: 5px;
     }
 
     .location-card p {
       font-weight: 600;
+      font-size: 14px;
+      line-height: 1.45;
       margin-bottom: 12px;
+    }
+
+    .location-card .btn {
+      margin-top: auto;
+      padding: 8px 17px;
+      font-size: 12px;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    .location-card:nth-child(even) h3 {
+      color: var(--bubblegum-pink);
     }
 
     /* CATERING */
@@ -778,11 +796,6 @@
       font-weight: 600;
     }
 
-    /*
-      MODEL PHOTOS REMOVED.
-      Clothing products can be added here later.
-    */
-
     .clothing-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -911,7 +924,7 @@
       color: var(--bubblegum-pink);
     }
 
-    /* MOBILE */
+    /* MOBILE / TABLET */
 
     @media (max-width: 900px) {
 
@@ -943,8 +956,16 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
+      /* COMPACT LOCATION GRID */
+
       .locations-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .location-card {
+        padding: 15px;
+        min-height: 145px;
       }
 
       .form-grid {
@@ -1009,6 +1030,34 @@
 
       .catering-confirmation {
         padding: 35px 20px;
+      }
+
+      /* EXTRA-COMPACT LOCATIONS ON PHONES */
+
+      .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+
+      .location-card {
+        padding: 13px;
+        min-height: 135px;
+        border-radius: 16px;
+      }
+
+      .location-card h3 {
+        font-size: 16px;
+      }
+
+      .location-card p {
+        font-size: 12px;
+        line-height: 1.4;
+        margin-bottom: 9px;
+      }
+
+      .location-card .btn {
+        padding: 7px 14px;
+        font-size: 11px;
       }
 
     }
@@ -1342,85 +1391,153 @@
         <div class="location-card">
           <h3>Mobil</h3>
           <p>10001 Fenkell, Detroit, MI 48238</p>
-          <a class="btn btn-blue" href="https://www.google.com/maps/search/?api=1&query=10001+Fenkell+Detroit+MI+48238" target="_blank">MAP</a>
+          <a
+            class="btn btn-blue"
+            href="https://www.google.com/maps/search/?api=1&query=10001+Fenkell+Detroit+MI+48238"
+            target="_blank"
+          >MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Kennedy Liquor</h3>
           <p>13344 Seven Mile, Detroit, MI 48219</p>
-          <a class="btn btn-pink" href="https://www.google.com/maps/search/?api=1&query=13344+Seven+Mile+Detroit+MI+48219" target="_blank">MAP</a>
+          <a
+            class="btn btn-pink"
+            href="https://www.google.com/maps/search/?api=1&query=13344+Seven+Mile+Detroit+MI+48219"
+            target="_blank"
+          >MAP</a>
         </div>
 
         <div class="location-card">
           <h3>W Liquor</h3>
           <p>3325 E Seven Mile, Detroit, MI 48234</p>
-          <a class="btn btn-blue" href="https://www.google.com/maps/search/?api=1&query=3325+E+Seven+Mile+Detroit+MI+48234" target="_blank">MAP</a>
+          <a
+            class="btn btn-blue"
+            href="https://www.google.com/maps/search/?api=1&query=3325+E+Seven+Mile+Detroit+MI+48234"
+            target="_blank"
+          >MAP</a>
         </div>
 
         <div class="location-card">
           <h3>AMOCO</h3>
           <p>38030 W 10 Mile Rd, Farmington, MI 48335</p>
-          <a class="btn btn-pink" href="https://www.google.com/maps/search/?api=1&query=38030+W+10+Mile+Rd+Farmington+MI+48335" target="_blank">MAP</a>
+          <a
+            class="btn btn-pink"
+            href="https://www.google.com/maps/search/?api=1&query=38030+W+10+Mile+Rd+Farmington+MI+48335"
+            target="_blank"
+          >MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Grand Liquor</h3>
           <p>12889 Woodward, Highland Park, MI 48203</p>
-          <a class="btn btn-blue" href="https://www.google.com/maps/search/?api=1&query=12889+Woodward+Highland+Park+MI+48203" target="_blank">MAP</a>
+          <a
+            class="btn btn-blue"
+            href="https://www.google.com/maps/search/?api=1&query=12889+Woodward+Highland+Park+MI+48203"
+            target="_blank"
+          >MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Imperial Fresh</h3>
           <p>14424 Schaefer, Detroit, MI 48227</p>
-          <a class="btn btn-pink" href="https://www.google.com/maps/search/?api=1&query=14424+Schaefer+Detroit+MI+48227" target="_blank">MAP</a>
+          <a
+            class="btn btn-pink"
+            href="https://www.google.com/maps/search/?api=1&query=14424+Schaefer+Detroit+MI+48227"
+            target="_blank"
+          >MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Martell Liquor</h3>
           <p>19137 Seven Mile, Detroit, MI 48219</p>
-          <a class="btn btn-blue" href="https://www.google.com/maps/search/?api=1&query=19137+Seven+Mile+Detroit+MI+48219" target="_blank">MAP</a>
+          <a
+            class="btn btn-blue"
+            href="https://www.google.com/maps/search/?api=1&query=19137+Seven+Mile+Detroit+MI+48219"
+            target="_blank"
+          >MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Heydens Liquor</h3>
           <p>20201 Seven Mile, Detroit, MI 48219</p>
-          <a class="btn btn-pink" href="https://www.google.com/maps/search/?api=1&query=20201+Seven+Mile+Detroit+MI+48219" target="_blank">MAP</a>
+          <a
+            class="btn btn-pink"
+            href="https://www.google.com/maps/search/?api=1&query=20201+Seven+Mile+Detroit+MI+48219"
+            target="_blank"
+          >MAP</a>
         </div>
 
         <div class="location-card">
           <h3>BP</h3>
           <p>30435 Cherry Hill, Westland, MI 48186</p>
-          <a class="btn btn-blue" href="https://www.google.com/maps/search/?api=1&query=30435+Cherry+Hill+Westland+MI+48186" target="_blank">MAP</a>
+          <a
+            class="btn btn-blue"
+            href="https://www.google.com/maps/search/?api=1&query=30435+Cherry+Hill+Westland+MI+48186"
+            target="_blank"
+          >MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Vintage Village Liquor</h3>
           <p>28927 Southfield Rd, Lathrup Village, MI 48076</p>
-          <a class="btn btn-pink" href="https://www.google.com/maps/search/?api=1&query=28927+Southfield+Rd+Lathrup+Village+MI+48076" target="_blank">MAP</a>
+          <a
+            class="btn btn-pink"
+            href="https://www.google.com/maps/search/?api=1&query=28927+Southfield+Rd+Lathrup+Village+MI+48076"
+            target="_blank"
+          >MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Greenfield Market</h3>
           <p>15530 Puritan, Detroit, MI 48227</p>
-          <a class="btn btn-blue" href="https://www.google.com/maps/search/?api=1&query=15530+Puritan+Detroit+MI+48227" target="_blank">MAP</a>
+          <a
+            class="btn btn-blue"
+            href="https://www.google.com/maps/search/?api=1&query=15530+Puritan+Detroit+MI+48227"
+            target="_blank"
+          >MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Big V Liquor</h3>
           <p>14111 Greenfield Rd, Detroit, MI 48227</p>
-          <a class="btn btn-pink" href="https://www.google.com/maps/search/?api=1&query=14111+Greenfield+Rd+Detroit+MI+48227" target="_blank">MAP</a>
+          <a
+            class="btn btn-pink"
+            href="https://www.google.com/maps/search/?api=1&query=14111+Greenfield+Rd+Detroit+MI+48227"
+            target="_blank"
+          >MAP</a>
         </div>
 
         <div class="location-card">
           <h3>United Liquor</h3>
           <p>22040 Seven Mile, Detroit, MI 48219</p>
-          <a class="btn btn-blue" href="https://www.google.com/maps/search/?api=1&query=22040+Seven+Mile+Detroit+MI+48219" target="_blank">MAP</a>
+          <a
+            class="btn btn-blue"
+            href="https://www.google.com/maps/search/?api=1&query=22040+Seven+Mile+Detroit+MI+48219"
+            target="_blank"
+          >MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Marathon</h3>
           <p>10550 W Jefferson Ave, River Rouge, MI 48218</p>
-          <a class="btn btn-pink" href="https://www.google.com/maps/search/?api=1&query=10550+W+Jefferson+Ave+River+Rouge+MI+48218" target="_blank">MAP</a>
+          <a
+            class="btn btn-pink"
+            href="https://www.google.com/maps/search/?api=1&query=10550+W+Jefferson+Ave+River+Rouge+MI+48218"
+            target="_blank"
+          >MAP</a>
+        </div>
+
+        <!-- NEW 15TH LOCATION -->
+
+        <div class="location-card">
+          <h3>BP</h3>
+          <p>21746 Schoolcraft, Detroit, MI 48223</p>
+          <a
+            class="btn btn-blue"
+            href="https://www.google.com/maps/search/?api=1&query=21746+Schoolcraft+Detroit+MI+48223"
+            target="_blank"
+          >MAP</a>
         </div>
 
       </div>
@@ -1880,8 +1997,6 @@
 
       </div>
 
-      <!-- MODEL PICTURES REMOVED -->
-
       <div class="buttons" style="margin-top:35px;">
 
         <a
@@ -2119,7 +2234,7 @@
 
     <p>Detroit, Michigan</p>
     <p>313-591-3034</p>
-    <p>14 Retail Locations</p>
+    <p>15 Retail Locations</p>
     <p>© 2026 TastyStrains. All Rights Reserved.</p>
 
   </footer>
