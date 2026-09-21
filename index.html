@@ -841,8 +841,6 @@
       animation: apparelSpin 8s ease-in-out infinite;
     }
 
-    /* Each apparel item spins independently */
-
     .apparel-card:nth-child(1) .apparel-inner {
       animation-delay: 0s;
     }
@@ -933,6 +931,61 @@
     .chenille {
       color: var(--bubblegum-pink);
       font-weight: 900;
+    }
+
+    /* APPAREL PURCHASE AREA */
+
+    .apparel-purchase {
+      margin-top: 20px;
+      padding: 18px;
+      background: rgba(255, 119, 200, 0.08);
+      border: 2px solid rgba(255, 119, 200, 0.22);
+      border-radius: 20px;
+    }
+
+    .size-label {
+      display: block;
+      text-align: left;
+      font-size: 14px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .size-select {
+      width: 100%;
+      padding: 13px 15px;
+      border: 2px solid #d9d9d9;
+      border-radius: 14px;
+      background: #ffffff;
+      color: #222;
+      font-family: "Poppins", Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      outline: none;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .size-select:focus {
+      border-color: var(--baby-blue);
+      box-shadow: 0 0 0 3px rgba(94, 203, 255, 0.18);
+    }
+
+    .buy-now-btn {
+      width: 100%;
+      margin-top: 12px;
+      text-align: center;
+      font-size: 15px;
+      display: block;
+    }
+
+    .size-warning {
+      display: none;
+      margin-top: 9px;
+      color: #e60070;
+      font-size: 12px;
+      font-weight: 900;
+      text-align: center;
     }
 
     .apparel-note {
@@ -2134,7 +2187,7 @@
 
             <p>
               <strong>Sizes:</strong>
-              S–3XL
+              S / M / L / XL
             </p>
 
             <p>
@@ -2151,14 +2204,45 @@
 
           </div>
 
-          <a
-            href="https://www.instagram.com/tastystrains313/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-blue"
-          >
-            APPAREL INQUIRIES
-          </a>
+          <div class="apparel-purchase">
+
+            <label
+              class="size-label"
+              for="shirt-size"
+            >
+              SELECT SIZE
+            </label>
+
+            <select
+              id="shirt-size"
+              class="size-select"
+              aria-label="Select shirt size"
+            >
+              <option value="">Choose a size</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+
+            <div
+              id="shirt-size-warning"
+              class="size-warning"
+            >
+              PLEASE SELECT A SIZE BEFORE CONTINUING.
+            </div>
+
+            <a
+              href="https://square.link/u/vsFGI3MO?src=sheet"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-blue buy-now-btn"
+              data-size-select="shirt-size"
+            >
+              BUY NOW
+            </a>
+
+          </div>
 
         </div>
 
@@ -2209,6 +2293,11 @@
             </p>
 
             <p>
+              <strong>Sizes:</strong>
+              S / M / L / XL
+            </p>
+
+            <p>
               <strong>Details:</strong>
               Signature TastyStrains branding with
               raised <span class="chenille">Chenille Patch</span>
@@ -2223,14 +2312,45 @@
 
           </div>
 
-          <a
-            href="https://www.instagram.com/tastystrains313/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-pink"
-          >
-            APPAREL INQUIRIES
-          </a>
+          <div class="apparel-purchase">
+
+            <label
+              class="size-label"
+              for="hoodie-size"
+            >
+              SELECT SIZE
+            </label>
+
+            <select
+              id="hoodie-size"
+              class="size-select"
+              aria-label="Select hoodie size"
+            >
+              <option value="">Choose a size</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+
+            <div
+              id="hoodie-size-warning"
+              class="size-warning"
+            >
+              PLEASE SELECT A SIZE BEFORE CONTINUING.
+            </div>
+
+            <a
+              href="https://square.link/u/Sots570c?src=sheet"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-pink buy-now-btn"
+              data-size-select="hoodie-size"
+            >
+              BUY NOW
+            </a>
+
+          </div>
 
         </div>
 
@@ -2575,6 +2695,69 @@
 
       }
     );
+
+
+    /* APPAREL SIZE SELECTION */
+
+    const buyNowButtons =
+      document.querySelectorAll(".buy-now-btn");
+
+    buyNowButtons.forEach(function(button) {
+
+      button.addEventListener("click", function(event) {
+
+        const selectId =
+          button.getAttribute("data-size-select");
+
+        const sizeSelect =
+          document.getElementById(selectId);
+
+        const warning =
+          document.getElementById(
+            selectId.replace("-size", "-size-warning")
+          );
+
+        if (!sizeSelect.value) {
+
+          event.preventDefault();
+
+          warning.style.display = "block";
+
+          sizeSelect.focus();
+
+          setTimeout(function() {
+            warning.style.display = "none";
+          }, 3000);
+
+          return;
+
+        }
+
+        warning.style.display = "none";
+
+      });
+
+    });
+
+
+    /* CLEAR SIZE WARNING WHEN SIZE IS CHANGED */
+
+    document.querySelectorAll(".size-select").forEach(function(select) {
+
+      select.addEventListener("change", function() {
+
+        const warning =
+          document.getElementById(
+            select.id.replace("-size", "-size-warning")
+          );
+
+        if (select.value) {
+          warning.style.display = "none";
+        }
+
+      });
+
+    });
 
   </script>
 
