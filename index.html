@@ -373,9 +373,9 @@
 
     .carousel {
       width: 320px;
-      height: 330px;
+      height: 370px;
       margin: 0 auto;
-      perspective: 1200px;
+      perspective: 1600px;
       position: relative;
     }
 
@@ -384,7 +384,7 @@
       height: 100%;
       position: relative;
       transform-style: preserve-3d;
-      animation: spin 22s linear infinite;
+      animation: spin 35s linear infinite;
     }
 
     .flavor-card {
@@ -415,36 +415,85 @@
       box-shadow: none;
     }
 
+    /* 15 ROTATING POSITIONS */
+
     .flavor-card:nth-child(1) {
-      transform: rotateY(0deg) translateZ(285px);
+      transform: rotateY(0deg) translateZ(390px);
     }
 
     .flavor-card:nth-child(2) {
-      transform: rotateY(45deg) translateZ(285px);
+      transform: rotateY(24deg) translateZ(390px);
     }
 
     .flavor-card:nth-child(3) {
-      transform: rotateY(90deg) translateZ(285px);
+      transform: rotateY(48deg) translateZ(390px);
     }
 
     .flavor-card:nth-child(4) {
-      transform: rotateY(135deg) translateZ(285px);
+      transform: rotateY(72deg) translateZ(390px);
     }
 
     .flavor-card:nth-child(5) {
-      transform: rotateY(180deg) translateZ(285px);
+      transform: rotateY(96deg) translateZ(390px);
     }
 
     .flavor-card:nth-child(6) {
-      transform: rotateY(225deg) translateZ(285px);
+      transform: rotateY(120deg) translateZ(390px);
     }
 
     .flavor-card:nth-child(7) {
-      transform: rotateY(270deg) translateZ(285px);
+      transform: rotateY(144deg) translateZ(390px);
     }
 
     .flavor-card:nth-child(8) {
-      transform: rotateY(315deg) translateZ(285px);
+      transform: rotateY(168deg) translateZ(390px);
+    }
+
+    .flavor-card:nth-child(9) {
+      transform: rotateY(192deg) translateZ(390px);
+    }
+
+    .flavor-card:nth-child(10) {
+      transform: rotateY(216deg) translateZ(390px);
+    }
+
+    .flavor-card:nth-child(11) {
+      transform: rotateY(240deg) translateZ(390px);
+    }
+
+    .flavor-card:nth-child(12) {
+      transform: rotateY(264deg) translateZ(390px);
+    }
+
+    .flavor-card:nth-child(13) {
+      transform: rotateY(288deg) translateZ(390px);
+    }
+
+    .flavor-card:nth-child(14) {
+      transform: rotateY(312deg) translateZ(390px);
+    }
+
+    .flavor-card:nth-child(15) {
+      transform: rotateY(336deg) translateZ(390px);
+    }
+
+    /* COMING SOON LABEL */
+
+    .coming-soon span {
+      position: absolute;
+      left: 50%;
+      bottom: -30px;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      background: var(--bubblegum-pink);
+      color: #ffffff;
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-family: "Poppins", Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
     }
 
     @keyframes spin {
@@ -938,9 +987,9 @@
       }
 
       .carousel {
-        transform: scale(0.82);
-        margin-top: -20px;
-        margin-bottom: -20px;
+        transform: scale(0.68);
+        margin-top: -50px;
+        margin-bottom: -50px;
       }
 
       .detroit-desserts-logo {
@@ -1136,15 +1185,17 @@
 
       </div>
 
-      <!-- 8-FLAVOR ROTATING CUPS -->
+      <!-- 15-FLAVOR ROTATING CUPS -->
 
       <div class="flavor-area">
 
-        <h3>EIGHT FLAVORS. ONE VIBE.</h3>
+        <h3>15 FLAVORS. ONE VIBE.</h3>
 
         <div class="carousel">
 
           <div class="carousel-inner">
+
+            <!-- CURRENT FLAVORS -->
 
             <div class="flavor-card">
               <img
@@ -1162,21 +1213,21 @@
 
             <div class="flavor-card">
               <img
-                src="cherry%20.png"
+                src="cherry .png"
                 alt="Cherry Water Ice"
               >
             </div>
 
             <div class="flavor-card">
               <img
-                src="watermelon%20.png"
+                src="watermelon .png"
                 alt="Watermelon Water Ice"
               >
             </div>
 
             <div class="flavor-card">
               <img
-                src="blueberry%20.png"
+                src="blueberry .png"
                 alt="Blueberry Water Ice"
               >
             </div>
@@ -1200,6 +1251,64 @@
                 src="mango.png"
                 alt="Mango Water Ice"
               >
+            </div>
+
+            <!-- COMING SOON FLAVORS -->
+
+            <div class="flavor-card coming-soon">
+              <img
+                src="mangonada.PNG"
+                alt="Mangonada Water Ice - Coming Soon"
+              >
+              <span>COMING SOON</span>
+            </div>
+
+            <div class="flavor-card coming-soon">
+              <img
+                src="mermaid-ice.PNG"
+                alt="Mermaid Ice Water Ice - Coming Soon"
+              >
+              <span>COMING SOON</span>
+            </div>
+
+            <div class="flavor-card coming-soon">
+              <img
+                src="sour-apple.PNG"
+                alt="Sour Apple Water Ice - Coming Soon"
+              >
+              <span>COMING SOON</span>
+            </div>
+
+            <div class="flavor-card coming-soon">
+              <img
+                src="cosmic-ice.PNG"
+                alt="Cosmic Ice Water Ice - Coming Soon"
+              >
+              <span>COMING SOON</span>
+            </div>
+
+            <div class="flavor-card coming-soon">
+              <img
+                src="atomic-blast.PNG"
+                alt="Atomic Blast Water Ice - Coming Soon"
+              >
+              <span>COMING SOON</span>
+            </div>
+
+            <div class="flavor-card coming-soon">
+              <img
+                src="chocolate .PNG"
+                alt="Chocolate Water Ice - Coming Soon"
+              >
+              <span>COMING SOON</span>
+            </div>
+
+            <div class="flavor-card coming-soon">
+              <img
+                src="coco-coconut.PNG"
+                alt="Coco Coconut Water Ice - Coming Soon"
+              >
+              <span>COMING SOON</span>
             </div>
 
           </div>
