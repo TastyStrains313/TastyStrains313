@@ -415,8 +415,6 @@
       box-shadow: none;
     }
 
-    /* 15 ROTATING POSITIONS */
-
     .flavor-card:nth-child(1) {
       transform: rotateY(0deg) translateZ(390px);
     }
@@ -476,8 +474,6 @@
     .flavor-card:nth-child(15) {
       transform: rotateY(336deg) translateZ(390px);
     }
-
-    /* COMING SOON LABEL */
 
     .coming-soon span {
       position: absolute;
@@ -815,6 +811,137 @@
       gap: 20px;
     }
 
+    /* APPAREL 3D SPINNING PRODUCTS */
+
+    .apparel-grid {
+      max-width: 1100px;
+      margin: 45px auto 0;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+      align-items: start;
+    }
+
+    .apparel-card {
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 28px;
+      padding: 22px;
+      text-align: center;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+    }
+
+    .apparel-flip {
+      width: 100%;
+      max-width: 390px;
+      aspect-ratio: 4 / 5;
+      margin: 0 auto 22px;
+      perspective: 1400px;
+    }
+
+    .apparel-inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: apparelSpin 8s ease-in-out infinite;
+    }
+
+    .apparel-card:nth-child(2) .apparel-inner {
+      animation-delay: 2s;
+    }
+
+    .apparel-front,
+    .apparel-back {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+
+    .apparel-back {
+      transform: rotateY(180deg);
+    }
+
+    .apparel-front img,
+    .apparel-back img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      border-radius: 22px;
+      background: transparent;
+    }
+
+    @keyframes apparelSpin {
+
+      0%,
+      35% {
+        transform: rotateY(0deg);
+      }
+
+      50%,
+      85% {
+        transform: rotateY(180deg);
+      }
+
+      100% {
+        transform: rotateY(360deg);
+      }
+
+    }
+
+    .apparel-card h3 {
+      font-family: "Archivo Black", Impact, sans-serif;
+      font-size: 23px;
+      line-height: 1.15;
+      margin-bottom: 15px;
+      color: var(--baby-blue);
+    }
+
+    .apparel-card:nth-child(even) h3 {
+      color: var(--bubblegum-pink);
+    }
+
+    .apparel-details {
+      background: rgba(94, 203, 255, 0.10);
+      border-radius: 18px;
+      padding: 18px;
+      text-align: left;
+      margin-bottom: 18px;
+    }
+
+    .apparel-details p {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.55;
+      margin-bottom: 8px;
+    }
+
+    .apparel-details p:last-child {
+      margin-bottom: 0;
+    }
+
+    .apparel-details strong {
+      font-weight: 900;
+      color: #222;
+    }
+
+    .chenille {
+      color: var(--bubblegum-pink);
+      font-weight: 900;
+    }
+
+    .apparel-note {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
     /* STORY */
 
     .story-card {
@@ -969,7 +1096,10 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
-      /* COMPACT LOCATION GRID */
+      .apparel-grid {
+        grid-template-columns: 1fr;
+        max-width: 650px;
+      }
 
       .locations-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -988,6 +1118,7 @@
       .form-group.full {
         grid-column: auto;
       }
+
     }
 
     @media (max-width: 600px) {
@@ -1002,6 +1133,19 @@
 
       .clothing-grid {
         grid-template-columns: 1fr;
+      }
+
+      .apparel-grid {
+        grid-template-columns: 1fr;
+        max-width: 430px;
+      }
+
+      .apparel-card {
+        padding: 18px;
+      }
+
+      .apparel-flip {
+        max-width: 390px;
       }
 
       .story-card,
@@ -1049,8 +1193,6 @@
         width: 100%;
         min-width: 0;
       }
-
-      /* EXTRA-COMPACT LOCATIONS ON PHONES */
 
       .locations-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1262,8 +1404,6 @@
 
           <div class="carousel-inner">
 
-            <!-- CURRENT FLAVORS -->
-
             <div class="flavor-card">
               <img
                 src="lemon.png"
@@ -1319,8 +1459,6 @@
                 alt="Mango Water Ice"
               >
             </div>
-
-            <!-- COMING SOON FLAVORS -->
 
             <div class="flavor-card coming-soon">
               <img
@@ -1545,8 +1683,6 @@
             target="_blank"
           >MAP</a>
         </div>
-
-        <!-- NEW 15TH LOCATION -->
 
         <div class="location-card">
           <h3>BP</h3>
@@ -1809,8 +1945,6 @@
 
       </div>
 
-      <!-- SUCCESS MESSAGE -->
-
       <div
         id="cateringConfirmation"
         class="catering-confirmation"
@@ -1861,8 +1995,6 @@
         </p>
 
       </div>
-
-      <!-- CATERING INFORMATION -->
 
       <div class="catering-hero">
 
@@ -2034,20 +2166,187 @@
         <br>
 
         <p>
+          Each piece is designed to bring the TastyStrains
+          identity beyond the cup with bold graphics,
+          premium materials and signature ICY details.
+        </p>
+
+        <br>
+
+        <p>
           Follow the brand on Instagram for apparel releases,
           custom pieces and clothing inquiries.
         </p>
 
       </div>
 
+      <div class="apparel-grid">
+
+        <!-- SHIRT -->
+
+        <div class="apparel-card">
+
+          <div class="apparel-flip">
+
+            <div class="apparel-inner">
+
+              <div class="apparel-front">
+
+                <img
+                  src="tastystrains-shirt-front.png"
+                  alt="TastyStrains shirt front"
+                >
+
+              </div>
+
+              <div class="apparel-back">
+
+                <img
+                  src="tastystrains-shirt-back.png"
+                  alt="TastyStrains shirt back"
+                >
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <h3>
+            TASTYSTRAINS SOO ICY SHIRT
+          </h3>
+
+          <div class="apparel-details">
+
+            <p>
+              <strong>Material:</strong>
+              400 GSM 100% cotton French terry
+            </p>
+
+            <p>
+              <strong>Fit:</strong>
+              Oversized / drop-shoulder unisex fit
+            </p>
+
+            <p>
+              <strong>Sizes:</strong>
+              S–3XL
+            </p>
+
+            <p>
+              <strong>Details:</strong>
+              Woven TastyStrains label with
+              raised <span class="chenille">Chenille Patch</span>
+              / ICY treatment
+            </p>
+
+            <p>
+              <strong>Construction:</strong>
+              Premium heavyweight construction
+            </p>
+
+          </div>
+
+          <a
+            href="https://www.instagram.com/tastystrains313/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-blue"
+          >
+            APPAREL INQUIRIES
+          </a>
+
+        </div>
+
+
+        <!-- JOGGING PANTS -->
+
+        <div class="apparel-card">
+
+          <div class="apparel-flip">
+
+            <div class="apparel-inner">
+
+              <div class="apparel-front">
+
+                <img
+                  src="tastystrains-jogging-pants-front.heic"
+                  alt="TastyStrains jogging pants front"
+                >
+
+              </div>
+
+              <div class="apparel-back">
+
+                <img
+                  src="tastystrains-jogging-pants-back.PNG"
+                  alt="TastyStrains jogging pants back"
+                >
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <h3>
+            TASTYSTRAINS SOO ICY JOGGING PANTS
+          </h3>
+
+          <div class="apparel-details">
+
+            <p>
+              <strong>Material:</strong>
+              Premium heavyweight streetwear fabric
+            </p>
+
+            <p>
+              <strong>Fit:</strong>
+              Relaxed / stacked streetwear fit
+            </p>
+
+            <p>
+              <strong>Details:</strong>
+              Signature TastyStrains branding with
+              raised <span class="chenille">Chenille Patch</span>
+              detailing
+            </p>
+
+            <p>
+              <strong>Style:</strong>
+              Designed as part of the TastyStrains
+              premium streetwear collection
+            </p>
+
+          </div>
+
+          <a
+            href="https://www.instagram.com/tastystrains313/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-pink"
+          >
+            APPAREL INQUIRIES
+          </a>
+
+        </div>
+
+      </div>
+
+      <p class="apparel-note">
+        Front and back views rotate automatically.
+        No shorts included.
+      </p>
+
       <div class="buttons" style="margin-top:35px;">
 
         <a
           href="https://www.instagram.com/tastystrains313/"
           target="_blank"
-          class="btn btn-blue"
+          rel="noopener noreferrer"
+          class="btn btn-pink"
         >
-          APPAREL INQUIRIES
+          FOLLOW @TASTYSTRAINS313
         </a>
 
       </div>
@@ -2245,6 +2544,7 @@
           <a
             href="https://www.instagram.com/tastystrains313/"
             target="_blank"
+            rel="noopener noreferrer"
             class="btn btn-pink"
           >
             INSTAGRAM
