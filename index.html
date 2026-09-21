@@ -805,20 +805,14 @@
       font-weight: 600;
     }
 
-    .clothing-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
     /* APPAREL 3D SPINNING PRODUCTS */
 
     .apparel-grid {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 45px auto 0;
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 28px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
       align-items: start;
     }
 
@@ -847,8 +841,18 @@
       animation: apparelSpin 8s ease-in-out infinite;
     }
 
+    /* Each apparel item spins independently */
+
+    .apparel-card:nth-child(1) .apparel-inner {
+      animation-delay: 0s;
+    }
+
     .apparel-card:nth-child(2) .apparel-inner {
       animation-delay: 2s;
+    }
+
+    .apparel-card:nth-child(3) .apparel-inner {
+      animation-delay: 4s;
     }
 
     .apparel-front,
@@ -904,6 +908,10 @@
 
     .apparel-card:nth-child(even) h3 {
       color: var(--bubblegum-pink);
+    }
+
+    .apparel-card:nth-child(3) h3 {
+      color: var(--baby-blue);
     }
 
     .apparel-details {
@@ -1066,6 +1074,15 @@
 
     /* MOBILE / TABLET */
 
+    @media (max-width: 1000px) {
+
+      .apparel-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 850px;
+      }
+
+    }
+
     @media (max-width: 900px) {
 
       .nav-container {
@@ -1090,15 +1107,6 @@
 
       .package-grid {
         grid-template-columns: 1fr;
-      }
-
-      .clothing-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .apparel-grid {
-        grid-template-columns: 1fr;
-        max-width: 650px;
       }
 
       .locations-grid {
@@ -1128,10 +1136,6 @@
       }
 
       .feature-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .clothing-grid {
         grid-template-columns: 1fr;
       }
 
@@ -1405,114 +1409,69 @@
           <div class="carousel-inner">
 
             <div class="flavor-card">
-              <img
-                src="lemon.png"
-                alt="Lemon Water Ice"
-              >
+              <img src="lemon.png" alt="Lemon Water Ice">
             </div>
 
             <div class="flavor-card">
-              <img
-                src="tropical-rainbow.png"
-                alt="Tropical Rainbow Water Ice"
-              >
+              <img src="tropical-rainbow.png" alt="Tropical Rainbow Water Ice">
             </div>
 
             <div class="flavor-card">
-              <img
-                src="cherry .png"
-                alt="Cherry Water Ice"
-              >
+              <img src="cherry .png" alt="Cherry Water Ice">
             </div>
 
             <div class="flavor-card">
-              <img
-                src="watermelon .png"
-                alt="Watermelon Water Ice"
-              >
+              <img src="watermelon .png" alt="Watermelon Water Ice">
             </div>
 
             <div class="flavor-card">
-              <img
-                src="blueberry .png"
-                alt="Blueberry Water Ice"
-              >
+              <img src="blueberry .png" alt="Blueberry Water Ice">
             </div>
 
             <div class="flavor-card">
-              <img
-                src="cotton-candy.png"
-                alt="Cotton Candy Water Ice"
-              >
+              <img src="cotton-candy.png" alt="Cotton Candy Water Ice">
             </div>
 
             <div class="flavor-card">
-              <img
-                src="fireworks.png"
-                alt="Fireworks Water Ice"
-              >
+              <img src="fireworks.png" alt="Fireworks Water Ice">
             </div>
 
             <div class="flavor-card">
-              <img
-                src="mango.png"
-                alt="Mango Water Ice"
-              >
+              <img src="mango.png" alt="Mango Water Ice">
             </div>
 
             <div class="flavor-card coming-soon">
-              <img
-                src="mangonada.PNG"
-                alt="Mangonada Water Ice - Coming Soon"
-              >
+              <img src="mangonada.PNG" alt="Mangonada Water Ice - Coming Soon">
               <span>COMING SOON</span>
             </div>
 
             <div class="flavor-card coming-soon">
-              <img
-                src="mermaid-ice.PNG"
-                alt="Mermaid Ice Water Ice - Coming Soon"
-              >
+              <img src="mermaid-ice.PNG" alt="Mermaid Ice Water Ice - Coming Soon">
               <span>COMING SOON</span>
             </div>
 
             <div class="flavor-card coming-soon">
-              <img
-                src="sour-apple.PNG"
-                alt="Sour Apple Water Ice - Coming Soon"
-              >
+              <img src="sour-apple.PNG" alt="Sour Apple Water Ice - Coming Soon">
               <span>COMING SOON</span>
             </div>
 
             <div class="flavor-card coming-soon">
-              <img
-                src="cosmic-ice.PNG"
-                alt="Cosmic Ice Water Ice - Coming Soon"
-              >
+              <img src="cosmic-ice.PNG" alt="Cosmic Ice Water Ice - Coming Soon">
               <span>COMING SOON</span>
             </div>
 
             <div class="flavor-card coming-soon">
-              <img
-                src="atomic-blast.PNG"
-                alt="Atomic Blast Water Ice - Coming Soon"
-              >
+              <img src="atomic-blast.PNG" alt="Atomic Blast Water Ice - Coming Soon">
               <span>COMING SOON</span>
             </div>
 
             <div class="flavor-card coming-soon">
-              <img
-                src="chocolate .PNG"
-                alt="Chocolate Water Ice - Coming Soon"
-              >
+              <img src="chocolate .PNG" alt="Chocolate Water Ice - Coming Soon">
               <span>COMING SOON</span>
             </div>
 
             <div class="flavor-card coming-soon">
-              <img
-                src="coco-coconut.PNG"
-                alt="Coco Coconut Water Ice - Coming Soon"
-              >
+              <img src="coco-coconut.PNG" alt="Coco Coconut Water Ice - Coming Soon">
               <span>COMING SOON</span>
             </div>
 
@@ -1547,151 +1506,121 @@
         <div class="location-card">
           <h3>Mobil</h3>
           <p>10001 Fenkell, Detroit, MI 48238</p>
-          <a
-            class="btn btn-blue"
-            href="https://www.google.com/maps/search/?api=1&query=10001+Fenkell+Detroit+MI+48238"
-            target="_blank"
-          >MAP</a>
+          <a class="btn btn-blue"
+             href="https://www.google.com/maps/search/?api=1&query=10001+Fenkell+Detroit+MI+48238"
+             target="_blank">MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Kennedy Liquor</h3>
           <p>13344 Seven Mile, Detroit, MI 48219</p>
-          <a
-            class="btn btn-pink"
-            href="https://www.google.com/maps/search/?api=1&query=13344+Seven+Mile+Detroit+MI+48219"
-            target="_blank"
-          >MAP</a>
+          <a class="btn btn-pink"
+             href="https://www.google.com/maps/search/?api=1&query=13344+Seven+Mile+Detroit+MI+48219"
+             target="_blank">MAP</a>
         </div>
 
         <div class="location-card">
           <h3>W Liquor</h3>
           <p>3325 E Seven Mile, Detroit, MI 48234</p>
-          <a
-            class="btn btn-blue"
-            href="https://www.google.com/maps/search/?api=1&query=3325+E+Seven+Mile+Detroit+MI+48234"
-            target="_blank"
-          >MAP</a>
+          <a class="btn btn-blue"
+             href="https://www.google.com/maps/search/?api=1&query=3325+E+Seven+Mile+Detroit+MI+48234"
+             target="_blank">MAP</a>
         </div>
 
         <div class="location-card">
           <h3>AMOCO</h3>
           <p>38030 W 10 Mile Rd, Farmington, MI 48335</p>
-          <a
-            class="btn btn-pink"
-            href="https://www.google.com/maps/search/?api=1&query=38030+W+10+Mile+Rd+Farmington+MI+48335"
-            target="_blank"
-          >MAP</a>
+          <a class="btn btn-pink"
+             href="https://www.google.com/maps/search/?api=1&query=38030+W+10+Mile+Rd+Farmington+MI+48335"
+             target="_blank">MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Grand Liquor</h3>
           <p>12889 Woodward, Highland Park, MI 48203</p>
-          <a
-            class="btn btn-blue"
-            href="https://www.google.com/maps/search/?api=1&query=12889+Woodward+Highland+Park+MI+48203"
-            target="_blank"
-          >MAP</a>
+          <a class="btn btn-blue"
+             href="https://www.google.com/maps/search/?api=1&query=12889+Woodward+Highland+Park+MI+48203"
+             target="_blank">MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Imperial Fresh</h3>
           <p>14424 Schaefer, Detroit, MI 48227</p>
-          <a
-            class="btn btn-pink"
-            href="https://www.google.com/maps/search/?api=1&query=14424+Schaefer+Detroit+MI+48227"
-            target="_blank"
-          >MAP</a>
+          <a class="btn btn-pink"
+             href="https://www.google.com/maps/search/?api=1&query=14424+Schaefer+Detroit+MI+48227"
+             target="_blank">MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Martell Liquor</h3>
           <p>19137 Seven Mile, Detroit, MI 48219</p>
-          <a
-            class="btn btn-blue"
-            href="https://www.google.com/maps/search/?api=1&query=19137+Seven+Mile+Detroit+MI+48219"
-            target="_blank"
-          >MAP</a>
+          <a class="btn btn-blue"
+             href="https://www.google.com/maps/search/?api=1&query=19137+Seven+Mile+Detroit+MI+48219"
+             target="_blank">MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Heydens Liquor</h3>
           <p>20201 Seven Mile, Detroit, MI 48219</p>
-          <a
-            class="btn btn-pink"
-            href="https://www.google.com/maps/search/?api=1&query=20201+Seven+Mile+Detroit+MI+48219"
-            target="_blank"
-          >MAP</a>
+          <a class="btn btn-pink"
+             href="https://www.google.com/maps/search/?api=1&query=20201+Seven+Mile+Detroit+MI+48219"
+             target="_blank">MAP</a>
         </div>
 
         <div class="location-card">
           <h3>BP</h3>
           <p>30435 Cherry Hill, Westland, MI 48186</p>
-          <a
-            class="btn btn-blue"
-            href="https://www.google.com/maps/search/?api=1&query=30435+Cherry+Hill+Westland+MI+48186"
-            target="_blank"
-          >MAP</a>
+          <a class="btn btn-blue"
+             href="https://www.google.com/maps/search/?api=1&query=30435+Cherry+Hill+Westland+MI+48186"
+             target="_blank">MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Vintage Village Liquor</h3>
           <p>28927 Southfield Rd, Lathrup Village, MI 48076</p>
-          <a
-            class="btn btn-pink"
-            href="https://www.google.com/maps/search/?api=1&query=28927+Southfield+Rd+Lathrup+Village+MI+48076"
-            target="_blank"
-          >MAP</a>
+          <a class="btn btn-pink"
+             href="https://www.google.com/maps/search/?api=1&query=28927+Southfield+Rd+Lathrup+Village+MI+48076"
+             target="_blank">MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Greenfield Market</h3>
           <p>15530 Puritan, Detroit, MI 48227</p>
-          <a
-            class="btn btn-blue"
-            href="https://www.google.com/maps/search/?api=1&query=15530+Puritan+Detroit+MI+48227"
-            target="_blank"
-          >MAP</a>
+          <a class="btn btn-blue"
+             href="https://www.google.com/maps/search/?api=1&query=15530+Puritan+Detroit+MI+48227"
+             target="_blank">MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Big V Liquor</h3>
           <p>14111 Greenfield Rd, Detroit, MI 48227</p>
-          <a
-            class="btn btn-pink"
-            href="https://www.google.com/maps/search/?api=1&query=14111+Greenfield+Rd+Detroit+MI+48227"
-            target="_blank"
-          >MAP</a>
+          <a class="btn btn-pink"
+             href="https://www.google.com/maps/search/?api=1&query=14111+Greenfield+Rd+Detroit+MI+48227"
+             target="_blank">MAP</a>
         </div>
 
         <div class="location-card">
           <h3>United Liquor</h3>
           <p>22040 Seven Mile, Detroit, MI 48219</p>
-          <a
-            class="btn btn-blue"
-            href="https://www.google.com/maps/search/?api=1&query=22040+Seven+Mile+Detroit+MI+48219"
-            target="_blank"
-          >MAP</a>
+          <a class="btn btn-blue"
+             href="https://www.google.com/maps/search/?api=1&query=22040+Seven+Mile+Detroit+MI+48219"
+             target="_blank">MAP</a>
         </div>
 
         <div class="location-card">
           <h3>Marathon</h3>
           <p>10550 W Jefferson Ave, River Rouge, MI 48218</p>
-          <a
-            class="btn btn-pink"
-            href="https://www.google.com/maps/search/?api=1&query=10550+W+Jefferson+Ave+River+Rouge+MI+48218"
-            target="_blank"
-          >MAP</a>
+          <a class="btn btn-pink"
+             href="https://www.google.com/maps/search/?api=1&query=10550+W+Jefferson+Ave+River+Rouge+MI+48218"
+             target="_blank">MAP</a>
         </div>
 
         <div class="location-card">
           <h3>BP</h3>
           <p>21746 Schoolcraft, Detroit, MI 48223</p>
-          <a
-            class="btn btn-blue"
-            href="https://www.google.com/maps/search/?api=1&query=21746+Schoolcraft+Detroit+MI+48223"
-            target="_blank"
-          >MAP</a>
+          <a class="btn btn-blue"
+             href="https://www.google.com/maps/search/?api=1&query=21746+Schoolcraft+Detroit+MI+48223"
+             target="_blank">MAP</a>
         </div>
 
       </div>
@@ -1726,23 +1655,9 @@
           method="POST"
         >
 
-          <input
-            type="hidden"
-            name="_subject"
-            value="NEW TASTY STRAINS CATERING REQUEST"
-          >
-
-          <input
-            type="hidden"
-            name="_template"
-            value="table"
-          >
-
-          <input
-            type="hidden"
-            name="_captcha"
-            value="true"
-          >
+          <input type="hidden" name="_subject" value="NEW TASTY STRAINS CATERING REQUEST">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="true">
 
           <div class="form-grid">
 
@@ -1945,10 +1860,7 @@
 
       </div>
 
-      <div
-        id="cateringConfirmation"
-        class="catering-confirmation"
-      >
+      <div id="cateringConfirmation" class="catering-confirmation">
 
         <div class="confirmation-check">✓</div>
 
@@ -2259,6 +2171,79 @@
         </div>
 
 
+        <!-- HOODIE -->
+
+        <div class="apparel-card">
+
+          <div class="apparel-flip">
+
+            <div class="apparel-inner">
+
+              <div class="apparel-front">
+
+                <img
+                  src="tastystrains-hoodie-front.PNG"
+                  alt="TastyStrains hoodie front"
+                >
+
+              </div>
+
+              <div class="apparel-back">
+
+                <img
+                  src="tastystrains-hoodie-back.JPEG"
+                  alt="TastyStrains hoodie back"
+                >
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <h3>
+            TASTYSTRAINS SOO ICY HOODIE
+          </h3>
+
+          <div class="apparel-details">
+
+            <p>
+              <strong>Material:</strong>
+              Premium heavyweight streetwear fabric
+            </p>
+
+            <p>
+              <strong>Fit:</strong>
+              Oversized / relaxed unisex fit
+            </p>
+
+            <p>
+              <strong>Details:</strong>
+              Signature TastyStrains branding with
+              raised <span class="chenille">Chenille Patch</span>
+              / ICY treatment
+            </p>
+
+            <p>
+              <strong>Style:</strong>
+              Premium heavyweight hoodie designed
+              as part of the TastyStrains streetwear collection
+            </p>
+
+          </div>
+
+          <a
+            href="https://www.instagram.com/tastystrains313/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-pink"
+          >
+            APPAREL INQUIRIES
+          </a>
+
+        </div>
+
+
         <!-- JOGGING PANTS -->
 
         <div class="apparel-card">
@@ -2324,7 +2309,7 @@
             href="https://www.instagram.com/tastystrains313/"
             target="_blank"
             rel="noopener noreferrer"
-            class="btn btn-pink"
+            class="btn btn-blue"
           >
             APPAREL INQUIRIES
           </a>
@@ -2335,7 +2320,7 @@
 
       <p class="apparel-note">
         Front and back views rotate automatically.
-        No shorts included.
+        Each apparel piece rotates independently.
       </p>
 
       <div class="buttons" style="margin-top:35px;">
@@ -2586,7 +2571,8 @@
 
   <script>
 
-    const cateringForm = document.getElementById("cateringForm");
+    const cateringForm =
+      document.getElementById("cateringForm");
 
     const cateringFormBox =
       document.getElementById("cateringFormBox");
@@ -2594,70 +2580,83 @@
     const cateringConfirmation =
       document.getElementById("cateringConfirmation");
 
-    cateringForm.addEventListener("submit", async function(event) {
+    cateringForm.addEventListener(
+      "submit",
+      async function(event) {
 
-      event.preventDefault();
+        event.preventDefault();
 
-      const submitButton =
-        cateringForm.querySelector('button[type="submit"]');
-
-      submitButton.disabled = true;
-      submitButton.textContent = "SUBMITTING...";
-
-      try {
-
-        const response = await fetch(
-          "https://formsubmit.co/ajax/tastystrains313@yahoo.com",
-          {
-            method: "POST",
-            body: new FormData(cateringForm),
-            headers: {
-              "Accept": "application/json"
-            }
-          }
-        );
-
-        const data = await response.json();
-
-        if (response.ok && data.success !== false) {
-
-          cateringForm.reset();
-
-          cateringFormBox.style.display = "none";
-
-          cateringConfirmation.style.display = "block";
-
-          cateringConfirmation.scrollIntoView({
-            behavior: "smooth",
-            block: "center"
-          });
-
-        } else {
-
-          throw new Error(
-            data.message ||
-            "The catering request could not be submitted."
+        const submitButton =
+          cateringForm.querySelector(
+            'button[type="submit"]'
           );
+
+        submitButton.disabled = true;
+        submitButton.textContent = "SUBMITTING...";
+
+        try {
+
+          const response = await fetch(
+            "https://formsubmit.co/ajax/tastystrains313@yahoo.com",
+            {
+              method: "POST",
+              body: new FormData(cateringForm),
+              headers: {
+                "Accept": "application/json"
+              }
+            }
+          );
+
+          const data = await response.json();
+
+          if (
+            response.ok &&
+            data.success !== false
+          ) {
+
+            cateringForm.reset();
+
+            cateringFormBox.style.display =
+              "none";
+
+            cateringConfirmation.style.display =
+              "block";
+
+            cateringConfirmation.scrollIntoView({
+              behavior: "smooth",
+              block: "center"
+            });
+
+          } else {
+
+            throw new Error(
+              data.message ||
+              "The catering request could not be submitted."
+            );
+
+          }
+
+        } catch (error) {
+
+          console.error(
+            "Catering form error:",
+            error
+          );
+
+          alert(
+            "We couldn't submit your catering request right now. " +
+            "Please try again or call 313-591-3034."
+          );
+
+          submitButton.disabled = false;
+
+          submitButton.textContent =
+            "SUBMIT CATERING REQUEST";
 
         }
 
-      } catch (error) {
-
-        console.error("Catering form error:", error);
-
-        alert(
-          "We couldn't submit your catering request right now. " +
-          "Please try again or call 313-591-3034."
-        );
-
-        submitButton.disabled = false;
-
-        submitButton.textContent =
-          "SUBMIT CATERING REQUEST";
-
       }
-
-    });
+    );
 
   </script>
 
