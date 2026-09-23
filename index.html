@@ -808,10 +808,10 @@
     /* APPAREL 3D SPINNING PRODUCTS */
 
     .apparel-grid {
-      max-width: 900px;
+      max-width: 1200px;
       margin: 45px auto 0;
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 28px;
       align-items: start;
     }
@@ -847,6 +847,10 @@
 
     .apparel-card:nth-child(2) .apparel-inner {
       animation-delay: 2s;
+    }
+
+    .apparel-card:nth-child(3) .apparel-inner {
+      animation-delay: 4s;
     }
 
     .apparel-front,
@@ -1950,8 +1954,6 @@
           the agreed-upon booking terms.
         </p>
 
-        <!-- CATERING PAYMENT LINK -->
-
         <a
           href="https://square.link/u/XVt5l5n5?src=sheet"
           target="_blank"
@@ -2153,7 +2155,7 @@
 
       <div class="apparel-grid">
 
-        <!-- SHIRT / TOP -->
+        <!-- BLACK TASTYSTRAINS SHIRT -->
 
         <div class="apparel-card">
 
@@ -2164,8 +2166,8 @@
               <div class="apparel-front">
 
                 <img
-                  src="cropshirt-front.PNG"
-                  alt="TastyStrains shirt front"
+                  src="tastystrains-shirt-front.png"
+                  alt="Black TastyStrains shirt front"
                 >
 
               </div>
@@ -2173,8 +2175,8 @@
               <div class="apparel-back">
 
                 <img
-                  src="cropshirt-back.PNG"
-                  alt="TastyStrains shirt back"
+                  src="tastystrains-shirt-back.png"
+                  alt="Black TastyStrains shirt back"
                 >
 
               </div>
@@ -2218,21 +2220,19 @@
 
           </div>
 
-          <!-- SHIRT SIZE + BUY NOW -->
-
           <div class="apparel-purchase">
 
             <label
               class="size-label"
-              for="shirt-size"
+              for="black-shirt-size"
             >
               SELECT SIZE
             </label>
 
             <select
-              id="shirt-size"
+              id="black-shirt-size"
               class="size-select"
-              aria-label="Select shirt size"
+              aria-label="Select black shirt size"
             >
               <option value="">Choose a size</option>
               <option value="S">S</option>
@@ -2242,18 +2242,16 @@
             </select>
 
             <div
-              id="shirt-size-warning"
+              id="black-shirt-size-warning"
               class="size-warning"
             >
               PLEASE SELECT A SIZE BEFORE BUYING.
             </div>
 
-            <!-- CORRECT SHIRT/TOP PAYMENT LINK -->
-
             <a
               href="https://square.link/u/Sots570c?src=sheet"
               class="btn btn-blue buy-now-btn"
-              data-size-select="shirt-size"
+              data-size-select="black-shirt-size"
             >
               BUY NOW
             </a>
@@ -2328,8 +2326,6 @@
 
           </div>
 
-          <!-- HOODIE SIZE + BUY NOW -->
-
           <div class="apparel-purchase">
 
             <label
@@ -2358,12 +2354,116 @@
               PLEASE SELECT A SIZE BEFORE BUYING.
             </div>
 
-            <!-- CORRECT HOODIE PAYMENT LINK -->
-
             <a
               href="https://square.link/u/vsFGI3MO?src=sheet"
               class="btn btn-pink buy-now-btn"
               data-size-select="hoodie-size"
+            >
+              BUY NOW
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- NEW BROWN TASTYSTRAINS SHIRT -->
+
+        <div class="apparel-card">
+
+          <div class="apparel-flip">
+
+            <div class="apparel-inner">
+
+              <div class="apparel-front">
+
+                <img
+                  src="cropshirt-front.PNG"
+                  alt="Brown TastyStrains shirt front"
+                >
+
+              </div>
+
+              <div class="apparel-back">
+
+                <img
+                  src="cropshirt-back.PNG"
+                  alt="Brown TastyStrains shirt back"
+                >
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <h3>
+            TASTYSTRAINS SOO ICY BROWN SHIRT
+          </h3>
+
+          <div class="apparel-details">
+
+            <p>
+              <strong>Material:</strong>
+              Premium heavyweight cotton
+            </p>
+
+            <p>
+              <strong>Fit:</strong>
+              Oversized / drop-shoulder unisex fit
+            </p>
+
+            <p>
+              <strong>Sizes:</strong>
+              S / M / L / XL
+            </p>
+
+            <p>
+              <strong>Details:</strong>
+              Signature TastyStrains branding with
+              raised <span class="chenille">Chenille Patch</span>
+              / ICY treatment
+            </p>
+
+            <p>
+              <strong>Style:</strong>
+              New colorway added to the TastyStrains
+              streetwear collection
+            </p>
+
+          </div>
+
+          <div class="apparel-purchase">
+
+            <label
+              class="size-label"
+              for="brown-shirt-size"
+            >
+              SELECT SIZE
+            </label>
+
+            <select
+              id="brown-shirt-size"
+              class="size-select"
+              aria-label="Select brown shirt size"
+            >
+              <option value="">Choose a size</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+
+            <div
+              id="brown-shirt-size-warning"
+              class="size-warning"
+            >
+              PLEASE SELECT A SIZE BEFORE BUYING.
+            </div>
+
+            <a
+              href="https://square.link/u/Sots570c?src=sheet"
+              class="btn btn-blue buy-now-btn"
+              data-size-select="brown-shirt-size"
             >
               BUY NOW
             </a>
@@ -2586,6 +2686,7 @@
             href="https://www.instagram.com/tastystrains313/"
             target="_blank"
             rel="noopener noreferrer"
+            class="btn btn-pink"
           >
             INSTAGRAM
           </a>
